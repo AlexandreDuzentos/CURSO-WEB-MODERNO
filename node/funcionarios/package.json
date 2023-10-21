@@ -1,0 +1,15 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "Primeiro arquivo package.json",
+  "main": "funcionarios.js",
+  "scripts": {
+    "start": "ola",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "0.17.1"
+  }
+}

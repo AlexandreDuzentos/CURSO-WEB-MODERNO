@@ -1,0 +1,1 @@
+this.ola2 = "Olá, como estás?"

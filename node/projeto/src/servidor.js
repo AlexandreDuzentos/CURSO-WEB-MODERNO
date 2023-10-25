@@ -25,8 +25,9 @@ const porta = 3003
 const express = require("express")
 
 /* 
-  O body-parser é uma dependência que faz um parse(análise) no body da requisição, converte em
-  objeto e depois entrega o resultado para o backend da aplicação, a partir de req.body.
+  O body-parser é uma dependência que tem a função de analisar(to parse) o body da requisição,
+  converte-lo em objeto e depois entregar o resultado para o backend da aplicação, a partir de
+  req.body.
 */
 const bodyParser = require("body-parser")
 const bancoDeDados = require("./bancoDeDados")
@@ -34,21 +35,45 @@ const bancoDeDados = require("./bancoDeDados")
 // A função express() cria uma aplicação express.
 const app = express()
 
-// Fazendo de fato o body parser no body da requisição.
+/*
+ O método use do express atende toda e qualquer requisição feita para o servidor usando o 
+ express, independente do método de requisiçao HTTP usado, e também independente da rota, tudo
+ o que ele precisa para receber a requisição enviada pelo cliente é usar apenas a mesma porta
+ sendo usada pelo cliente.
+
+ application/x-www-data-urlencoded - é um content-type que descreve que os dados do formulário
+ serão enviados num único bloco no body(corpo) da mensagem http.
+
+ A função urlencoded() do bodyParser funcionára apenas se o content-type usado pelo formulário para
+ fazer a requisição for o application/x-www-form-data-urlencoded.
+
+ A função urlencoded() retorna uma função middleware que fará o parse do body da requisição.
+
+ função middleware: são funções que têm acesso ao objeto de solicitação(req) e ao objeto de
+ resposta(res), e a próxima função middleware no ciclo solicitação resposta do aplicativo.
+
+ */
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+
+/*
+  Rota via get para obter todos os produtos do banco de dados.
+*/
 app.get("/produtos", (req, res, next) => {
     res.send(bancoDeDados.getProdutos())
 })
 
+
+// Rota via get para obter um produto do banco de dados pelo id.
 app.get("/produtos/:id",(req, res, next) => {
     // Numa requisição via get os dados vêm na url.
     res.send(bancoDeDados.getProduto(req.params.id))
 })
 
 
+// Rota via post para salvar um produto no banco de dados.
 app.post("/produtos", (req, res, next) => {
     // Numa requisição via post os dados vêm no corpo da requisição
     const produto = bancoDeDados.salvarProduto({
@@ -61,6 +86,7 @@ app.post("/produtos", (req, res, next) => {
 })
 
 
+// Rota via put para atualizar um produto no banco de dados pelo id.
 app.put("/produtos/:id", (req, res, next) => {
     const produto = bancoDeDados.salvarProduto({
         id: req.params.id,
@@ -72,6 +98,8 @@ app.put("/produtos/:id", (req, res, next) => {
     res.send(produto)
 })
 
+
+// Rota via delete para remover um produto do banco de dados pelo id.
 app.delete("/produtos/:id", (req, res, next) => {
     const produto = bancoDeDados.excluirProduto(req.params.id)
     res.send(produto) 
@@ -79,8 +107,8 @@ app.delete("/produtos/:id", (req, res, next) => {
 
 
 /**
- * Criando uma rota usando o berbo http get, o primeiro argumento passado
- * é o caminho, e a segunda é a callback que será executada quando a requisição for feita.
+ * Criando uma rota usando o verbo http get, o primeiro argumento passado
+ * é o caminho, e a segunda é a middleware que será executada quando a requisição for feita.
  */
 
 /*

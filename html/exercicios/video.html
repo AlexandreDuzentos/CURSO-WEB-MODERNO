@@ -1,0 +1,99 @@
+<h1>Video</h1>
+
+<!--
+  O parâmetro controls exibe os controles do vídeo(iniciar, pausar, barra de progresso e outros).
+  O parâmetro autoplay faz com que o vídeo inicie automaticamente.
+
+  O parâmetro controlslist com o valor nodownload faz com que a opção de download seja removida
+  da lista de controles do vídeo.
+-->
+<video id="meuVideo" width="800" height="450" controls autoplay controlslist="nodownload">
+   <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+   Seu browser não suporta esse recurso
+</video>
+
+<div wm-progresso="meuVideo" class="progresso">
+   <div></div>
+</div>
+
+<div class="buttons">
+    <div wm-play>Iniciar</div>
+    <div wm-pause>Pausar</div>
+    <div wm-reload>Reiniciar</div>
+</div>
+
+<style>
+    #meuVideo{
+        margin-bottom:15px;
+    }
+    .progresso{
+        width:800px;
+        height:20px;
+        border:2px solid #444;
+        margin-bottom:25px;
+        text-align:center;
+    }
+
+    .progresso > div{
+        background-color:red;
+        height:20px;
+        color:white;
+        font-weight:bold;
+        text-align:center;
+    }
+
+    .buttons > div{
+        display:inline;
+        padding:10px;
+        background-color:#444;
+        color:white;
+    }
+
+
+</style>
+
+<script>
+
+    let video = document.querySelector("#meuVideo")
+    let progresso = document.querySelector(".progresso > div")
+    let playButton = document.querySelector(".buttons > [wm-play]")
+    let pauseButton = document.querySelector(".buttons > [wm-pause]")
+    let restartButton = document.querySelector(".buttons > [wm-reload]")
+
+    // Inicia o vídeo
+    playButton.onclick = function(){
+       video.play()
+
+       setInterval(() => {
+        controlarProgressBar()
+       }, 1000)
+       
+    }
+
+    // Pausa o vídeo
+    pauseButton.onclick = function(){
+        video.pause()
+    } 
+    
+    // Reinicia o vídeo
+    restartButton.onclick = function(){
+        video.load()
+    }
+
+    /*
+     O evento oncontextmenu é disparado quando o usuário clica com o botão direito do mouse num
+     elemento html que abre um contextmenu.
+    */
+    video.oncontextmenu = function(e){
+        // Previnindo o comportamento padrão gerado pelo evento(ue é de abertura do contextmenu)
+        e.preventDefault()
+    }
+
+    function controlarProgressBar(){
+        progresso.innerHTML = Math.floor(video.currentTime / video.duration * 100) + "%"
+        progresso.style.width = Math.floor(video.currentTime / video.duration * 100) + "%"
+    }
+     
+   
+</script>
+

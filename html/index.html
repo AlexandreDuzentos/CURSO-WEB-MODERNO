@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>Exercícios HTML</title>
+       <style>
+          #conteudo{
+            padding:30px 0px;
+          }
+       </style>
+    </head>
+    <body>
+       <header>
+        <h1>Exercícios HTML</h1>
+       </header>
+       <nav>
+         <!--
+         Há um servidor a servir os arquivos estáticos que estão dentro da pasta html(o http-server), na porta
+         8080 e outro que está a tratar requisições feitas via formulário na porta 3003, o que vem embutido
+         dentro do express js.
+         -->
+         <a href="exercicios/teste.html" target="_blank" >00 - Teste</a>|
+         <a href="exercicios/texto1.html" target="_blank">01 - Texto 1</a>|
+         <a href="exercicios/texto2.html" target="_blank">02 - Texto 2</a>|
+         <a href="exercicios/listas.html" target="_blank">03 - listas 1</a>|
+         <a href="exercicios/listaAninhada.html" target="_blank">04 - listas aninhadas</a>|
+         <a href="exercicios/links1.html" target="_blank">05 - links 1</a>|
+         <a href="exercicios/links2.html" target="_blank">06 - links 2</a>|
+         <a href="exercicios/tabela.html" target="_blank">07 - tabela</a>|
+         <a href="exercicios/form/form.html" target="_blank">08 - Formulário</a>|
+         <a href="exercicios/imagens.html" target="_blank">09 - Imagens</a>|
+         <a href="exercicios/video.html" target="_blank">10 - Vídeo</a>|
+         <a href="exercicios/tagsNaoVisuais.html" target="_blank">10 - Tags não visuais</a>|
+       </nav>
+       <section id="conteudo"></section>
+       <footer>
+          Curso de web moderno
+       </footer>
+       <script>
+          document.querySelectorAll("a").forEach((link) => {
+            /* Tratando o evento do click nos links */
+              link.onclick = function(event) {
+                /*
+                O método preventDefault previnirá o comportamento padrão
+                causado por um elemento quando o evento de click for disparado
+                pelo mesmo.
+                */
+                 event.preventDefault()
+
+                 let conteudo = document.getElementById("conteudo")
+
+                 /*
+                 O método fetch inicia o processo de buscar um recurso do servidor,
+                 ele retorna uma promise que resolve para um objeto de resposta.
+                 */
+                 window.fetch(link.href)
+                    /*
+                     A função text pega devolve o conteúdo da página html para qual a requisição
+                     feita.
+                    */
+                   .then((resp) => resp.text())
+                   .then((html) => conteudo.innerHTML = html)         
+
+              }
+          })
+          
+       </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<h1>Formulário</h1>
+
+<form >
+
+    <!-- o input do tipo hidden serve para ocultar um input que não se deseja que o usuário veja -->
+    <input type="hidden" name="id" value="3">
+    <label for="inome">Nome: </label>
+    <input type="text" name="nome" id="inome">
+
+    <label for="isenha">Senha: </label>
+    <input type="password" name="senha" id="isenha">
+
+    <label for="ibio">Biográfia: </label>
+    <textarea name="bio" id="ibio" cols="60" rows="14"></textarea>
+
+    <div>
+        <input type="radio" name="tipo" value="admin">
+        <label for="itipo">Admin</label>
+
+        <input type="radio" name="tipo" value="comum">
+        <label for="itipo">Comum</label>
+    </div>
+    
+    <input type="checkbox" name="ativo" id="iativo">
+    <label for="iativo">Ativo</label>
+
+    <select name="estado">
+       <option value="LD">Luanda</option>
+       <option value="BG">Benguela</option>
+       <option value="HB">Huambo</option>
+       <option value="HL">Huíla</option>
+       <option value="LN">Lunda-norte</option>
+       <option value="LS">Lunda-sul</option>
+       <option value="MX">Moxico</option>
+    </select>
+
+    <!--
+        O atributo multiple indica que várias opções podem ser selecionadas ao mesmo tempo.
+        O atributo size indica a quantidade de opções a serem exibidas de uma só vez. 
+    -->
+    <select name="Países" multiple size="3">
+        <option value="AN">Angola</option>
+        <option value="NAM">Namíbia</option>
+        <option value="RDC">República democrática do congo</option>
+        <option value="ZW">Zimbabwe</option>
+        <option value="SA">África do sul</option>
+        <option value="RCA">Republica centro africana</option>
+    </select>
+
+    <!-- Dentro de um mesmo formulário podemos ter botões de submissão que realizam as mais
+    diversas ações dos métodos http -->
+    <button formaction="http://localhost:1010/usuarios" formmethod="post">Incluir</button>
+    <button formaction="http://localhost:1010/usuarios/1" formmethod="post">Alterar</button>
+    <button formaction="http://localhost:1010/usuarios/1" formmethod="delete">Alterar</button>
+</form>
+
+<style>
+    input, textarea, button, select{
+        display:block;
+        margin-bottom:8px;
+    }
+
+    input[type=radio], input[type=checkbox]{
+        display:inline;
+    }
+</style>

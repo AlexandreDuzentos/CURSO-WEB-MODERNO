@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Um pouco de css</title>
+       <style>
+          h1 {
+            position:absolute;
+            top:400px;
+            left:400px;
+          }
+
+          .fundoVermelho{
+             background-color:#f00;
+          }
+
+          #textoPrincipal{
+            font-size:40px;
+            font-weight:bold;
+            color:#fff;
+            padding:10px;
+            background-color:#444;
+            margin-bottom:50px;
+            display:inline-block;
+          }
+       </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <!--
+            Um id identifica de forma única cada elemento na página, podendo
+            ser aplicado apenas em um único elemento. 
+        -->
+        <span id="textoPrincipal">Texto1</span> <br>
+
+        <!--
+         Uma class pode servir para identificar vários elementos diferentes
+         na página, e mais de uma class pode ser aplicada por elemento.
+        -->
+        <span class="fundoVermelho negrito">Texto2</span> <br>
+        <span class="fundoVermelho" wm-atrib>Texto3</span>
+    </body>
+</html>

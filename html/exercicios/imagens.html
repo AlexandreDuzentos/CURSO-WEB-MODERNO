@@ -1,0 +1,167 @@
+<h1>Imagens</h1>
+
+<div wm-slider>
+    
+<p>
+    <!--
+      O parâmetro alt é exibido quando a imagem não é carregada, e ele também
+      é lido pelo leitor de telas para deficientes visuais.
+    -->
+    <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Muro da cidade"
+     width="513" height="342 " title="Muro da cidade por Tarso Bessa">
+</p>
+
+<p>
+    <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="Intro Cod3r"
+    title="gif introdutório da cod3r">
+</p>
+
+<p class="circular">
+   <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="Rio de janeiro"
+   height="342">
+</p>
+
+<p class="texto">
+   <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="Avatar" align="left">
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, doloribus fugit.
+   Obcaecati deserunt illum nihil necessitatibus accusamus. Perferendis facere, laboriosam
+   perspiciatis delectus, sunt quos magnam nulla, sapiente dicta est officiis?
+</p>
+
+<p class="cidade"></p>
+
+<p>
+    <picture>
+        <!-- As imagens devem ser colocadas da maior a menor-->
+        <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+         media="(min-width: 600px)">
+
+         
+         <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png"
+         alt="logo estreita" title="logo estreita cod3r 1">
+         
+    </picture>
+</p>
+
+</div>
+
+
+
+
+
+
+<style>
+
+    p{
+      position:absolute;
+      display:none;
+    }
+
+    .circular {
+        width: 513px;
+        background-color:#444;
+    }
+
+    .cidade{
+        width:513px;
+        height:342px;
+        background-image:url("http://files.cod3r.com.br/curso-web/imagem4.jpg");
+        background-size:200% 100%;
+        background-repeat:no-repeat;
+    }
+
+    .texto{
+        width:400px;
+    }
+
+    .texto img{
+        margin-right:12px;
+    }
+
+    div.wm-slider{
+        margin:auto;
+    }
+
+    div.wm-slider p{
+      display:inline-block;
+    }
+</style>
+
+<script>
+    /**
+     * elemento: é o elemento que será movido
+     * inicio: é a posição inicial do elemento a ser movido
+     * fim: é o posição final do elemento a ser movido
+     * passo: é o passo em que o elemento será movido
+     * callback: é a função que será invocada quando o elemento completar o seu movimento
+     */
+    function mover(elemento, inicio, fim, passo, callback){
+        const novoInicio = inicio + passo
+        /*
+         O if abaixo funcionará como um while, isso, por conta da função
+         que é chamada de forma recursiva dentro dela.
+        */
+        if(novoInicio <= fim){
+            /*
+             Esse bloco de comando será executado enquanto o novoInicio for maior do
+             que o fim, ou seja, quando o elemento chegar ao seu ponto final.
+            */
+            elemento.style.left = novoInicio + "px";
+            setTimeout(() => {
+                mover(elemento, novoInicio, fim, passo, callback)
+            }, 100)
+        } else {
+            /*
+             A callback abaixo será executada quando o novoInicio for maior do que
+             o fim, ou seja, quando o elemento chegar ao seu ponto final.
+            */
+            callback()
+        }
+    }
+
+
+     // innerWidth: retorna a largura interna da página
+     // p.clientWidth: retorna a largura de um elemento
+   
+   function slider(){
+    // A função querySelectorAll retorna um Nodelist
+      const p = document.querySelectorAll("[wm-slider] > p")
+
+      // Convertendo um nodeList em array
+      const slides = Array.from(p)
+
+      exibirSlide(slides, slides[0])
+   }
+
+   function exibirSlide(slides, slide){
+      slide.style.display = "block"
+
+      const inicio = -600
+      const fim = 1300;
+
+      mover(slide, inicio, fim, 10, () => {
+        slide.style.display = "none"
+
+           /*
+           função chamada toda vez que um elemento terminar de ser exibido, ela trará
+           o próximo elemento a exibido, ela será de forma indefinida
+           */
+           exibirSlide(slides, getProximo(slides, slide))
+      })
+   }
+
+   function getProximo(lista, Atual){
+        // Acessando o índice do próximo elemento do array de elementos
+        const i = lista.indexOf(Atual) + 1
+
+        // Garantindo que o índice não extrapola a quantidade de elementos presente no array
+        if(i  < lista.length){
+            return lista[i]
+        } else {
+            return lista[0]
+        }
+   }
+
+   slider()
+   
+</script>

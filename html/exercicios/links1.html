@@ -1,0 +1,32 @@
+<h1>Links parte 1</h1>
+
+<!-- URL ABSOLUTA -->
+
+<!-- para que o browser interprete a url como absoluta o protocolo deve estar presente -->
+<a href="www.google.com.br" class="pAtual">Google 1</a>
+<a href="http://www.google.com.br" class="pAtual" target="_blank">Google 2</a>
+
+
+<!-- URL RELATIVA -->
+
+<!-- o arquivo index.html da pasta onde está o arquivo atual será acessado -->
+<a href="index.html" class="pAtual">Voltar 1</a>
+
+<!-- A pasta raiz da aplicação será acessada e após isso o arquivo index.html -->
+<a href="/index.html" class="pAtual">Voltar 2</a>
+
+<!-- Saindo da pasta atual e acesando o arquivo index.html -->
+<!--
+ O mecanismo do servidor que servirá os arquivos dentro de uma pasta específica não permite
+ que eu consiga acessar pastas acima da hierárquia daquela pasta específica.
+
+ Sair da pasta que de fato está sendo servida é uma falha de segurança, desse modo o ../
+ não surtirá nenhum efeito.
+-->
+<a href="../index.html" class="pAtual">Voltar 3</a>
+
+<style>
+    a.pAtual{
+        display:block;
+    }
+</style>

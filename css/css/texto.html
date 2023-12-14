@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Texto</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+        /* ... */
+        * {
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* --- INÍCIO - DEFININDO TAMANHO DE FONTE --- */
+
+        div{
+            font-size:50px;
+        }
+        
+        /* valores padrão
+           É recomendado trabalhar com unidades relativas
+         */
+        p{
+          font-size:1em;
+          font-size:100%;
+          font-size:16px;
+          font-size:12pt;
+
+          /* unidades absolutas */
+          font-size:100px;
+          font-size:72pt /* pontos */;
+          font-size:1inch; /* polegadas */
+
+          /* unidades relativas */
+          font-size:2.2em;
+          font-size:2.2rem;
+
+          /*
+          font-size:10vh;
+          font-size:50vw;
+          */
+
+          /* --- FIM - DEFININDO TAMANHO DE FONTE --- */
+
+          /* --- INÍCIO - DEFININDO FAMÍLIA DA FONTE --- */
+
+          /* Nas fontes monospaçadas, todos os glifos ocupam o mesmo espaço */
+          font-family:monospace;
+
+          /* serif é uma família de fontes com serifas e uma das fontes dessa família e a georgia */
+          font-family:Georgia, serif;
+
+          /* sans-serif é uma família de fontes sem serifas e uma das fontes dessa famíia e verdana */
+          font-family:Verdana, sans-serif;
+
+          /* cursive é uma família de fontes em que os glifos se parecem com a escrita humana e uma das fontes
+           dessa família e indie flower */
+           font-family:'Indie Flower', cursive;
+
+           /* --- FIM - DEFININDO FAMÍLIA DA FONTE --- */
+
+           /* --- INÍCIO - DEFININDO O PESO e ESTILO DAS FONTES --- */
+           font-weight:900;
+           font-style:italic;
+
+           /* transformando as palavras em maiúsculas, minúsculas e a primeira letra em maíuscula */
+           text-transform:uppercase;
+           text-transform:lowercase;
+           text-transform:capitalize;
+
+           /* definindo a decoração de texto */
+           text-decoration:underline;
+           text-decoration:overline;
+           text-decoration:line-through;
+
+           /* definindo espaço entre letras e palavras */
+           word-spacing:10px;
+           letter-spacing: 10px;
+
+           /* definindo a altura(espaçamento) entre as linhas */
+           line-height:2.4rem;
+
+           /* definindo alinhamento de texto */
+           text-align:center;
+           text-align:left;
+           text-align:right;
+           text-align:justify;
+        }
+
+        .botao{
+            font-size:28px;
+            text-decoration:none;
+            padding:10px 30px;
+            border-radius:20px;
+        }
+
+        .destaque {
+            color:white;
+            background-color:tomato;
+            box-shadow:2px 2px 3px #000;
+        }
+
+        .destaque:active{
+            box-shadow:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Que texto
+            <br>legal!!!
+        </p>
+    </div>
+    <a href="http://google.com" class="botao destaque">Google</a>
+</body>
+
+</html>

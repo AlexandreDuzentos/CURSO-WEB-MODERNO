@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #01</title>
+    <style>
+        /* https://caniuse.com/#feat=css-grid */
+        
+        html,
+        body {
+            margin: 20px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: solid 5px dodgerblue;
+            background: #fff;
+        }
+
+        body{
+            /* definindo um grid container */
+            display:grid;
+
+            /* Especificando a quantidade de colunas do grid layout e suas respectivas larguras */
+            grid-template-columns:50% 50%;
+
+            /*
+             A função repeat oferece a possibilidade de pegar uma determinada quantidade de valores
+             e repetir pela quantidade de vezes passada no primeiro parâmetro.
+            */
+            grid-template-columns:repeat(12, 8.33%);
+            grid-template-columns:repeat(4, 8.33% 8.33% 8.33%);
+            grid-template-columns:repeat(11, 100px);
+            grid-template-columns:repeat(11, 100px) 50px;
+
+            /*
+              A unidade fragment(fr) representa que resta de espaço do grid container
+              considerando o espaço ocupado por outros elementos. 
+             */
+            grid-template-columns: 200px 20% 1fr; 
+            grid-template-columns: 3fr 6fr 3fr;
+
+           /*
+            Definindo um intervalo de valores para ser aplicado como largura da coluna.
+            minmax(100px, 300px)
+           */
+
+           /* Especificando a quantidade de linhas do grid container */
+           grid-template-rows: 50% 25% 12.5% 12.5%;
+
+           /*
+            Multiplicando-se a quantidade de linhas pleas colunas obtém-se a quantidade
+            total de items do grid container.
+
+            Quando a multiplicação da quantidade de linhas pelas colunas não resulta na quantidade
+            total de item do grid-container, o espaço ocupado por outros items, seja na coluna
+            ou na linha, será o espaço restante do grid-container, considerando os espaços ocupados
+            por outros elementos, tanto na coluna quanto na linha.
+           */
+           grid-template-rows: 100px 1fr;
+           grid-template-rows:100px 100px;
+
+           /*
+            A primeira linha ocupará 100px e as restantes linhas dividirão o espaço
+            restante de forma igualitária devido ao auto.
+           */
+           grid-template-rows:100px auto;
+
+        }
+
+        .d8{
+          /* --- ESSAS PROPRIEDADES TÊM A FUNÇÃO DE FAZER COM QUE OS ITEMS OCUPEM MAIS DE UMA
+           "CÉLULA" -----
+            
+          */
+          /* o grid item iniciará na coluna dois */
+          grid-column-start:2;
+
+          /* o grid item terminará na coluna quatro */
+          grid-column-end:4;
+
+          /* Faz o mesmo que o anterior, da coluna de início(grid-column-start), pule duas colunas */
+          grid-column-end:span 2;
+
+          /* o grid-item iniciará na linha três */
+          grid-row-start:3;
+
+          /* o grid-item terminará na linha cinco */
+          grid-row-end:5;
+
+          /* Faz o mesmo que o anterior, da linha de início(grid-row-start), pule duas linhas */
+          grid-row-end:span 2;
+
+        }
+
+        .d10,
+        .d11{
+          /* Podem se sobrepor */
+          grid-column-start:1;
+          grid-column-end:3;
+
+          grid-row-start:5;
+          grid-row-end:span 1;
+        }
+
+        .d10{
+            /*
+             definindo a profundidade de um elemento na página, quando maior o z-index, mais o 
+             elemento ficará na frente dos outros, z-index negativo tem menor prioridade do que
+             z-index positivo.
+            */
+            z-index:0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+    <div class="d6">6</div>
+    <div class="d7">7</div>
+    <div class="d8">8</div>
+    <div class="d9">9</div>
+    <div class="d10">10</div>
+    <div class="d11">11</div>
+    <div class="d12">12</div>
+</body>
+
+</html>

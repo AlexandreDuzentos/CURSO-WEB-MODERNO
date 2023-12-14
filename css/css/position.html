@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+       div{
+         font-size: 60px;
+         padding:30px;
+         border:5px solid #222;
+       }
+
+       .static{
+        /* quando o posicionamente é static o top e left não são considerados */
+         top: 100px;
+         left:100px;
+         background-color:steelblue;
+       }
+
+       .fixed{
+        /* o posiconamento fixed posiciona os elementos dentro das delimitações do viewport(area visível do browser)*/
+        position:fixed;
+        bottom:30px;
+        right:0px;
+        background-color:tomato;
+       }
+
+       /*
+        o posicionamente relative posiciona os elementos relativamente a outros elementos, ou seja,
+        a partir do início de outros elementos.
+       */
+       .relative1{
+         position:relative;
+         left:50px;
+         top:5px;
+         background-color:seagreen;
+       }
+
+       /*
+        o posicionamento absolute posiciona os elementos relativamente ao viewport, ou seja, 
+       a partir do início do viewport e não do body e nem do html.
+        */
+       .absolute1{
+          position:absolute;
+          left:350px;
+          top:120px;
+          background-color:violet;
+       }
+
+       .relative2{
+         position:relative;
+         left:250px;
+         top:2000px;
+         width:200px;
+         height:200px;
+         background-color:slategray;
+       }
+
+       /*
+        o elemento se poscionará de forma absoluta em relação ao elemento pai e não ao
+        viewport, por conta do posicionamento do element pai ser relativo
+       */
+       .absolute2{
+         position:absolute;
+         left:10px;
+         top:10px;
+         width:20px;
+         height:20px;
+         background-color:orange;
+       }
+
+       /* o posicionamente sticky gruda um elemento em relação ao viewport quando o scroll da página
+       é feito.
+       */
+       .sticky{
+        /*
+          o prefixo -webkit é um vendor-prefix, que é utlizado quando um browser não é totalmente
+          compatível com alguma propriedade, que no caso é a propriedade sticky.
+        */
+          position:-webkit-sticky; /* safari */
+          position:sticky;
+          background-color:#777;
+          top:5px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>

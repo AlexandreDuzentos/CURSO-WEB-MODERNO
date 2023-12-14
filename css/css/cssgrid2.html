@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #02</title>
+    <style>
+        html,
+        body {
+            margin: 20px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: solid 5px dodgerblue;
+            background: #fff;
+        }
+
+        body{
+            display: grid;
+
+            /*
+             É possível colocar nomes nas linhas das colunas, as linhas são(1, 2, 3, 4) para esse
+             caso.
+             */
+
+            grid-template-columns: [one] 1fr [two] 1fr [three] 1fr [last];
+            grid-template-rows: repeat(3, 1fr);
+
+            /* Define um intervalo entre as colunas */
+            grid-column-gap:20px;
+
+            /* Define um intervalo entre as linhas */
+            grid-row-gap:20px;
+
+            /*
+             Shorthand para intervalo entre linhas e colunas, o primeiro valor
+             é o intervalo entre linhas e o segundo entre colunas.
+             */
+            grid-gap: 20px 20px;
+        }
+
+        .d1{
+            grid-column-start: one;
+            grid-column-end: last;
+
+            /* shorthand para definir a coluna de inicio(grid-column-start) e de fim(grid-column-end) */
+            grid-column: one / last;
+
+           /*  grid-column: 1 / span 2; */
+           
+           /* shorthand para definir a linha de inicio(grid-row-start) e de fim(grid-row-end) */
+           grid-row: 1 / span 2;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+</body>
+
+</html>

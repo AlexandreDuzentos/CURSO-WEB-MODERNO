@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Card</title>
+    <style>
+        .curso{
+            /*
+             a propriedade float, além de flutuar os elementos, faz com que eles também se
+             comportem como display inline-block, passando a ocupar apenas o espaço de seu conteúdo
+             e de seu padding, se tiver, ou seja, o content-box e o padding-box.
+            */
+
+            /* float:left;  poderia ter usado o float left opcionalmente */ 
+            display:inline-block;
+            font-family:verdana, sans-serif;
+            border:1px solid #ccc;
+            box-shadow:2px 2px 8px #0000005a;
+            height:300px;
+            width:260px;
+            margin:5px 20px;
+            padding:5px;
+            vertical-align:top;
+        }
+
+        .curso img{
+            width:100%;
+            max-height:50%;
+        }
+
+        .curso-info{
+            padding:10px;
+            height:90px;
+            overflow:hidden;
+        }
+
+        .curso-info h4{
+            font-size:1.4em;
+            font-weight:100;
+            margin:0;
+        }
+
+        .curso-preco{
+            float:right;
+            padding:10px;
+        }
+
+        .preco-de{
+            text-decoration:line-through;
+            color:firebrick;
+        }
+
+        .preco-por{
+            color:green;
+            font-weight:bold;
+            font-size:1.4em;
+        }
+        
+        /*
+        --- SOLUÇÃO ALEXANDRE ---
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .curso{
+            position:relative;
+            width:250px;
+            height:290px;
+            padding:8px;
+            box-shadow:2px 2px 10px #00000060;
+            display:inline-block;
+            margin:0 18px;
+            vertical-align:middle;
+        }
+
+        .curso img{
+            width:100%;
+        }
+
+        .curso-info > h4{
+            font-size:1.2em;
+            margin:5px 0;
+            font-weight:500;
+        }
+
+        .curso-info > p{
+            font-size:0.8em;
+            font-weight:400;
+        }
+
+        .curso-preco{
+           position:absolute;
+           bottom:8px;
+           right:10px;
+        }
+
+        .curso-preco > .preco-de{
+             font-size:1em;
+             color:#f00;
+             text-decoration:line-through;
+             font-weight:lighter;
+        }
+
+        .curso-preco > .preco-por{
+            font-size:1.2em;
+            color:#3b803b;
+            font-weight:900;
+            font-weight:bolder;
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <h1>Card</h1>
+
+    <h2>Objetivo</h2>
+    <img src="http://files.cod3r.com.br/curso-web/card.png" height="340" alt="Objetivo">
+
+    <h2>Resultado</h2>
+
+
+    <div class="main">
+        <div class="curso">
+            <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
+            <div class="curso-info">
+                <h4>Docker: Ferramenta essencial para Desenvolvedores</h4>
+                <p>Prof. Fulano</p>
+            </div>
+            <div class="curso-preco">
+                <span class="preco-de">R$80,00</span>
+                <span class="preco-por">R$50,00</span>
+            </div>
+        </div>
+        <div class="curso">
+            <img src="http://files.cod3r.com.br/curso-web/curso2.jpg" />
+            <div class="curso-info">
+                <h4>Web Moderno com Javascript + Projetos</h4>
+                <p>Prof. Sicrano Filho</p>
+            </div>
+            <div class="curso-preco">
+                <span class="preco-de">R$80,00</span>
+                <span class="preco-por">R$50,00</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

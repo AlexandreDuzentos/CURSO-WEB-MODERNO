@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox #02</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        div {
+            border:5px solid dodgerblue;
+            font-size:40px;
+        }
+
+        .flex-container div{
+            box-sizing:border-box;
+        }
+
+        .flex-container{
+            display:flex;
+            height:300px;
+            width:600px;
+        }
+
+        .flex-container > div:nth-child(3){
+            background-color:indianred;
+
+            /*
+             A propriedade order controla a ordem na qual um filho do flex container aparece
+             dentro dele, ela recebe números inteiros, a ordem de todos elementos é 0.
+
+             Elementos com uma ordem maior são colocados por último no flex-container.
+
+             Elementos com ordem 
+            */
+            order:1;
+            order:0; /* os flex-items serão exibidos na ordem em que foram definidos no HTML */
+            order:-1; 
+            
+            /* Alinha um único elemento no main axis */
+            /* justify-self:flex-start; */
+
+             /* Alinha um único elemento no cross axis */
+             align-self:flex-end;
+             align-self:flex-start;
+             align-self:center;
+             align-self:stretch;
+        }
+
+        /* --- a lógica de crescimento do flex-grow e o flex-shrink é a mesma */
+        .flex-container div{
+            width:100px;
+
+            /*
+             Seta o fator de crescimento do flex-grow,
+             números negativos são inválidos.
+
+             essa propriedade faz com que um elemento em especifico
+             possa encolher mais do que os outros.
+            */
+             flex-grow: 0;  /* o valor zero(0) é o padrão, os elementos não crescem */
+             flex-grow: 1;
+        }
+
+        .flex-container > div:nth-child(1){
+             flex-grow:2; 
+        }
+
+        .flex-container{
+            width:300px;
+        }
+
+
+        /*
+             Seta o fator de crescimento do flex-shrink,
+             números negativos são inválidos.
+
+             essa propriedade faz com que um elemento em especifico
+             possa encolher mais do que os outros.
+            */
+        .flex-container > div:nth-child(1){
+            flex-shrink:5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

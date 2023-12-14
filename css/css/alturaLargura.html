@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Altura e Largura</title>
+    <style>
+        html{
+            height:100%;
+        }
+        /*
+          Por padrão, a tag body e html ocupam a largura toda da tela, mas não a altura toda,
+           a altura ocupada pelos mesmos depende da soma das alturas dos elementos filhos dentro deles
+           + alguma margin e padding dos mesmos.
+        */
+        body {
+            font-size: 40px;
+            background-color: coral;
+            height:100%;
+        }
+
+        div {
+            background-color: seagreen;
+        }
+
+        span {
+            background-color: dodgerblue;
+        }
+
+        span, div{
+            width:50%;
+            height:250px;
+            height:50%;
+            display:inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+     Quando damos uma quebra de linha entre duas tags, fica um caractere em
+     branco entre eles, que ocupa espaço e pode influenciar a propriedade display inline-block.
+    -->
+    <div>Título</div><span>Subtítulo</span>
+</body>
+
+</html>

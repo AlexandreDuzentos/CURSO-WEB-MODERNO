@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Origem CSS: Externo, Interno e Inline</title>
+
+    <!--
+       Existe uma prioridade que define qual estilo será aplicado preferencialmente,
+       essa prioridade é determinada pela ordem de processamento, o último estilo
+       a ser processado, terá preferência de aplicação.
+    -->
+    <style>
+       body{
+         background-color:aquamarine;
+       }
+    </style>
+
+    <!-- Se a relação(rel) for removida a folha de estilo não será aplicada na página -->
+    <link rel="stylesheet" href="./css/externo.css">
+</head>
+
+<!--
+  o css inline tem uma preferência maior de aplicação em relação ao estilo interno e externo,
+  independente da ordem de preferência.
+
+  Usar css inline não é uma boa prática.
+ -->
+<body style="background-color:coral">
+    <h1>E agora?</h1>
+</body>
+
+</html>

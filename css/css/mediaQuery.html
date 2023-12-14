@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <style>
+
+        *{
+           box-sizing:border-box;
+           margin:0;
+           padding:0;
+        }
+
+        div {
+            font-size: 40px;
+            margin: 20px;
+            padding: 20px;
+            background-color: coral;
+            border: solid 5px;
+            display: none;
+        }
+        
+
+       /* o que está dentro de parenteses é o critério para a media query ser aplicada */
+        @media screen and (max-width: 600px){
+            .muito-pequeno{
+                display:block;
+            }
+        }
+
+        /* 
+         Definindo dois critérios para media query ser aplicada, pelo menos um dos critérios
+         precisa ser atendido para a media query ser aplicada.
+         */
+        @media screen and (max-width:1000px), (orientation: landscape){
+            .pequeno-retrato{
+                display:block;
+            }
+        }
+
+        @media screen and (min-width:500px) and (max-width:1000px){
+            .intervalo{
+                display:block;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="muito-pequeno">Muito Pequeno</div>
+    <div class="pequeno-retrato">Pequeno ou Retrato</div>
+    <div class="intervalo">Intervalo</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cores</title>
+    <style>
+        /* 
+            https://www.w3schools.com/colors/colors_hsl.asp
+            
+            https://coolors.co/
+            http://paletton.com/
+        */
+
+        body{
+            /* Aplicando a cor pelo nome da mesma */
+            background-color:red;
+            background-color: green;
+            background-color:blue;
+            background-color:white;
+            background-color:black;
+
+            /*
+              Aplicando a cor pelo código hexadecimal
+
+              O uso de dois valores hexadecimais por cor é opcional
+              pode-se usar apenas um valor por cor.
+             */
+            background-color:#ff0000;
+            background-color:#00ff00;
+            background-color:#0000ff;
+            background-color:#000000;
+            background-color:#ffffff;
+
+
+            /*
+              Aplicando a cor pelo código hexadecimal com transparência
+
+              O 00 como transparência significa que ela será total, ou seja, a cor
+              ficará totalmente transparennte.
+
+              O ff como transparência significa que ela não será aplicada, ou seja, a
+              cor será exibida sem transparência alguma.
+            */
+            background-color:#ff000000;
+
+
+            /* Aplicando a cor pela função rgb(red, green, blue) */
+            background-color:rgb(255, 0, 0);
+            background-color:rgb(0, 225,0);
+            background-color:rgb(0, 0, 255);
+            background-color:rgb(0, 0, 0);
+            background-color:rgb(255, 255, 255);
+
+            /*
+              Aplicando a cor pela função rgba(red, green, blue, alpha) que permite usar transparência
+              O argumento de transparência vai de 0 a 1, 0 correspondente a 
+              transparência total e 1 a transparência não será aplicada.
+             */
+            background-color:rgba(255, 0, 0, 1);
+
+            /*
+             Aplicando a cor pela função hsl(hue, saturation, lightness)
+             O primeiro argumento vai de 1 até 360, o segundo de 0 a 100% bem como o terceiro.
+            */
+            background-color:hsl(299, 50%, 50%);
+
+            /*
+             Aplicando a cor pela função hsla(hue, saturation, lightness, alpha) que permite usar
+             transparência.
+            */
+            background-color:hsla(299, 50%, 50%, 0.5);
+        }
+
+        div{
+            font-size:100px;
+        }
+    </style>
+</head>
+
+<body>
+     <h1>Teste</h1>
+
+     <div>
+        <h1>Teste</h1>
+     </div>
+
+</body>
+
+</html>

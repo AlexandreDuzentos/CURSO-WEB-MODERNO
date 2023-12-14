@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #02</title>
+    <style>
+       .fora{
+          position:relative;
+          background-color:orange;
+          width:400px;
+          height:400px;
+         /*  padding:50px; */
+       }
+
+       .dentro{
+          background-color:mediumvioletred;
+          height:100px;
+          width:100%;
+
+          /* A declaração abaixo define a position padrão*/
+          position:static; /* o elemento ocupará 100% do width do elemento pai */
+
+          position:relative; /* o elemento ocupará 100% do width do elemento pai */
+
+          position:absolute; /* o elemento ocupará 100% do width + padding do elemento pai */
+
+          position:fixed; /* o elemento ocupará 100% da largura do viewport */ 
+       }
+    </style>
+</head>
+<body>
+    <div class="fora">
+        <div class="dentro">Paulo</div>
+    </div>
+</body>
+</html>

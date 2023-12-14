@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tamanho Box</title>
+    <style>
+        body {
+            font-size: 45px;
+            margin:0;
+        }
+
+        div{
+            background-color:deepskyblue;
+            width:100%;
+            height:300px;
+            padding:100px;
+            border:20px solid;
+
+            /*
+             A declaração abaixo considerará o content-box, o padding-box e o border-box no cálculo
+             para determinar o width e height total da caixa em questão, ou seja, o width de 100% do seletor
+             já inclui o content-box, o padding-box e o border-box.
+              
+             content-box: é o width e o height do conteúdo apenas, que é formado pelo width.
+             padding-box: é o width e o height do padding apenas.
+             border-box:é o width e o height da border apenas.
+
+             O objetivo desse valor na propriedade é evitar que a caixa cresça muito.
+            */
+            box-sizing:border-box;
+
+            /*box-sizing:content-box;*/
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        O tamanho do Box é...
+    </div>
+</body>
+</html>

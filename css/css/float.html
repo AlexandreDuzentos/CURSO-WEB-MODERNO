@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+
+        .c1 {
+            background-color: red;
+             /* Quando a propriedade abaixo é aplicada, os elementos se comportam como inline-block */
+             float:right;
+        }
+
+        .c2 {
+            background-color: green;
+
+          
+            /*
+              Essa propriedade deixará em branco o espaço que era ocupado por um elemento
+              que foi flutuado para a direita, evitando assim, que outros elementos invadam aquele espaço
+              que era ocupado pelo elemento que foi flutuado.
+             */
+            clear:right;
+        }
+        
+        .c3 {
+            background-color: blue;
+        }
+
+        .c4 {
+            background-color: orange;
+        }
+
+        div{
+            width:150px;
+            height:150px;
+
+           
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+</body>
+
+</html>

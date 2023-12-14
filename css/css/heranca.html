@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Herança</title>
+    <style>
+        /*
+         Por conta das folhas de estilo serem aplicadas em cascata nas CSSs
+         elementos filhos herdam determinadas propriedades por padrão de seus elementos
+         Pai, e para herdar explícitamente uma propriedade de um elemento pai é necessário
+         usar o valor inherit na frente da propriedade que se deseja herdar.
+         */
+        body{
+            font-family:monospace;
+            font-size:40px;
+            border:5px solid red;
+            padding:50px;
+            margin:10px 100px 150px 200px;
+        }
+
+        div{
+            border: inherit;
+            padding:inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Herança</h1>
+    <div>Estou herdando</div>
+</body>
+
+</html>

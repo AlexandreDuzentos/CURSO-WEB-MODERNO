@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox #01</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+       .big{
+         font-size:1.5em;
+       }
+
+       /*
+         A declaração display flex fará com esse elemento se transforme num flex-container
+         e todos os elementos dentro dele serão flex-items, o eixo principal por padrão
+         é o eixo da linha(row).
+       */
+       .flex-container{
+           /* Definindo um flex-container */
+           display:flex;
+
+            /*
+            O valor row-reverse faz o mesmo que apenas o row, com exceção que as direções
+            do main start e do main end são trocadas e os flex-items flutuam para a direita(right)
+           */
+           flex-direction:row-reverse;
+
+
+            /*
+            O valor row-reverse faz o mesmo que apenas o row, com exceção que as direções
+            do main start e do main end são trocadas e os flex-items flutuam para a direita(right)
+           */
+           flex-direction:row-reverse;
+
+           /*
+            A propriedade flex-direction permite setar o eixo principal do flex-container.
+
+            setando o eixo principal como sendo a coluna(column), os flex-items
+            ficarão com o display block.
+            */
+           flex-direction:column; 
+
+           /*
+             O valor column-reverse faz o mesmo que apenas o column, com exceção que as direções
+             do main start e do main end são trocadas.
+            */
+           flex-direction:column-reverse;
+
+            /*
+            A propriedade flex-direction permite setar o eixo principal do flex-container.
+
+            setando o eixo principal como sendo a linha(row), os flex-items
+            ficarão com o display inline.
+            */
+           flex-direction:row;
+
+           width:50%;
+           height:200px;
+
+           /*
+             A propriedade flex-wrap faz com que os flex-items fiquem embrulhados(dentro)
+             dentro do flex-container, independentemente se o width(largura) do flex-container
+             for insuficiente para abarcar todos os flex-items, o flex-wrap fará com que os
+             flex-items possam ocupar mais de uma linha para caberem dentro do flex-container.
+
+             o flex-wrap faz com que os flex-items respeitem as delimitações(dimensões do flex
+             container).
+
+             o nowrap faz o inverso do wrap.
+            */
+           flex-wrap:wrap;
+
+           /*
+            o valor wrap-reverse faz o mesmo que apenas o wrap, com a exceção que as direções 
+            do cross start e cross end são trocadas 
+           */
+           flex-wrap:wrap-reverse;
+
+           /* A propriedade flex flow é um shorthand para setar o flex-direction e o flex-wrap */
+           flex-flow:row wrap;
+
+           flex-flow:column-reverse wrap;     
+           
+           flex-flow:row wrap;
+
+           /* --------------- ALINHAMENTO NO MAIN AXIS ------------------*/
+
+           /* Alinhando o conteúdo no início do main-axis(eixo principal) ou seja, no main start */
+           justify-content: flex-start;
+
+           /* Alinhando o conteúdo no fim do main-axis(eixo principal) ou seja, no main-end */
+           justify-content:flex-end;
+
+           /*
+             Alinhando o conteúdo no centro do main-axis(eixo-principal), ou seja, entre o 
+             main start e o main end.
+           */
+            justify-content:center;
+
+            /* 
+             o space-around aplica um espaçamento a esquerda e a direita de todo
+             elemento do flex-container.
+            */
+            justify-content:space-around;
+
+            /*
+              o space-between aplica um espaçamento a esquerda e a direita de todo
+              elemento do flex-container com exceção os elementos nos extremos que
+              não recebe o espaçamento a direita(para o elemento a direita) e a esquerda
+              (para o elemento a esquerda).
+            */
+            justify-content:space-between;
+
+            /* --------------- ALINHAMENTO NO CROSS AXIS ------------------*/
+             height:400px;
+
+             /*
+              stretch é o valor padrão para alinhamento no cross axis, ele estica os elemento do
+              no cross-axis, ou seja, do início cross start até ao fim do cross end, fazendo com
+              que o elemento  ocupe todo o cross size.
+              */
+            align-items:stretch;
+
+            /* o baseline alinha os items baseado na linha de base das fontes */
+            align-items:baseline;
+
+            /* o flex-start alinha os flex-items no início do cross start*/
+            align-items:flex-start;
+
+            /* o flex-end alinha os flex-items no final do cross end */
+            align-items:flex-end;
+
+            /* o center alinha os flex-items no centro do cross axis */
+            align-items:center;
+
+
+            /* ---- alinhando no cross axis quando tem mais de uma linha(row) originada pelo flex-wrap ---- */
+
+            /*
+             O flex-start alinha os flex-items que ocupam mais de uma linha no início do
+             cross start
+            */
+             align-content:flex-start;
+
+              /*
+             O flex-start alinha os flex-items que ocupam mais de uma linha no fim do
+             cross end.
+            */
+             align-content:flex-end;
+
+              /*
+             O center alinha os flex-items que ocupam mais de uma linha no centro do
+             cross axis.
+            */
+             align-content:center;
+
+              /* 
+             o space-around aplica um espaçamento em cima e em baixo nos flex-items
+             ocupando linhas diferentes.
+            */
+             align-content:space-around;
+
+             /*
+              o space-between aplica um espaçamento entre os flex-items ocupando
+              linhas diferentes.
+             */
+             align-content:space-between;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="flex-container tag nolabel">
+        <div class="tag nolabel">1</div>
+        <div class="tag nolabel">2</div>
+        <div class="tag nolabel big">3</div>
+        <div class="tag nolabel">4</div>
+        <div class="tag nolabel">5</div>
+        <div class="tag nolabel">6</div>
+        <div class="tag nolabel">7</div>
+        <div class="tag nolabel">8</div>
+        <div class="tag nolabel">9</div>
+        <div class="tag nolabel">10</div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

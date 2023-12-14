@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox #03</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+       div {
+         border: 5px solid dodgerblue;
+         font-size: 40px;
+       }
+
+       .flex-container div{
+          box-sizing: border-box;
+       }
+
+       .flex-container{
+          display:flex;
+          /* flex-direction:column; */
+       }
+
+       .flex-container div{
+           /*
+             O flex-basis é a dimensão do flex-item no sentido do main-axis, se o main-axis for row(linha),
+             ele se traduzirá em width, se o main-axis for column(coluna), ele se traduzirá
+             em height.
+
+             Se o main-axis for row(linha) a dimensão do flex-basis será aplicada na linha, se o
+             main axis for  column(coluna) a dimensão do flex-basis será aplicada na coluna.
+           */
+          flex-basis: 100px;
+
+           /*
+              O width tem preferência de aplicação em relação ao flex-basis quando
+              a main-axis é column(coluna) , quando o main-axis for row(linha), o flex-basis
+              terá preferência de aplicação.
+           */
+          width:200px;
+       }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

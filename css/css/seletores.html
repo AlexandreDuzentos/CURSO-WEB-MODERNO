@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        /* O asterisco é um seletor universal, ele seleciona todas os elementos da página. */
+
+        /*
+       *{
+         color:yellow;
+         background-color:#f77;
+       }
+      */
+
+      /*
+       o ponto(.) seguido de um nome seleciona elementos que têm a classe correspondente
+       ao nome.
+       */
+
+       /*
+      .tag{
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /* o cerquilha seguido de um nome seleciona o elemento que tem o id correspondente */
+      /*
+      #aprovados{
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /* selecionando filho direito(child) */
+
+      /*
+      #aninhado > div{
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /* selecionando descendente(descendente)*/
+      /*
+      #aninhado  section{
+        color:yellow; 
+        background-color:#f77;
+      }
+      */
+
+      /*
+       selecionando irmãos adjacentes(adjacent siblings): que são filho de um mesmo pai e estão
+       um ao lado do outro, a tag ul  será selecionada.
+      */
+      /*
+      p + ul{
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /* selecionando irmãoes gerais(general siblings): que são filhos de um mesmo pai e estão
+       não estão um ao lado do outro */
+
+      /*
+      p ~ ol{
+        color:yellow;
+        background-color:#f77;
+      }
+      */
+      
+      /* selecionando elemento com o paramêtro feira associado ao valor casa */
+      /*
+      [feira="casa"]{
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /* selecionando elemento com o parâmetro feira associado ao valor escritorio empresa */
+      /*
+      [feira="escritorio empresa"]{
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /*
+       selecionando elemento com o parâmetro feira associado ao valor escritorio e mais qualquer
+       outro valor que esteja após o escritório, separado por espaço. 
+
+       A função tíl antes do igual é de pegar qualquer outro valor que esteja após o valor escritório
+       separado por espaço.
+      */
+      /*
+      [feira~="escritorio"]{
+        color:yellow;
+        background-color:#f77;
+      }
+      */
+
+      /*
+       selecionando elemento com o parâmetro feira associado com um valor que tenha alguma
+       correspondência de sa dentro dele.
+
+       o asterisco antes do igual serve para pegar qualquer correspondência de sa no valor associado
+       com o parâmetro feira.
+        */
+
+      /*
+      [feira*="sa"]{
+        color:yellow;
+        background-color:#f77;
+      }
+      */
+      
+      /*
+       Selecionando uma tag span que seja filho de um outro elemento, e seja o primeiro filho dentro
+       daquele elemento.
+
+       nota: o primeiro filho de cada elemento é um label que foi criado via js.
+      */
+      /*
+      span:nth-child(1){
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      
+      /* Selecionando os filhos ímpares dentro de uma tag section*/
+      /*
+      section > :nth-child(odd){
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+      
+      /* Selecionando os filhos pares dentro de uma tag section */
+      /*
+      section > :nth-child(even){
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /*
+       Fazendo dois seletores, uma para os filhos ímpares dentro de uma tag section , e outro para a tag
+       ul.
+       */
+       /*
+      section > :nth-child(odd), ul{
+         color:yellow;
+         background-color:#f77;
+      }
+      */
+
+      /* Selecionando o segundo span que é um filho de section*/
+      section > span:nth-of-type(2){
+         color:yellow;
+         background-color:#f77;
+      }
+
+    </style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag'>
+            <p class='tag'>1</p>
+            <ul class='tag' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    <section class='tag nolabel'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

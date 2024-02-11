@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <!--
+        ***** ABORDAGEM 1 PARA TRABALHAR COM EVENTOS ********
+
+          Dentro de tags HTML, é possível passar parâmetros que referenciem
+          eventos e associa-los a funções(manipuladoras de eventos(event handlers))
+
+          a vantagem de passar um evento directamente na tag é que fica explícito para
+          quem está lendo o código que aquele elemento está associado a um determinado
+          evento.
+
+          a desvantagem é a perca de flexibilidade, por conta do evento ter sido posto 
+          de forma hardcode.
+
+          é opcional passar o parâmetro para e função associado ao evento.
+        -->
+        <a espera-um-pouco href="https://google.com.br"
+        onclick="navegarEm5s(event)">Google</a>
+    </div>
+    <script>
+        /* ***** O PADRÃO DE PROJETO MAIS UTILIZADO NA WEB É O OBSERVER ****** */
+        /*
+         o parâmetro event é um objeto que corresponde ao evento que foi
+         disparado.
+
+         Essa função é uma manipuladora de eventos(event handler), pois ela
+         executa um código quando um evento é disparado.
+        */
+        function navegarEm5s(event){
+            /*
+             A função preventDefault do objeto event previne o comportamento padrão
+             que é executado quando o evento é disparado
+            */
+            event.preventDefault()
+            console.log("Saindo em 5s...")
+
+            /*
+             A função setTimeout define um tempo limite para que uma callback seja executada.
+
+             A função setTimeout executará a função callback passada como parâmetro para ela,
+             passados 5 segundos.
+            */
+            setTimeout(() => {
+
+                /*
+                a propriedade target do objeto event corresponde ao elemento
+                que disparou o evento.
+                */
+            const link = event.target
+
+            /*
+                propriedade de leitura e de escrita
+
+                lê a url da barra de pesquisa e redireciona
+                do endereço atual onde esse arquivo se encontra, para um outro endereço.
+            */
+            window.location.href = link.href
+        }, 5000)
+        }
+
+
+        /*
+         ***** ABORDAGEM 2 PARA TRABALHAR COM EVENTOS *****
+
+        a vantagem dessa abordagem é uma maior flexiblidade na hora de realizar
+        alguma manutenção.
+
+        a desvantagem é que o programador precisará abrir o arquivo que contém os 
+        eventos para saber que elementos estão associados a que eventos.
+
+        recomendação: usar atributos personalizados para selecionar elementos a partir do
+        JavaScript, use nomes de atributos descritivos.
+        */
+
+        const link = document.querySelector("[espera-um-pouco]") // selecionando o elemento
+ 
+        link.onclick = navegarEm5s // associando o elemento ao evento do click e ao manipulador de eventos(event handler)
+
+    </script>
+</body>

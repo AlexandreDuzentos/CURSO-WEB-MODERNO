@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Atributos #03</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        <ul id="compras" destino='escritório' data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo Descartável</li>
+        </ul>
+    </div>
+    <script>
+        const lista = document.querySelector("#compras");
+
+        /*
+         Acessando atributos personalizados usando a notação ponto, forma de acesso
+         apenas de leitura.
+
+         a propriedade attributes retorna um objeto do tipo NamedNodeMap, que possui
+         todos os atributos do elemento em questão
+         */
+
+         console.log(lista.attributes)
+         console.log(lista.attributes.destino)
+
+         /*
+          Para acessar um atributo em que o identificador não é válido, deve-se
+          usar a notação de colchetes.
+         */
+         console.log(lista.attributes['data-urgencia'])
+         console.log(lista.attributes[2])
+
+        
+    </script>
+</body>
+
+</html>

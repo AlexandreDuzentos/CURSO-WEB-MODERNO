@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Classes</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        Classes
+    </div>
+    <script>
+        /* ACESSANDO CLASSES, a constante classes receberá um objeto do tipo DOMTokenList */
+        const classes = document.querySelector('div').classList
+
+        // Adicionando uma classe ao elemento
+        classes.add('destaque')
+
+        // Removendo uma classe do elemento
+        classes.remove('destaque')
+
+        // Alterna uma classe do elemento, se ainda estiver, adiciona, se já, remove.
+        classes.toggle('destaque')
+
+        /*
+         Verifica se uma classe está contida no grupo de classes do elemento, retorna um valor
+         booleano.
+        */
+        console.log(classes.contains('destaque'))
+
+        /*
+         A propriedade length retorna um valor inteiro correspondente a quantidade 
+         de classes que o elemento possui.
+        */
+        console.log(classes.length)
+
+        classes.toggle('destaque')
+
+        classes.add("destaque1")
+        classes.add("destaque2")
+
+        /* o objeto DOMTokenList é iterável(iterable), ou seja, ele tem um iterator associado */
+        for(let c of classes){
+            console.log(c)
+        }
+        
+        /* o objeto DOMTokenList tem disponível dentro do seu prototype a função forEach */
+        classes.forEach((c) => console.log(c))
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        <p>Texto Inicial</p>
+    </div>
+    <script>
+        const div = document.querySelector("div")
+
+        /* A propriedade innerHTML substitui tudo oque estava dentro do elemento por outra coisa */
+        div.innerHTML = "Texto alterado"
+
+        /*
+         A propriedade outerHTML substituí tudo oque estava dentro do elemento e o elemento em si
+         por outra coisa.
+        */
+       /*  div.outerHTML = "Texto alterado" */
+
+        /*
+         A função insertAdjacentHTML insere um node(nódo) ao lado do elemento em questão
+         recebe dois parâmetros, o primeiro é a posição que se dejesa inserir o elemento
+         (beforebegin, afterbegin, beforeend, afterend),
+         e o segundo e o elemento.
+        */
+        div.insertAdjacentHTML('beforebegin', "<p>Antes do início</p>")
+        div.insertAdjacentHTML('afterbegin',"<p>Depois do início</p>")
+        div.insertAdjacentHTML('beforeend', "<p>Antes do fim</p>")
+        div.insertAdjacentHTML('afterend', "<p>Depois do fim</p>")
+
+        // Somente texto(sem tags)
+        console.log(div.innerText)
+
+        // texto e as tags
+        console.log(div.innerHTML)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #04</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="conteudo exercicio">
+    <div id="first">
+        <p>Início</p>
+    </div>
+    <div class="first">
+        <ul>
+            <li>Pedro</li>
+            <li>Ana</li>
+            <li>Bia</li>
+        </ul>
+    </div>
+    <div name="first">
+        <p>Fim</p>
+    </div>
+    <script>
+        /* ----- NAVEGAÇÃO PELA ÁRVORE DE ELEMENTOS DA DOM ------ */
+
+        /*
+         dentro de uma função tradicional o this varia de acordo com quem chama a função, ele(this)
+         é quem chama a função.
+         */
+        function log(){
+            console.log(this)
+        }
+
+        /*
+         Adicionando a função log nos prototypes dos objetos abaixo: HTMLCollection, HTMLElement
+         NodeList e Node, toda função em JS tem o atributo prototype.
+         */
+        HTMLCollection.prototype.log = log
+        HTMLElement.prototype.log = log
+        NodeList.prototype.log = log
+        Node.prototype.log = log
+
+        const lista = document.querySelector("div ul")
+
+        /*
+          Acessando o Node pai da lista.
+
+          A propriedade parentNode também interpreta as quebras de linhas e espaços em branco
+          entre os Nodes, interpreta-as como "text".
+
+          o this aqui será quem chamou a função log, que no caso será o elemento
+          correspondente a propriedade parentNode que retorna um objeto do tipo Node.  
+        */
+        lista.parentNode.log()
+
+        /*
+           Acessando os Nodes filhos da lista.
+
+           A propriedade childNodes também interpreta as quebras de linhas e espaços em branco
+           entre os Nodes, interpreta-as como "text".
+
+           o this aqui será quem chamou a função log, que no caso serão os elementos
+           correspondentes a propriedade childNodes que retorna objeto do tipo  NodeList.    
+        */
+        lista.childNodes.log()
+
+        /*
+          Acessando o primeiro Node filho da lista, que no caso será "text", porque a propriedade
+          firstChild também interpreta as quebras de linhas e espaços em branco, interpreta-as
+          como "text".
+
+          o this aqui será quem chamou a função log, que no caso serão os elementos
+          correspondentes a propriedade firstChild que retorna um objeto do tipo Node,
+          mas no caso retornará um "text".
+
+        */
+        lista.firstChild.log()
+
+        let primeiro = lista.firstChild
+
+        /*
+          A propriedade nextSibling acessa o próximo elemento irmão de um outro elemento.
+
+          A propriedade nextSibling também considera quebras de linha e espaços em branco,
+          que são interpretadas como "text" e retorna um  objeto do tipo Node.
+        */
+        primeiro.nextSibling.log()
+
+        /*
+          A propriedade lastChild acesso o último filho de um elemento pai.
+
+          O lastChild também considera quebras de linha e espaços em branco, que são
+          interpretadas como "text" e retorna um objeto do tipo Node.
+        */
+        const ultimo = lista.lastChild
+        ultimo.log()
+
+        /*
+         Acessando os elementos filhos de um elemento pai, as quebras de linhas e espaços em branco
+         não são interpretadas, ou seja, não vem "text" no retorno.
+
+         A propriedade children retorna um objeto do tipo HTMLCollection.
+        */
+        lista.children.log()
+        
+        /*
+         Acessando o primeiro elemento da lista, as quebras de linha e espaços em branco
+         não são interpretados como elemento, ou seja, não vem "text" no retorno.
+
+         A propriedade firstElementChild retorna um objeto do tipo HTMLElement.
+        */
+        lista.firstElementChild.log()
+
+         
+        /*
+         Acessando o último elemento da lista, as quebras de linha e espaços em branco
+         não são interpretados como elemento, ou seja, não vem "text" no retorno.
+
+         A propriedade lastElementChild retorna um objeto do tipo HTMLElement.
+        */
+        lista.lastElementChild.log()
+
+         
+        /*
+         Acessando o elemento irmão anterior da lista, as quebras de linha e espaços em branco
+         não são interpretados como elemento, ou seja, não vem "text" no retorno.
+
+         A propriedade previousElementChild retorna um objeto do tipo HTMLElement.
+        */
+        console.log(lista.previousElementSibling)
+
+         
+        /*
+         Acessando o próximo elemento irmão da lista, as quebras de linha e espaços em branco
+         não são interpretados como elemento, ou seja, não vem "text" no retorno.
+
+         A propriedade nextElementChild retorna um objeto do tipo HTMLElement.
+        */
+        console.log(lista.nextElementSibling)
+        
+
+        /*
+         A função querySelectorAll retorna um objeto do tipo NodeList que contém 
+         a funcão log no seu prototype.
+        */
+        document.querySelectorAll("div ul li").log()
+
+        /* é um object */
+        console.log(typeof NodeList.prototype)
+       
+
+    </script>
+</body>
+
+</html>

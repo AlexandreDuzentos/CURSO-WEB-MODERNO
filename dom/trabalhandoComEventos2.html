@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>Elemento</div>
+    <script>
+        const item = document.querySelector("div")
+        item.style.position = "display"
+
+        /*
+         o this dentro de uma função arrow não varia, ele está associado ao contexto
+         em que a função foi declarada, que no caso é o contexto do browser, nesse contexto
+         o this aponta para window sempre.
+
+         associando um evento a um elemento html e uma arrow function
+
+         Essa função moverá o elemento na página
+        */
+        item.onmousemove = e => {    
+            const item = e.target
+
+            /* mudando o apontador do cursor do mouse */
+            item.style.cursor = "move"
+            item.style.position = "absolute"
+
+             /* a propriedade MouseEvent.clientY do interface MouseEvent retorna a coordenada y
+                 do ponteiro do mouse dentro das coordenadas do viewport.
+
+                 a propriedade element.clientHeight retorna a altura de um elemento.
+              */
+
+            item.style.top =  `${e.clientY - (item.clientHeight / 2)}px`
+            item.style.left =  `${e.clientX - (item.clientHeight / 2)}px`
+
+            
+
+        
+
+           /*
+            A propriedade buttons do objeto event é apenas de leitura
+            e indica quais botões estão  pressionados no mouse(ou noutro dispositivo de entrada)
+            quando um evento do mouse é disparado.
+
+            Há um grupo especifico de botões que podem ser pressionados, cada botão que pode
+            ser pressionado é representado por um dado número. se mais de um botão for pressionado,
+            o valor dos botões são adicionados para produzir um novo número.
+
+            se o valor for 0, quer dizer que nenhum botão do mouse foi pressionado, se for diferente
+            disso, algum botão foi pressionado.
+
+            propriedade buttons reference: https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/buttons   
+           */
+        }
+    </script>
+</body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #03</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form input,
+        form select,
+        form button {
+            margin: 10px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Formulário</h1>
+    <form name="pesquisa" action="http://www.google.com.br/search">
+        <input type="text" name="q" placeholder="Digite o termo...">
+        <select name="hl">
+            <option value="pt-br">Português (Brasil)</option>
+            <option value="en-us">Inglês (Americano)</option>
+        </select>
+        <button>Pesquisar</button>
+    </form>
+    <script>
+        /*
+         retorna um objeto do tipo HTMLCollection com todos os formulários
+         do documento HTML.
+         */
+        console.log(document.forms)
+
+        /* Acessando o primeiro formulário do documento HTML */
+        console.log(document.forms[0])
+
+        /* A função getElementsByName retorna um objeto do tipo nodeList que é iterável */
+        console.log(document.getElementsByName("pesquisa"))
+
+        /* Acessando directamente um elemento pelo seu name */
+        console.log(document.pesquisa)
+
+        /* Acessando elemento pelo name de forma encadeada */
+        console.log(document.pesquisa.q)
+
+        /* setando valor do atributo q que está sendo acessado de forma encadeada de forma programatica */
+        document.pesquisa.q.value = "windows"
+
+          /* setando valor do atributo name que está sendo acessado de forma encadeada de forma programatica */
+        document.pesquisa.hl.value = "en-us"
+
+        /*
+         Clica no botão programaticamente.
+        document.querySelector("button").click()
+        */
+    </script>
+</body>
+
+</html>

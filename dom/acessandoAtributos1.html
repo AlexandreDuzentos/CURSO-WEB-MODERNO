@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Atributos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        <a href='https://www.cod3r.com.br'>Cod3r</a>
+    </div>
+    <div id='primeiro'>
+        <img src='http://files.cod3r.com.br/curso-web/logo-estreita.png' alt='logo'>
+    </div>
+    <script>
+
+        /* Acessando atributos */
+        const img = document.querySelector("img")
+
+        /*
+          A função getAttribute("attributename") permite acessar o valor de um atributo
+          O acesso ao valor dos atributos é mais flexível usando a função getAttribute.
+        */
+        console.log(`Acessa pelo função getAttribute: ${img.getAttribute("src")}`)
+
+        /* Acesso ao valor de um atributo usando a notação ponto(acesso direto) */
+        console.log(`Acesso direto ao atributo: ${img.src}`)
+
+        /* Acesso ao valor de um atributo pela notação de colchetes */
+        console.log(`Acesso usando a notação de colchetes: ${img['src']}`)
+
+        /*
+         A propriedade nodeType retorna o tipo de um nódo(node), como um número, de um
+         nódo especificado.
+
+         É uma propriedade apenas de leitura.
+
+         nodeType reference: https://www.w3schools.com/jsref/prop_node_nodetype.asp
+        */
+       console.log('Elemento "img".................')
+       console.log('nodeType', img.nodeType)
+       
+
+       /*
+         A propriedade nodeName retorna o nome de um nódo(node)
+
+         É uma propriedade apenas de leitura.
+
+         nodeName reference: https://www.w3schools.com/jsref/prop_node_nodename.asp
+       */
+      console.log("nodeName", img.nodeName)
+
+       /*
+        Acessando o nódo(node) que representa um atributo, um objeto que representa
+        o nódo src é retornado
+       */
+      const src = img.getAttributeNode("src")
+      console.log('Atributo "src".............')
+      console.log('nodeType ', src.nodeType)
+      console.log('nodeName', src.nodeName)
+
+      /*
+         A propriedade nodeValue acessa o valor de um determinado nódo(node)
+         e também seta o valor, é uma propriedade de leitura e de escrita.
+       */
+      console.log('nodeValue', src.nodeValue)
+
+      const link = document.querySelector('a')
+      console.log('Elemento "a"..................')
+      console.log('href',link.href)
+      console.log("firstChild.nodeType ",link.firstChild.nodeType)
+
+      /* Setando um outro valor para o conteúdo do elemento link, forma pouco usual */
+      link.firstChild.nodeValue = "Novo Texto"
+
+      /* Setando um outro valor para o conteúdo do elemento link, forma usual */
+      link.innerHTML = "Alexandre Duzentos"
+
+
+
+    </script>
+</body>
+
+</html>

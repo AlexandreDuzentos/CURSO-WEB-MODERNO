@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        const body = document.querySelector("body")
+
+        /*
+          A função createElement cria um novo elemento, recebe como
+          parâmetro o nome da tag a ser criada.
+        */
+        const div1 = document.createElement("div")
+        div1.classList.add("destaque")
+
+        /* A propriedade innerHTML serve para ler e escrever um conteúdo de um elemento HTML, ele
+        substitui tudo que estava dentro da tag em questão */
+        div1.innerHTML = "Primeiro"
+
+        const div2 = document.createElement("div")
+        div2.setAttribute("wm-atributo", "valor")
+        div2.innerHTML = "Segundo"
+
+        const p = document.createElement("p")
+        p.innerHTML = "Terceiro"
+
+        const div3 = document.createElement("div")
+
+        /*
+         A função appendChild insere um elemento dentro de outro.
+        */
+        div3.appendChild(p)
+
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        /* A função createTextNode cria um texto, que tem um nodeType 3 dentro do documento HTML */
+        const texto = document.createTextNode("Antes...")
+
+        /*
+         A função insertBefore insere um elemento dentro de outro em uma posição específica
+
+         O primeiro parâmetro é o node que se deseja inserir e o segundo a posição em que se deseja 
+         pôr, nessa caso, ele o node que se deseja inserir estará no índice 0 da div3, ou seja, será
+         o primeiro elemento dentro da div3.
+
+         o insertBefore é mais cirúrgico do que o appendChild.
+        */
+        div3.insertBefore(texto, div3.childNodes[0]);
+
+        /*
+          A função cloneNode clona um determinado node(nódo) do documento HTML.
+
+          recebe como parâmetro um valor booleano, se for true, o elemento e todos
+          os seus filhos serão clonados, e for false, apenas o elemento será clonado.
+        */
+        const div4 = div3.cloneNode(true)
+        
+        body.appendChild(div4)
+
+        /* A função removeChild remove um elemento do documento HTML */
+        body.removeChild(div3)
+    </script>
+</body>
+
+</html>

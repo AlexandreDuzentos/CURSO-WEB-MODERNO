@@ -2,7 +2,8 @@
  node-schedule é um pacote que permite agendar tarefas para serem disparadas de forma recorrente
  de tempos em tempos.
 
- O node-schedule oferece um forma muito mais rica para trabalhar com recorrência.
+ O node-schedule oferece um forma muito mais rica para trabalhar com tarefas que precisam
+ ser realizadas de forma recorrente ou seja, recorrência.
 */
 
 // formato: segundo minuto hora diaDoMês mês diaDaSemana

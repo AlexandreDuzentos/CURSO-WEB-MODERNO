@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #02</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
+    <script>       
+       /*
+        Seleciona um elemento por id, classe, nome da tag, atributo, as possibilidades
+        são imensas, retorna um objeto do tipo HTMLElement.
+       */       
+       let querySelector = document.querySelector("#primeiro").classList.add('destaque')
+
+       /*
+        A função querySelectorAll retorna um objeto do tipo NodeList, que suporta a função forEach, e é um
+        objeto iterável.
+        */
+       let querySelectorAll = document.querySelectorAll("*")
+
+       /* Iterando o objeto querySelectorAll do tipo NodeList */
+       for(let element of querySelectorAll){
+            console.log(element)
+       }
+
+       /* Arrow function para selecionar elementos usando a função querySelectorAll */
+       const selecionar = (seletor) => {
+          document.querySelectorAll(seletor).forEach((e) => e.classList.add('destaque'))
+       } 
+
+       /* Arrow function para deselecionar elementos usando a função querySelectorAll */
+       const deselecionar = (seletor) => {
+          document.querySelectorAll(seletor).forEach((e) => e.classList.remove('destaque'))
+       }
+       
+       /* Selecionando todas as divs da página */
+       selecionar("div")
+
+       /* Deselecionando todos os elementos da página que estiverem selecionados */
+       deselecionar("*")
+
+       /* Deselecionando todos os elementos com as classes abaixo */
+       selecionar(".terceiro.ultimo")
+
+       deselecionar("*")
+
+       /* selecionando todo elemento do documento com exceção do elemento marcado com o id primeiro */
+
+       selecionar(":not(#primeiro)")
+
+       deselecionar("*")
+
+       /* selecionando o primeiro filho de algum elemento pai */
+       selecionar(":nth-child(1)")
+
+       deselecionar("*")
+
+       /* selecionando o primeiro elemento do tipo div entre irmãos */
+       selecionar("div:nth-of-type(1)")
+
+       deselecionar("*")
+
+       /* selecionando o primeiro filho do tipo div de um elemento pai */
+       selecionar("div:nth-child(1)")
+
+       deselecionar("*")
+
+       /* Selecionando elemento marcado com o atributo personalizado wb-atrib */
+       selecionar("[wb-attrib]")
+    </script>
+</body>
+</html>

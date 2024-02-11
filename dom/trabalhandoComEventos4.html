@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #04</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form input,
+        form select,
+        form button {
+            margin: 10px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Formulário</h1>
+    <form name="pesquisa" action="http://www.google.com.br/search">
+        <input type="text" name="q" placeholder="Digite o termo...">
+        <select name="hl">
+                <option value="pt-br">Português (Brasil)</option>
+                <option value="en-us">Inglês (Americano)</option>
+            </select>
+        <button wm-submit>Pesquisar</button>
+    </form>
+    <script>
+        // formData reference: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+         const form = document.forms[0]
+         form.onsubmit = function(e){
+            e.preventDefault()
+            
+            const form = e.target
+            /*
+             A interface formData fornece uma forma de construir um conjunto
+             de pares de chave/valor que representam os campos do formulário e
+             seus valores.
+
+             recebe como parâmetro um formulário.
+             */
+            const formData = new FormData(form)
+
+            /* Adicionando uma chave e valor no objeto do tipo formData */
+            formData.append("ajax", true)
+
+            // acessando o valor do campo q
+            console.log(formData.get('q'))
+
+            // testando se determinado campo existe no formulário.
+            console.log(formData.has('hl'))
+
+            /*
+             há um iterator associado ao objeto do tipo formData
+
+             iterator(iterador): é um objeto que pode ser usado para percorrer coleções.
+              */
+            for(let valor of formData){
+                console.log(valor)
+            }
+         }
+    </script>
+</body>

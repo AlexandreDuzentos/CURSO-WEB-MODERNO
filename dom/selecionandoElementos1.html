@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #01</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo">.terceiro .ultimo</div>
+    <script>  
+    
+    /*
+     Há uma função chamada dir(), que funciona apenas no console do browser,
+     ela permite ver o valor das variáveis dentro da tag script.
+    */
+
+        /*
+         Selecionando elemento por id, é retornado um objeto do tipo HTMLElement, que é um objeto que
+         representa a tag HTML que foi selecionada.
+
+          A função para selecionar elementos pelo nome da classe retorna mais de um elemento porque
+          classes foram projetadas para selecionar mais de um elementos na página.
+
+           A função para selecionar elementos pelo id retorna um único elemento porque o id
+           foi projeto para selecionar elementos de forma única.
+         */
+        let elementId = document.getElementById("primeiro")
+        console.log(elementId)
+
+        /*
+         A propriedade classList permite a manipulação do atributo de conteúdo
+         da classe do elemento, ele retorna um objeto DOMTokenList.
+
+         Adicionando uma classe na lista de classes do elemento com o método add do objeto
+         DOMTokenList.
+         */
+         document.getElementById("primeiro").classList.add("destaque")
+
+        /*
+         Selecionando elementos pelo nome da tag, é retornado um HTMLCollection, que é um objeto iteravél, que 
+         possui uma coleção de HTMLElements. 
+
+         O objeto HTMLCollection não suporta determinadas funções, por conta disso, as vezes, é necessário
+         converte o objeto HTMLCollection para array.
+
+         A função para selecionar elementos pelo nome da tag retorna mais de um elemento porque
+         podem haver tags com o mesmo nome na documento HTML.
+        */
+        let elementsTagName = document.getElementsByTagName("div")
+        console.log(elementsTagName)
+
+        /*
+         A função from do objeto especial Array converte um objeto iterável, como é o caso de
+         HTMLCollection para um Array.
+
+         O objetivo dessa conversão é aumentar um leque de possibilidades para trabalhar com
+         o objeto HTMLCollection.
+         */
+         Array.from(elementsTagName).forEach((e) => e.classList.remove("destaque"))
+
+         /* convertendo um HTMLCollection para array usando o operador spread */
+         let divsArray = [...elementsTagName]
+         divsArray.forEach((e) => e.classList.add("destaque"))
+
+         /* 
+            Selecionando elementos por classe.
+            também é retornado um HTMLCollection que é um objeto iterável
+
+            A função para selecionar elementos pelo nome da classe retorna mais de um elemento porque
+            classes foram projetadas para selecionar mais de um elementos na página.
+          */
+         let elementsClassName = document.getElementsByClassName("ultimo")
+
+         /* iterando o objeto iterável elementsClassName que é do tipo HTMLCollection */
+         for(let htmlElement of elementsClassName){
+             htmlElement.classList.remove("destaque")
+         }
+
+    </script>
+
+</body>
+</html>

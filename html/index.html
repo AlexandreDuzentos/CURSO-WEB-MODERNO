@@ -55,8 +55,8 @@
                  */
                  window.fetch(link.href)
                     /*
-                     A função text pega devolve o conteúdo da página html para qual a requisição
-                     feita.
+                     A função text retorna uma promise que resolve para o conteúdo da página html
+                     para qual a requisição feita.
                     */
                    .then((resp) => resp.text())
                    .then((html) => conteudo.innerHTML = html)         

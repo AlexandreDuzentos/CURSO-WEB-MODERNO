@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>XMLHttpRequest #03</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Estados</h1>
+
+    <script>
+        function ajax(config){
+            /* XMLHttpRequest reference: https://www.w3schools.com/xml/dom_http.asp*/
+            const xhr = new XMLHttpRequest()
+            xhr.open(config.method, config.url, true)
+
+            /* o evento abaixo é disparado toda vez que o estado  do objeto XMLHttpRequest muda */
+            xhr.onreadystatechange = e => {
+                /*
+                 Quando a propriedade readyState  é 4 e a propriedade estado é 200,
+                 a resposta está pronta.
+
+                 quando o readyState é 4 a requisição foi finalizada e a resposta está pronta.
+
+                 a propriedade status representa um estado de resposta HTTP.
+                */
+               if(xhr.readyState == 4){
+                   if(xhr.status == 200){
+                       config.sucess(xhr.responseXML) // responseXML retorna os dados da resposta na forma de uma String XML
+                   } else if(xhr.status >= 400){
+                       config.error({
+                           code: xhr.status, // status numérico da resposta da requisição HTTP
+                           text: xhr.statusText  // status textual da resposta da requisição HTTP
+                       })
+                   }     
+               }
+            }
+
+            xhr.send()
+        }
+
+
+        ajax({
+            method: "get",
+            url: "http://localhost:8080/dados/estados.xml",
+
+            sucess(response){
+                 const estados = response.getElementsByTagName("estado")
+
+                 /* início - Solução Alexandre Duzentos */
+                 const itens = Array.from(estados).map((estado) => {
+                      return `<li>${estado.attributes.nome.value}</li>`
+                 })
+
+                 const stringEstados = itens.toString()
+                 const stringSemVirgula = stringEstados.replace(/,/g, " ")
+                 document.body.insertAdjacentHTML("beforeend", `<ul>${stringSemVirgula}</ul>`)
+
+                 /* Fim - solução Alexandre Duzentos */
+
+
+                  /* início - Solução Instrutor */
+                 /*
+                 const itens = Array.from(estados).reduce((html, estado) => {
+                     return html + `<li>${estado.attributes.nome.value}</li>`
+                 }, "")
+
+                 document.body.insertAdjacentHTML("beforeend", `<ul>${itens}</ul>`)
+                 */
+
+                 /* Fim - solução Instrutor */
+            },
+
+            error(e){
+                const msg = document.createTextNode(`${e.code} : ${e.text}`)
+                document.body.appendChild(msg)
+            }
+        })
+    </script>
+</body>

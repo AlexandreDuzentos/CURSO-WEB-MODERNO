@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Mini SPA</title>
+    <link rel='stylesheet' href='../css/estilo.css'>
+    <style>
+        nav {
+            font-size: 2em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #FFF;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body class="conteudo">
+    <nav>
+        <a href wm-link="series.html" wm-destino=".pagina">Séries</a> |
+        <a href wm-link="linguagens.html" wm-destino=".pagina">Linguagens</a>
+    </nav>
+    <div class="pagina"></div>
+    <script>
+        /*
+
+         Simulando uma SPA(single page application) usando AJAX.
+         SPA: é um website ou aplicação web que dinâmicamente
+         reescreve a página web atual com dados novos do servidor
+         web, ao invés do método padrão de um navegador carregar
+         páginas webs completas.
+
+         url: é a url para onde a requisção ajax será enviada.
+         seletor: é o seletor do elemento na qual a resposta da requisição será colocada
+         push: indicará se a navegação estará sendo feita no sentido de ida ou volta,
+         true é para ida e false é para volta.
+        */
+        function navegarViaAjax(url, seletor, push = true) {
+             if(!url || !seletor) return
+             const elemento = document.querySelector(seletor)
+             window.fetch(url)
+                          .then(resp => resp.text())
+                          .then(html => {
+                            elemento.innerHTML = html
+                            if(push) { 
+                                /*
+                                  History API reference: https://developer.mozilla.org/en-US/docs/Web/API/History_API
+
+                                  PushState method reference: https://developer.mozilla.org/en-US/docs/Web/API/History/pushState
+
+                                 A API history fornece acesso ao histórico da sessão do browser por meio
+                                 do objeto global history. Ela expõe métodos úteis e propriedades que te
+                                 permitem navegar back and forth(ida e volta) pelo histórico do usuário, e
+                                 manipular os conteúdos da pilha de histórico.
+
+                                 O método pushState da interface History, adiciona uma entrada
+                                 para a pilha de histórico da sessão do browser.
+
+                                 pushState parameters: state, unused, url.
+
+                                 state: o objeto state é um objeto javascript que
+                                 é associado com a nova entrada do histórico criada
+                                 pelo pushState(). Toda vez que o usuário navegar para
+                                 para um novo state, um evento popstate é disparado, e a
+                                 propriedade state do evento conterá uma cópia do objeto de state
+                                 da entrada do histórico.
+                                */
+                                history.pushState({seletor}, "", url)
+                            }
+
+                          })
+                          .catch(error => console.log(error))
+                          
+        }
+
+        const links = document.querySelectorAll("a")
+        links.forEach(link => {
+            const url = link.getAttribute("wm-link")
+            const seletorDestino = link.getAttribute("wm-destino")
+            
+            link.onclick = e => {
+                e.preventDefault()
+                navegarViaAjax(url, seletorDestino)
+            }
+            
+        })
+
+        /*
+         onpopstate event reference: https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event
+         O evento popstate da interface window é disparado quando a entrada do
+         histórico ativa é alterada. Se o histórico de entrada a ser ativado ter
+         sido criado por  por uma chamada history.pushState, a propriedade state
+         do evento popstate contém uma cópia do objeto state passado no método pushState().
+
+         Note que apenas chamando history.pushState não irá disparar um evento
+         popstate. O evento popstate é disparado após uma ação no navegador como
+         um click no botão de voltar(ou chamado history.back por javascript).
+         
+        */
+        window.onpopstate = e => {
+            /*
+             testando se o objeto passado como primeiro parâmetro para
+             o método pushState está presente no histórico que foi ativado.
+            */
+             if(e.state){
+                navegarViaAjax(window.location.href, e.state.seletor, false)
+             }
+        }
+
+       
+    </script>
+</body>

@@ -1,5 +1,10 @@
 // Nessa aula falaremos sobre o atributo prototype da função
 
+const person = {
+    raca: "Negra",
+    cor_olhos: "castanho"
+}
+
 function meuObjeto(){}
 
 console.log(meuObjeto.prototype)
@@ -25,12 +30,18 @@ meuObjeto.prototype.falar = function(){
     console.log(`Bom dia! Meu nome é ${this.nome}`)
 }
 
+console.log("Novo teste..........")
+meuObjeto.prototype.person = person
+
+// Acesando um atributo do obj1, que recebe um objeto.
+console.log(obj1.person.raca)
+
 /**
  *  O atributo __proto__ serve para referênciar o prototype de um objeto ou de uma função, o
  * prototype de todo objeto aponta para Object.prototype, e o prototype de uma função aponta para
  * Function.prototype.
  * 
- * O atributo prototype da função serve para acessar o prototype da função, oque me permite colocar
+ * O atributo prototype da função serve para acessar o prototype da função, oque me permite incluir
  * atributos e funções dentro do prototype da função.
  * */
 

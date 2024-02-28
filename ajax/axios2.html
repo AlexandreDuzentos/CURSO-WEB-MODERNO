@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Axios #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src="js/axios.js"></script>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Axios Get/Post</h1>
+    <div id="get"></div>
+    <div id="post"></div>
+
+    <script>
+        function exibirResultado(id, dados){
+           const texto = JSON.stringify(dados)
+           document.getElementById(id).innerHTML = texto
+        }
+
+        /* --------------- INÍCIO REQUISIÇÕES VIA GET -----------------*/
+
+        /*
+        Forma 2
+        axios({
+           method: "get",
+           url: "/parOuImpar",
+           params : {
+              num: 2
+           }
+        }).then(response => exibirResultado("get", response.data))
+        */
+
+        /*
+        Forma 1
+        axios.get("/parOuImpar", {
+           params : {
+              num: 3
+           }
+        }).then(response => exibirResultado("get", response.data))
+        */
+
+        /*
+        Forma 3
+        axios.get("/parOuImpar?num=3").
+                                then(response => exibirResultado("get", response.data))
+        */
+
+        
+        // Forma 4 - usando async await
+        const asyncawait = async () => {
+            const response = await axios.get("/parOuImpar?num=3")
+            exibirResultado("get", response.data)
+        }
+        
+        asyncawait()
+
+        /* --------------- FIM REQUISIÇÕES VIA GET -----------------*/
+
+        /* --------------- INÍCIO REQUISIÇÕES VIA POST -----------------*/
+
+        /*
+        Forma 1
+        axios.post("/formulario", {
+              nome: "Alexandre",
+              idade: 20,
+        }).then(response => exibirResultado("post", response.data))
+
+        */
+
+        /* Forma 2 - usando async await */
+        const asyncAwait2 = async _ => {
+             const response = await axios.post("/formulario", {
+                nome: "Alexandre",
+                idade: 20
+             })
+
+             exibirResultado("post", response.data)
+        }
+
+        asyncAwait2()
+
+
+         
+        
+        
+
+        
+    </script>
+</body>

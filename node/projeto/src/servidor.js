@@ -44,7 +44,7 @@ const app = express()
  application/x-www-data-urlencoded - é um content-type que descreve que os dados do formulário
  serão enviados num único bloco no body(corpo) da mensagem http.
 
- A função urlencoded() do bodyParser funcionára apenas se o content-type usado pelo formulário para
+ A função urlencoded() do bodyParser funcionará apenas se o content-type usado pelo formulário para
  fazer a requisição for o application/x-www-form-data-urlencoded.
 
  A função urlencoded() retorna uma função middleware que fará o parse do body da requisição.

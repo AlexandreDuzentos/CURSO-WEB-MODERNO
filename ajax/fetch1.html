@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Fetch API #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Estados</h1>
+
+    <script>
+        const url = "dados/estados.json"
+
+        /*
+          fetch API reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+          O fetch é uma API baseada em promise, o que quer dizer que quando a resposta
+          de uma requisição http é devolvida para o cliente, uma promise é resolvida
+          ou rejeitada, em ambos os casos, uma promise é retornada.
+
+          o fetch é um cliente HTTP baseado em promise
+
+          o fetch é uma API do próprio browser.
+
+          o método fetch retorna uma promise que resolve para um objeto de resposta da requisição.
+
+          Enviando requisição via get para o servidor usando a fetch API.
+        */
+        window.fetch(url, {method: "get"}).
+                   then(resp => resp.json()).
+                   then(estados => {
+                      const itens = estados.reduce((html, estado) => {
+                        return html + `<li>${estado.nome}</li>`
+                      }, "")
+
+                      document.body.insertAdjacentHTML("beforeend", `<ul>${itens}</ul>`)
+                    })            
+
+    </script>
+</body>

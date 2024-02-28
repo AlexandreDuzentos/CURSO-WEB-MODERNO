@@ -5,7 +5,7 @@ const http = require("http")
 /*
  Sem promise, usando callback
 
- A função callback será chamada a operação assíncrona for concluída.
+ A função callback será chamada quando a operação assíncrona for concluída.
  A operação assíncrona nessa caso será a leitura de um arquivo json.
 */
 const getTurma = letra => {
@@ -31,7 +31,7 @@ const getTurma = letra => {
          * 
          */
 
-           
+           /** Interceptando o evento que será executado quando os dados começarem a chegar */
             res.on("data", (dados) => {
                 resultado += dados
             })
@@ -76,7 +76,7 @@ const getTurma = letra => {
  Sendo a função, vindo após a async e o nome a variável que recebe a função no caso de uma
  função arrow.
 
- A função await é permitido dentro do corpo da função, habilitando o assíncrono.
+ A palavra-chave await é permitido dentro do corpo da função, habilitando o assíncrono.
 */
 
 

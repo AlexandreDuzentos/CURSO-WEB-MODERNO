@@ -17,6 +17,6 @@ const newObj = JSON.parse(json)
  também deve seguir a mesma regra.
 */
 
-console.log(JSON.parse(`{"firstName":"Alexandre", "lastName": "Alexandre", "idade":20, "feliz":true, "altura":1.87,
+console.log(JSON.parse(`{'firstName':'Alexandre', "lastName": "Alexandre", "idade":20, "feliz":true, "altura":1.87,
  "morada": {"cidade":"luanda", "municipio": "Talatona", "distrito":"futungo", "bairro":"kawelele"}}`))
 

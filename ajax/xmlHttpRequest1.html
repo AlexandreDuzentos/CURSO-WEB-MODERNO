@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>XMLHttpRequest #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Estados</h1>
+
+    <script>
+        /*
+        O XMLHttpRequest é uma API baseada em callback, o que
+        quer dizer que quando a resposta de uma requisição http é devolvida
+        para o cliente, uma callback é executada.
+         */
+        function ajax(config) {
+            /* instanciando o objeto responsável por interagir com o servidor web */
+           const xhr = new XMLHttpRequest()
+           
+           /*
+            Abrindo uma requisição via get, para uma dada url, o terceiro parâmetro indica que
+            a requisição será feita de forma assíncrona.
+           */
+           xhr.open(config.method, config.url, true)
+
+           /*
+           o evento onload é disparado quando uma transação XMLHttpRequest é completada
+           com sucesso.
+
+           Abaixo nós temos a função callback que será executada
+           quando a resposta chegar, a callback está associada a um evento.
+           */
+           xhr.onload = e => {
+                if(xhr.status === 200){
+                    config.sucess(xhr.response)
+                } else if(xhr.status >= 400){
+                    config.error({
+                        code: xhr.status,
+                        text: xhr.statusText
+                    })
+                }
+           }
+
+           /* enviando a requisição para o servidor web */
+           xhr.send()
+        }
+
+
+        /* 
+           Quando utilizamos uma url relativa em uma requisição HTTP, como
+           "dados/estados.json", ela é resolvida com base na URL da página
+           HTML em que o código HTML está sendo executado. Por exemplo,
+           se a página HTML em que o código está sendo executado está acessível
+           em http://localhost:8080 e você específica uma URL relativa como
+           "dados/estados/json", o navegador automaticamente concatena essa URL
+           relativa com a URL da página HTML, resultando em
+           http://localhost:8080/dados/estados.json.
+
+           Se você estiver executando esse código(da página atual) em um ambiente
+           de desenvolvimento local, onde o servidor está hospedado em
+           http://localhost:8080(origem), então a URL relativa será resolvida em relação 
+           a essa origem, dessa forma você não precisa definir a url completa, pois o 
+           navegador já sabe que dados/estados.json faz parte da URL
+           http://localhost:8080.
+        */
+        ajax({
+            method: "GET",
+            url: "dados/estados.json", // URL relativa
+
+            sucess(response){
+               const estados = JSON.parse(response) // convertendo JSON em objeto
+
+               const linhas = estados.map((estado) => {
+                  const tdId = document.createElement("td")
+                  tdId.innerHTML = estado.nome
+
+                  const tdNome = document.createElement("td")
+                  tdNome.innerHTML = estado.nome
+
+                  const tdSigla = document.createElement("td")
+                  tdSigla.innerHTML = estado.sigla
+
+                  const tRow = document.createElement("tr")
+                  tRow.appendChild(tdId)
+                  tRow.appendChild(tdNome)
+                  tRow.appendChild(tdSigla)
+
+                  return tRow
+               })
+
+               const tabela = document.createElement("table")
+               linhas.forEach((tRow) => {
+                   tabela.appendChild(tRow)
+               })
+
+               document.body.appendChild(tabela)
+
+            },
+
+            error(error){
+               const msg = document.createTextNode(`${error.code}: ${error.text}`)
+               document.body.appendChild(msg)
+            }
+        })
+    </script>
+</body>

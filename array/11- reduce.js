@@ -12,7 +12,7 @@ let notas = obj => obj.nota
 let resultado = alunos.map(notas).reduce((acumulador, valorAtual) => {
    console.log(acumulador, valorAtual)
 
-   // O valor do acumulador provém do valor retornado pela callback passada como parâmetro.
+   // O valor do acumulador provém do valor retornado pela callback passada como parâmetro para a função reduce.
    return acumulador + valorAtual
 
    /** Quando é passada um valor inicial como segundo argumento, o valorAtual se inicia com

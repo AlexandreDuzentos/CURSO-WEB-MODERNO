@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Fetch API #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input,
+        form select,
+        form button {
+            margin: 10px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Formulário Via Fetch</h1>
+    <form name="usuarioForm" action="formulario" method="post">
+        <input type="text" name="nome" placeholder="Nome..." />
+        <input type="text" name="sobrenome" placeholder="Sobrenome..." />
+        <button>Salvar</button>
+    </form>
+    <div id="resultado"></div>
+    <script>
+        /* Interceptando o evento de submissão de um formulário  */
+        document.usuarioForm.onsubmit = async e => {
+             e.preventDefault()
+
+             const form = e.target
+
+             /*
+               O objeto FormData deixa-te compilar um conjunto de pares chave/valor para enviar
+               usando a API Fetch ou XMLHttpRequest.
+
+               Passando os pares de chave/valor do formulário para o construtor da função
+               construtora FormData.
+             */
+             const data = new FormData(form)
+             data.append("ajax", true)
+            
+             /* Definindo configurações que serão passadas para a função fetch */
+             const options = {
+                 method: form.method,
+                 body: new URLSearchParams(data) // acessando pares de chave/valor do formuário
+             }
+
+             const resultado = document.getElementById("resultado")
+
+             /*
+            //  Usando promise
+             fetch(form.action, options)
+                 .then(resp => resp.json())
+                 .then(resp => {
+                  resultado.innerHTML = JSON.stringify(resp)        
+             }).catch(err => {
+                // Atentar-se na hora de mandar um erro muito técnico para o browser,
+                //   pois isso pode revelar especificações do ambiente,o que pode ser
+                //   uma falha de segurança para o seu sistema.
+
+                //   Há o risco de se revelar o nome do servidor, configurações sensíveis 
+                //   do seu ambiente e outros.
+                
+                //  resultado.innerHTML = err
+             })
+             */
+
+             /* usando async await, a forma padrão de tratar erros quando usamos
+             o async/await é a estrutura try catch */
+             try {
+                const resp = await fetch(form.action, options)
+                const json = await resp.json()
+
+                resultado.innerHTML = JSON.stringify(json)
+             } catch(err) {
+                resultado.innerHTML = err
+             }
+
+             
+        }
+
+
+    </script>
+</body>

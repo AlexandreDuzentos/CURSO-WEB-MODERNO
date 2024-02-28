@@ -12,6 +12,9 @@ function imprimir(nome, indice){
  * 
  * Para que uma função seja chamada, quando um evento ocorrer é preciso registrá-la
  * passando-a como argumentos para a função que a invocará(forEach, filter, map, reduce)
+ * 
+ * callback é um conceito que descreve a capacidade de uma função chamar outra função que
+ * ele recebe como argumento.
  */
 
 

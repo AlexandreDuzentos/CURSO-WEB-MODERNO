@@ -1,0 +1,27 @@
+Dependências:
+
+gulp-babel - plugin que integra o gulp ao babel.
+gulp-concat - plugin que concatena vários arquivos num só
+gulp-sass - plugin que integra o gulp com ao sass
+gulp-typescript - plugin que integra o gulp ao TypeScript
+gulp-uglify - plugin que minifica arquivos javascript
+gulp-ugliflycss - plugin que minifica arquivos css
+
+gulp-cli - é uma dependência que é um utilitário de linha de comando
+do gulp.
+
+gulp --version - exibe a versão do gulp cli e do gulp local.
+gulp  --help - exibe uma série de comandos usados para executar tarefas dentro do gulp.
+
+typescript - própria dependência do typescript
+
+O gulp é um kit de ferramentas baseado em funções e essas funções são conhecidas
+como tasks(tarefas).
+
+Basicamente teremos uma série de funções que são uma série de tarefas, que
+servem para automatizar os processos dentro da aplicação e essas tarefas podem
+ser executadas de forma sequencial ou parelela, em geral realizaremos
+tasks em série quando elas forem dependentes entre si e de forma paralela
+quando elas forem independentes entre si.
+
+

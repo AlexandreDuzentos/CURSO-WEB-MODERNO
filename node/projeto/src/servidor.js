@@ -4,8 +4,10 @@
  * 
  * Porta é recurso que permite fazer uma comunicação processo a processo, ou seja,de aplicação a aplicação.
  * 
- * Quando dois computadores se comunicam, além de ter o endereço IP, para que eu saiba onde é que está
- * a máquina, preciso saber com qual processo(aplicação) a comunicação irá ocorrer.
+ * Quando dois computadores se comunicam, além de ter-se o endereço IP,
+ * para que o computador de origem saiba onde está o computador de destino
+ * , o computador de origem também precisa saber com qual processo ou aplicação
+ *  comunicação irá ocorrer.
  * 
  * Cada aplicação que está comunicando com a rede possui uma porta específica para ela.
  * 

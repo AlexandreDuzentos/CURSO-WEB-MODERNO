@@ -56,6 +56,6 @@ console.log(fromJson.info)
 
 /**
  *  Escopos no browser: global(window), de função, de bloco(let, const)
- *  Escopos no node: global(global), nível do própio módulo(que representa o arquivo), de função
+ *  Escopos no node: global(global), nível do própio módulo(que representa o arquivo), de função, de bloco(let, const)
  *  */
 

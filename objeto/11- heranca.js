@@ -37,12 +37,15 @@ meuObjeto.prototype.person = person
 console.log(obj1.person.raca)
 
 /**
- *  O atributo __proto__ serve para referênciar o prototype de um objeto ou de uma função, o
+ * O atributo __proto__ serve para referênciar o prototype de um objeto ou de uma função, o
  * prototype de todo objeto aponta para Object.prototype, e o prototype de uma função aponta para
  * Function.prototype.
  * 
  * O atributo prototype da função serve para acessar o prototype da função, oque me permite incluir
- * atributos e funções dentro do prototype da função.
+ * atributos e funções dentro do prototype da função , o prototype de toda função é Function.prototype.
+ * 
+ * O Function.prototype é o supertipo de qualquer função, ou seja, todas as funções são seus
+ * subtipos, porque herdam de Function.prototype.
  * */
 
 // Acessando um atributo do obj1, que foi criado no prototype da função meuObjeto

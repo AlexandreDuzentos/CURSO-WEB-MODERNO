@@ -1,9 +1,9 @@
 /**
  *  Em javascript todo objeto tem uma referência para um prototype, que é o seu objeto pai,
  *  caso eu tente acessar um atributo que não esteja no objeto filho, ele procurará pelo atributo
- *  no seu prototype.
+ *  no seu prototype, caso não ache, continuará a procura na cadeia de prototypes do objeto.
  * 
- * O prototype de cada objeto aponta para object.prototype.
+ * O prototype de todo objeto aponta para object.prototype.
  * 
  * O atributo prototype só está disponível dentro de uma função.
  * Toda função tem o atributo prototype
@@ -12,8 +12,11 @@
  * 
  * O atributo __proto__ serve para acessar o prototype de um objeto.
  * 
- * Dentro de todo objeto temos um atributo __proto__ que aponta para o objeto pai do objeto em questão e
- * também para Object.prototype.
+ * Dentro de todo objeto temos um atributo __proto__ que aponta para o objeto pai do objeto e para toda
+ * a cadeia de prototypes do objeto em questão.
+ * 
+ * Object.prototype é o supertipo de qualquer objeto em javascript, todos os objetos em JS são
+ * subtipos de object.prototype, ou seja, herdam de Object.prototype.
  * */
 
 const volvo = {

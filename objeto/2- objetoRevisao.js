@@ -1,5 +1,5 @@
 // Um objeto é uma coleção dinâmica de pares chave/valor
-const produto = new Object
+const produto = new Object // criando um objeto a partir de uma função construtora nativa do JS
 produto.nome = "Computador"
 produto['marca'] = "HP"
 produto.categoria = "Eletrônico"
@@ -13,6 +13,7 @@ delete produto['marca']
 console.log(produto)
 
 
+/** Notação literal de criação de objetos */
 const carro = {
     modelo: "Hilux",
     valor: 89000,

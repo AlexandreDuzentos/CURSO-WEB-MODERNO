@@ -1,7 +1,7 @@
 
 /**
  *  Quando é feita a declaração abaixo, o constante pessoa passa a apontar um endereço de memória
- *  e o endereço de memória aponta para o objeto.
+ *  e o endereço de memória aponta para um objeto.
  * 
  *  A variável que aponta para a referência do objeto é que é constante, não o objeto em si.
  * 

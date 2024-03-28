@@ -1,0 +1,90 @@
+Na area de scripts do arquivo package.json há um script chamado "start' que está associado ao
+comando webpack.
+
+npm start
+
+O comando npm start executará o  comando webpack, que lerá o seu arquivo de configuração, que fica no diretório
+raíz do projeto, chamado webpack.config.js, e gerará uma pasta chamada dist, que nada mais é do
+que a pasta padrão de saída do build gerado pelo webpack contendo um arquivo chamado main.js,que
+nada mais é do o arquivo final de saída do build gerado pelo webpack, porém os nomes dos arquivos
+de saída podem ser configurados no arquivo de configuração do webpack.
+
+npm run build - comando que executará setará a variável de ambiente NODE_ENV com o valor production
+usando a dependência cross-env, que é responsável por mudar a forma como a variável de ambiente
+é setada dependendo do sistema operacional, e executará o webpack, o webpack será executado No
+modo de production.
+
+"scripts": {
+    "start": "webpack"
+}
+npm start - comando que executará o comando webpack para rodar o webpack no modo de development.
+
+
+"scripts": {
+    "start": "webpack-dev-server"
+}
+npm start - quando for executado, inicializará o servidor webpack-dev-server, e também executará
+internamente o webpack, e o webpack-dev-server servirá os arquivos que estão dentro de sua pasta raíz, que
+é a pasta public, quando ocorrer alguma alteração nos arquivos que estão no radar do webpack, o
+web-dev-server se recarregará automaticamente e gerará um novo build com os arquivos atualizados
+
+E webpack-dev-server é um servidor local, logo, ele ficará hospedado na minha própria máquina,
+logo, o acesso a ele será feito através do endereço http://localhost:9090.
+
+node dist/main.js
+
+o comando node dist/main.js executará o arquivo main.js que irá acessar todos os arquivos JS
+de interesse a partir do arquivo de entrada(principal.js) do webpack setado num objeto no arquivo de configuração
+do webpack, o arquivo de entrada(principal.js).
+
+O arquivo de entrada(main.js) faz referência a outros arquivos, isso não quer dizer que todas
+as referêcias devem estar diretamente no arquivo de entrada.
+
+O arquivo de saída main.js que é gerado dentro da pasta dist na verdade empocota todos os arquivos sendo
+referênciados a partir do arquivo de entrada(main.js), para posteriormente ele se tornar
+o arquivo a partir do qual os outros arquivos js que ele empacotou serão executados, e a partir dele
+nós conseguimos extrair o css que foi empacotado dentro dele.
+
+No webpack temos também o conceito de loaders, que são responsáveis por atender, tratar ou ler os
+arquivos referênciados a partir do arquivo de entrada(main.js), para cada tipo de arquivo referenciado, seja
+de css, HTML, JS, arquivos de imagem, deve haver um ou mais loaders para atende-los, se o webpack chegar
+em um arquivo que  não tem um loader para atende-lo, o build dará um problema.
+
+Os loaders pré-processam os arquivos sendo referênciados a partir do arquivo de entrada do webpack(main.js). 
+
+Por padrão arquivos com a extensão js já possuem um loader pré-definido, mas para outras extensões
+de arquivos é necessário cadastrar os seus loaders no arquivo de configuração do webpack.
+
+O webpack é fortemente centrado no sistema de módulos justamente porque ele acessa todos os arquivos
+de interesse a partir do arquivo de entrada usando recursos do próprio sistema de módulos para
+referência-los.
+
+
+O arquivo de saída do build do webpack, que por padrão recebe o nome de main.js, ele empocota
+todos os arquivos referênciados a partir do arquivo de entrada do webpack?
+
+E quando externou-se o arquivo css, usando o plugin mini-css- extract-plugin, ele foi extraído
+a partir do arquivo de saída do build do webpack que por padrão recebe o nome de main.js?
+
+Sim, o arquivo de saída do build do webpack, empacota todos os arquivos referenciados a partir
+do arquivo de entrada. Quando você utiliza o plugin mini-css-extract-plugin, ele extrai o CSS
+de seus arquivos JavaScript e o coloca em arquivos CSS separados. Você especifica o arquivo css
+na prop "filename":
+
+Isso é feito para melhorar a performance, pois permite que o navegador carregue e aplique estilos CSS de forma independente do JavaScript.
+
+É importante termos um build específico para desenvolvimento e outro para produção.
+
+
+Para mais informações sobre as dependências sendo usadas no arquivo package.json, consulte
+o website do npm em: https://www.npmjs.com/
+
+A dependência cross-env é responsável por setar uma variável de ambiente do node chamada NODE_ENV com
+o valor production NODE_ENV=production que seja independente de plataforma, pois dependendo
+do sistema operacional, o modo de setar variáveis de ambiente é diferente, o cross-env já
+de garantir de a variável de ambiente estará setada de acordo com o sistema operacional
+na qual a aplicação estará rodando, para dessa forma, quando o webpack for executado, já que
+ele executa no runtime do node, já estará setado a variável de ambiente NODE_ENV.
+
+variáveis de ambiente reference: https://kinsta.com/pt/base-de-conhecimento/o-que-sao-variaveis-de-ambiente/
+

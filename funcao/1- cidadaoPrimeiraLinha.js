@@ -1,5 +1,12 @@
 /*
- Função em Javscript é first class Object(citzen).
+ Função em Javscript é first class Object or first class citzen, em português,
+ objeto de primeira linha ou ordem  ou cidadão de primeira linha ou ordem.
+
+ Isso significa que funções podem, por exemplo, ser passadas como parâmetro de 
+ métodos, bem como retornadas como resultado de métodos.
+
+ Higher order functions - funções de alta ordem: funções são tratadas como
+ dados no javascript, por isso, recebem esse nome.
 
  função é tratada como um dado no javascript, embora seja especial, pelo 
  fato de ser executavel, o que traz consigo uma grande flexibilidade no

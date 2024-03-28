@@ -65,6 +65,10 @@
            a essa origem, dessa forma você não precisa definir a url completa, pois o 
            navegador já sabe que dados/estados.json faz parte da URL
            http://localhost:8080.
+
+           Quando uma requisição é feita usando uma url relativa, a url relativa
+           é resolvida com base na url da página a partir da qual a requisição
+           está sendo feita.
         */
         ajax({
             method: "GET",

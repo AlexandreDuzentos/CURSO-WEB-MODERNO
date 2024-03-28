@@ -1,0 +1,10 @@
+A escolha das versões dos pacotes do npm ao atuar como freelancer depende do contexto do
+projeto em que você está trabalhando. Se estiver desenvolvendo um aplicativo do zero, é 
+geralmente recomendável utilizar as versões mais recentes e estáveis das dependências,
+pois estas tendem a oferecer as últimas funcionalidades e correções de bugs.
+
+No entanto, se estiver realizando manutenção em um projeto existente, é crucial considerar a
+compatibilidade entre as versões das dependências. Ao instalar uma nova dependência,
+verifique se ela é compatível com as versões das dependências já presentes no projeto para
+evitar conflitos e problemas de funcionamento. Pode ser necessário analisar a documentação
+das dependências e realizar testes para garantir que tudo funcione corretamente.

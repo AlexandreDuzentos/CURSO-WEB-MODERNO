@@ -25,3 +25,6 @@ tasks em série quando elas forem dependentes entre si e de forma paralela
 quando elas forem independentes entre si.
 
 
+Para mais informações sobre as dependências sendo utilizadas no projeto, consulte
+o website do npm: https://www.npmjs.com/
+

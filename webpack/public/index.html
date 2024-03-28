@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo webpack</title>
+    <!--
+    referênciado o arquivo estilo.css extraído do arquivo js(principal.js) que empacota
+    todos os módulos que ele referência dentro dele, a extração foi possível por causa do
+    loader do miniCssExtractPlugin, que extraí css de dentro do arquivo principal.js
+    -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+</body>
+   <button class="botao">Teste</button>
+<!--
+    O arquivo principal.js insere o estilo por meio da DOM, inserindo a tag <style> com o conteúdo
+    dos arquivos css que estão empacotados no arquivo principal.js
+-->
+<script src="./principal.js"></script>
+</html>

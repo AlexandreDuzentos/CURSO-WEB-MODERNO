@@ -50,14 +50,20 @@ function watchFiles(callback){
  * na minha própria máquina, desse modo, a requisição é enviada para a minha própria máquina
  * e a porta é a 8080 porque foi configurada desse modo
  * no objeto de configuração do webserver, e quem a atende a requisição é
- * especiíficamente o webserver porque o processo dele está a escuta na porta 8080, e por padrão a primeira
+ * específicamente o webserver porque o processo dele está a escuta na porta 8080, e por padrão a primeira
  * requisição é feita para o arquivo index.html, que estará na raíz do diretório raíz
  * do webserver.
  */
 function server(callback){
      /** A pasta build é o diretório raíz do webserver(servidor web), ou seja,
-      * os arquivos dentro desse diretório estarão sendo servidos pelo
+      * tudo oque estiver dentro desse diretório estarão sendo servido pelo
       * webserver.
+      * 
+      * O webserver, com base na configuração passada para o objeto que ele recebe como
+      * parâmetro, abre o browser e envia a primeira requisição para ele mesmo, que está
+      * hospedado no endereço http://localhost:8080, e portanto a requisição será enviada
+      * para a pasta raíz do servidor, que é a build no nosso caso, e por padrão o servidor
+      * responde com o arquivo index.html que fica no diretório raíz do servidor.
       */
      gulp.src("build")
      .pipe(webserver({

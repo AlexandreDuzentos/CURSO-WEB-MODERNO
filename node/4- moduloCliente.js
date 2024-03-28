@@ -1,4 +1,7 @@
-// A função require serve para importar módulos
+/*
+    A função require serve para importar módulos, para importar módulos criados por min deve-se
+    usar o caminho relativo até ele.
+ */
 const moduloA = require("./2- ModuloA");
 const moduloB = require("./3- ModuloB");
 

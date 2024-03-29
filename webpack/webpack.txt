@@ -41,9 +41,7 @@ O arquivo de entrada(main.js) faz referência a outros arquivos, isso não quer 
 as referêcias devem estar diretamente no arquivo de entrada.
 
 O arquivo de saída main.js que é gerado dentro da pasta dist na verdade empocota todos os arquivos sendo
-referênciados a partir do arquivo de entrada(main.js), para posteriormente ele se tornar
-o arquivo a partir do qual os outros arquivos js que ele empacotou serão executados, e a partir dele
-nós conseguimos extrair o css que foi empacotado dentro dele.
+referênciados a partir do arquivo de entrada(main.js).
 
 No webpack temos também o conceito de loaders, que são responsáveis por atender, tratar ou ler os
 arquivos referênciados a partir do arquivo de entrada(main.js), para cada tipo de arquivo referenciado, seja

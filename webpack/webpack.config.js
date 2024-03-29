@@ -14,8 +14,8 @@ const fileLoader = require("file-loader") // loader para atender arquivos de ima
 const webpack = require("webpack") // importando o webpack
 
 /*
- importando plugin que extrai o CSS de seus arquivos JavaScript 
- e o coloca em arquivos CSS separados.
+ importando plugin que extrai CSS para dentro de arquivos separados. Ele cria um arquivo
+ css para cada arquivo JS que contém CSS, ou seja, que contém uma referência a um arquivo css. 
 */
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
@@ -44,7 +44,7 @@ module.exports = {
        port: 9000
     },
 
-    /** Essa seção optimization é executada apenas se o webpack estiver em modo de desenvolvimento(development) */
+    /** Toda configuração contida na prop optimization é executada apenas se o webpack estiver em modo de produção(production) */
    optimization: {
         minimizer: [
            new UglifyJSPlugin({

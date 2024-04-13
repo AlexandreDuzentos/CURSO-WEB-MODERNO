@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Entendendo jQuery</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Entendendo jQuery</h1>
+    <div>1</div>
+    <div>2</div>
+
+    <script>
+        /* 
+          cdn reference: https://www.cloudflare.com/learning/cdn/what-is-a-cdn/
+          O símbolo do dólar($) serve para referenciar o jQuery
+          A palavra jQuery serve para referenciar o jQuery também
+        */
+
+        /*
+         selecionando elementos e encadeando chamadas de funções a partir deles.
+
+         A função hide esconde elementos, a show exibe elementos e a fadeOut esconde
+         os elementos.
+
+         Esse encadeamento é possível porque cada uma das funções na cadeia
+         de chamadas retorna o próprio objeto selecionado.
+
+         $('div') - essa chamada não retorna os objetos puro da DOM, mas sim um
+         objeto decorado(por assim dizer), que é um objeto que tem um nó da DOM
+         dentro dele e dentro desse objeto tem várias funcionalidades não nativas
+         da DOM para manipular esse nó da DOM.
+         */
+        $('div').hide(5000).show(5000).fadeOut(5000)
+
+        /*
+          O Jquery não está trabalha com os objetos puros da DOM, por conta
+          disso, não podemos chamar função do Jquery a partir de um elemento 
+          puro da DOM.
+
+          Para que isso seja possível, é usado um padrão de projeto chamado
+          decorator.
+
+          A função retorna um elemento puro da DOM.
+         */
+        console.log($('div').get(0))
+
+        /*
+          A função isEmptyObject recebe um objeto como argumento e testa se o
+          objeto está vazio, retorna um valor booleano
+        */
+        console.log($.isEmptyObject({}))
+
+        /*
+         A função inArray recebe dois argumentos, sendo o primeiro o valor
+         que se deseja saber se está dentro de um array e o segundo o próprio
+         array, retorna um valor booleano.
+        */
+        console.log(jQuery.inArray(3, [1, 2, 3]))
+
+        /* estendendo as funcionalidades do Jquery */
+        $.fn.fundo = function(corFundo, time){
+            /* 
+             O this aqui dentro é o elemento a partir da qual a função
+             fundoVerde será chamada.
+            */
+           setTimeout(() => {
+             this.css("background-color", corFundo)
+           }, time)
+
+           return this
+        }
+
+        $("div").fundo("blue", 10000).fundo("green", 10000)
+
+
+    </script>
+</body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Animação #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+    <style>
+        div {
+            text-align: center;
+        }
+        button {
+            font-size: 1.8em;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Animação #01</h1>
+    <button>Iniciar</button>
+    <div id='animar'>Animar!</div>
+
+    <script>        
+        /* Funções para animações nativas */
+        $("button").click(e => {
+            const t = 450;
+
+            /*
+             A função hide esconde os elementos selecionados diminuindo as dimensões deles
+             paulatinamente dentro do tempo passado para ela.
+
+             A função show exibe os elementos selecionados aumentando as dimensões deles
+             gradualmente dentro do tempo passado para ela.
+            */
+            //$("#animar").hide(t).show(t)
+
+            /*  
+               A função toggle exibe ou esconde o elemento, alterna entre o show e o hide.
+             */
+           // $("#animar").toggle(t).toggle(t)
+
+           /*
+             A função fadeIn esconde os elementos selecionados reduzindo a opacidade
+             dos mesmos gradualmente dentro do tempo passado para elas.
+           */
+         // $("#animar").fadeIn(t).fadeOut(t)
+
+         /*
+          A função fadeToggle exibe ou esconde um elemento, ela alterna entre o fadeIn 
+          e o fadeOut.
+         */
+        // $("#animar").fadeToggle(t).fadeToggle(t)
+
+        /*
+         A função slideUp desliza o elemento para cima e a slideDown desliza o elemento
+         para baixo.
+         */
+        //$("#animar").slideUp(t).slideDown(t)
+
+        /*
+         A função slideToggle desliza um elemento para cima ou para baixo, ela
+         alterna entre o slideUp e o slideDown.
+        */
+        $("#animar").slideToggle(t).slideToggle(t)
+
+
+
+        })
+    </script>
+</body>

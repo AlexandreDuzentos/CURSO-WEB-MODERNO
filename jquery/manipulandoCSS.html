@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Manipulando CSS</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Manipulando CSS</h1>
+    <div id='div1'>1</div>
+    <div id='div2'>2</div>
+    <div id='div3'>3</div>
+    <div id='resultado'></div>
+    <script>
+        /* A função css é de leitura e de escrita, permite ler ou setar propriedades nos elementos selecionados */
+
+        // lendo propriedades dos elementos selecionados
+        const fonte = $("#div1").css('font-family')
+
+        $("#resultado").append(`Fonte é  ${fonte}`)
+
+        /* setando propriedade css nos elementos selecionados */
+        $("#div1").css("font-size", "10px")
+
+        /* 
+          A função css também recebe um objeto como argumento, o que permite que várias propriedades sejam
+          setadas de uma só vez.
+          */
+        $("#div1").css({"font-size": "3.5em", "color": "yellow"})
+
+        /*
+          A função css também aceita receber uma callback como parâmetro, que terá alguma
+          lógica para aplicação de uma propriedade.
+        */
+        $("#div1").css("font-size", function(){
+             return  `${2 * 2}em`
+        })
+
+        /* A função addClass adiciona uma classe nos elementos selecionados */
+        $("#div2").addClass("destaque")
+
+        /* 
+          A função hasClass testa se os elementos selecionados possuem a classe passada como
+          argumento, e retorna um valor booleano.
+        */
+        const temClasse = $("#div1").hasClass("destaque")
+        $("#resultado").append(`<br> Tem class? ${temClasse}`)
+
+        /* A função removeClass remove uma class do elemento selecionado */
+        $("#div2").removeClass("destaque")
+
+        /*
+          A função toggleClass adiciona ou remove uma classe dos elementos selecionados,
+          ele alterna a aplicação da Class.
+        */
+        $("#div2").toggleClass('destaque')
+        $("#div2").toggleClass('destaque')
+    </script>
+</body>

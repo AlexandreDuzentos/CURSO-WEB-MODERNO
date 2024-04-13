@@ -26,7 +26,7 @@ function falarDepoisDe(segundos, frase){
               A função callback resolve é chamada quando Promise é atendida.
 
               resolvendo a promise, ou seja, atendendo a promise com sucesso passando o argumento
-              que será passada para função then().
+              que será passada para  os parâmetros da função then().
 
               A callback de sucesso chamada abaixo, aceita um único argumento.
              */
@@ -47,13 +47,13 @@ function falarDepoisDe(segundos, frase){
 
 
 /*
- A função then() é chamada quando a promise é resolvida passando o argumento que se quer passar para
- a função then().
+ A callback passada para função then() é chamada quando a promise é resolvida passando o argumento que se quer passar para
+ como argumento para callback.
 
- A função catch() é chamada quando a promise é rejeitada passando o argumento que se quer passar para
- a função catch().
+ A callback passada para a função catch() é chamada quando a promise é rejeitada passando o argumento que se quer passar para
+ como argumento função a callback.
 
- A função then() do objeto promise serve para acessar o resultado de uma promise atendida com sucesso
+ A função then() da classe Promise serve para acessar o resultado de uma promise atendida com sucesso
  ou seja, sem erros.
 
  A função catch() do objeto promise serve para acessar o resultado de uma promise atendida com erro.

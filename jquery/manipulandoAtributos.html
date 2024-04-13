@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Manipulando Atributos</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+    <style>
+        [wm-relogio] {
+            text-align: center;
+        }
+
+        [wm-relogio] button {
+            font-size: 1.6em;
+            padding: 0px 25px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Manipulando Atributos</h1>
+    <div wm-relogio='1000'></div>
+    <script>
+        /* 
+          O valor da propriedade wm-relogio é o tempo de recorrência a partir da qual o relógio
+          será atualizado, nesse caso, ele será atualizado por padrão a cada segundo.
+        */
+
+        function Relogio(elemento){
+            const horaCerta = $("<p>").html("0") // conterá a hora mais atual do relógio
+            const botaoMenos = $("<button>").html("-") // reduzir o tempo de atualização do relógio
+            const botaoMais = $("<button>").html("+")
+
+            /*
+             o elemento passado como parâmetro é um elemento puro da DOM e logo não
+            seria possível a partir dele acessar funções da biblioteca Jquery, para que
+            o acesso a funções da biblioteca jquery seja possível o elemento precisa ser
+            passado para dentro da função de seleção do Jquery.
+            */
+            const $elemento = $(elemento)
+
+            $elemento.append(horaCerta, botaoMenos, botaoMais)
+
+            /* função responsável por obter o intervalo atual do atributo wm-relogio */
+            const getIntervaloAtual = () => {
+                return parseInt($elemento.attr("wm-relogio"))
+            }
+
+            /*
+             armazena o resultado da função setInterval, que é um ID único que identifica
+             o intervalo, o valor dessa variável será atualizado toda vez que o intervalo
+             de atualização do relógio for atualizado.
+            */
+            let temporizador = null
+
+            /* Função responsável por inicializar e parar o temporizador */
+            const iniciar = () => {
+                /* 
+                  O método clearInterval cancela uma ação temporizada e repetitiva que 
+                  foi anteriormente estabelecida pela chamada do método setInverval, ou seja,
+                  ela para o temporizador cujo id foi passado como argumento.
+                */
+                if(temporizador) clearInterval(temporizador)
+                   /*
+                     A função setInterval repete chamadas de funções ou repete trechos de
+                     código, com um tempo de espera fixo entre cada chamada.
+
+                     Dentro da função callback passada como argumento para a função setInterval
+                     será feita a atualização do relógio.
+                   */
+                   temporizador = setInterval(() => {
+                      /* 
+                         A função toLocaleString retorna a data num formato mais amigável.
+                       */
+                      horaCerta.html(new Date().toLocaleString("pt-BR"))
+                   }, getIntervaloAtual())
+            }
+
+            const alterarIntervalo = delta => {
+                /*
+                 A função max obtém o maior valor dentre dois valores, o segundo argumento
+                 passado para ela é o valor mínimo que ela pode retornar, se o primeiro
+                 argumento for menor que o valor mínimo, o valor mínimo é retornado. 
+                */
+                const novo = Math.max(getIntervaloAtual() + delta, 1000)
+                $elemento.attr("wm-relogio", novo)
+                iniciar() // toda vez que o intervalo for alterado, a função iniciar será chamada
+            }
+
+
+            /* 
+              click no botão menos diminui a frequência de atualização do temporizador do relógi, ou seja,
+              o relógio atualiza mais lentamente.
+             */
+            botaoMenos.click(e => alterarIntervalo(1000))
+
+             /*
+             click no botão menos aumenta a frequência de atualização do temporizador do relógio, ou seja,
+             o relógio se atualiza mais rapidamente.
+            */
+            botaoMais.click(e => alterarIntervalo(-1000))
+            iniciar()
+        }
+
+        $("[wm-relogio]").each((i, e) => new Relogio(e))
+
+       // $("[wm-relogio]").attr("opa") // leitura
+       // $("[wm-relogio]").attr("opa", 5) // alterar ou incluir
+
+        /*
+          A função attr aceita receber um objeto como argumento, para alterar
+          ou incluir atributos.
+         */
+        $("[wm-relogio]").attr({opa: 1, novo: true})
+
+        /* Removendo atributos de elementos DOM */
+        $("[wm-relogio]").removeAttr("opa")
+    </script>
+</body>

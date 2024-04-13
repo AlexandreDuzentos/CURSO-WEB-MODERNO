@@ -73,7 +73,7 @@ let nomes = []
  aninhadas.
 */
 
-// Chamada aninhada das funções getTurma usando promise
+// Chamada aninhada das funções getTurma usando promise, promise hell.
 
 /*
 getTurma("A").then((alunos) => {
@@ -117,7 +117,7 @@ getTurma("A").then((alunos) => {
 */
 
 /**
- * A função all do Objeto Promise, recebe um array que contém Promises como parâmetro, com isso, numa única
+ * A função all da classe Promise, recebe um array que contém Promises como parâmetro, com isso, numa única
  * chamada da função all, ela chamará todas as Promises passadas para o array dentro dela e ficará aguardando
  * que elas sejam resolvidas ou rejeitadas.
  */
@@ -152,12 +152,26 @@ getTurma("K")
   .catch((erro) => {
      console.log(erro)
   })
+
 /*
-const matriz = [[1,2], [3, 4], [5, 6], [7, 8], [9, 10]]
+const matriz = [[{nome: "ALexandre", idade: 20}], [{nome: "Paulo", idade: 22}], [{nome: "Mateus", idade: 25}], [{nome: "Augusto", idade: 18}], [{nome: "Matias", idade: 15}]]
 console.log(...matriz)
 
-output: [1,2] [3, 4] [5, 6] [7, 8] [9, 10]
+console.log([].concat(...matriz))
+
+output:
+[
+  { nome: 'ALexandre', idade: 20 },
+  { nome: 'Paulo', idade: 22 },
+  { nome: 'Mateus', idade: 25 },
+  { nome: 'Augusto', idade: 18 },
+  { nome: 'Matias', idade: 15 }
+]
+
+Quando concatenamos dois arrays ou mais, um único array é gerado, contendo os elementos
+de todos os arrays que foram concatenados.
 */
+
 
 
 

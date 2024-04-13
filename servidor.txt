@@ -1,0 +1,62 @@
+Servidor é software, no entanto, software roda apenas em cima de hardware, por conta do
+servidor ser um software com uma alta demanda de clientes e por consequência requisições, 
+para que o hardware consiga suportá-lo em geral precisa ser mais robusto, ou seja, ter uma
+poder computacional maior para que ele consiga lidar com as requisições que o
+software(servidor) recebe.
+
+O servidor é um software a rodar em cima de um hardware, pois apenas um software "saberia"
+ou seja, pode ser programado  para "saber" como atender e responder a requisições de clientes,
+o papel do hardware nesse cenário seria suportar o servidor(software).
+
+um servidor web fica hospedado em uma máquina física, e quando ele é inicializado, o endereço
+em que ele está hospedado é disponibilizado por ele mesmo, isso para que clientes possam se
+comunicar com o mesmo, a forma mais tradicional de um cliente comunicar-se com um servidor
+web a partir do navegador web usando o endereço disponibilizado pelo servidor durante sua
+inicialização.
+
+E o servidor no meu ambiente de desenvolvimento local, fica hospedado em
+http://localhost:8080.
+
+localhost remete para o endereço ip 127.0.0.1, que é um endereço de lookback, ou seja ele
+olha para a própria máquina a partir da qual a requisição está sendo feita, logo a
+requisição é enviada para a própria máquina.
+
+A porta 8080 é a padrão em uma requisição http.
+
+Então, quando eu crio um servidor a partir do NODE JS, o código que é executado em resposta
+a chamada do método createServer é o servidor, ou seja, o código é software que está a rodar
+cima máquina(hardware).
+
+Computadores pessoais, smartphones, dispositivos de IoT e até mesmo servidores que se conectam
+para requisitar serviços específicos são considerados clientes.
+
+Um cliente é, em primeiro lugar, um consumidor de um serviço. Ele se conecta ao servidor
+para solicitar e receber recursos ou funcionalidades específicas. Então, pense que toda
+vez que um dispositivo comum, nós mesmos, enviando requisições, usando aplicativos, somos
+clientes.
+
+Falar que toda máquina em qualquer contexto é um pouco radical. De fato a maioria das
+máquinas a se conectarem com um servidor são clientes, mas não absolutamente todas as
+máquinas que se conectam são clientes.
+
+Para um dispositivo ser considerado um cliente, ele precisa interagir com um servidor e 
+consumir um serviço que o mesmo provê.
+
+Quando uma requisição é enviada para o 
+endereço http://localhost:8080, que é um emdereço de lookback,  essa requisição seja
+enviada para a placa de rede da máquina a partir da qual a requisição foi enviada,
+e a placa de rede determinará para onde a requisição será enviada, seja para um processo
+a rodar na minha máquina ou para outro processo externo, sem a porta específicada, a placa
+de rede não tem como saber para qual processo(aplicação) a requisição será enviada, agora
+com a porta específicada 
+para 8080, a placa de rede saberá para qual processo(aplicação) com comunicação com rede a
+rodar na minha máquina ou fora dela enviar a requisição  e quando ela enviar a requisição
+para o servidor(que é software), ele saberá como recebe-la e trata-la e enviar a resposta
+para o cliente, pois ele tem a inteligência(porque foi programado) para tal para fazer isso.
+
+
+Como a placa de rede sabe se é para enviar uma requisição para a minha máquina ou para
+outra máquina(da internet)?
+R: por causa do endereço ip, se endereço ip do endereço usado for 127.0.0.1, então a
+requisição será enviada para a minha própria máquina, se for outro endereço válido na
+internet, então a requisição será enviada para um processo(aplicação) a rodar na internet.

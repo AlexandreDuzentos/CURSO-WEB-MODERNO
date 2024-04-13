@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Modificando HTML #01</h1>
+    <div id='conteudo1'></div>
+    <div id='conteudo2'></div>
+    <div id='conteudo3'></div>
+
+    <script>
+        /* 
+           Conteúdo 1
+
+           Insere conteúdo, específicado pelo parâmetro, ao fim de cada elemento no
+           conjunto dos elementos correspondentes ao seletor.
+        */
+        $("#conteudo1").append("<p>1</p>")
+        
+        /* criando elementos HTML de forma dinâmica no Jquery e inserindo conteúdo neles */
+       const elementos = [
+          $("<li>").append("Arroz"),
+          $("<li>").append("Feijão"),
+          $("<li>").append("Carne")
+       ]
+       
+       /*
+         Criando elementos de forma dinâmica pelo Jquery e inserindo conteúdo dentro deles.
+         Quando cria-se elementos de forma dinâmica pelo Jquery, já pode-se inserir conteúdo
+         dentro deles diretamente, sem precisar ser pelo método específico para tal.
+       */
+       const lista = $("<ul><li>Sorvete</li></ul>").prepend(elementos)
+       $("#conteudo2").append(lista)
+ 
+       /* encadeamento de chamadas para conteúdo na página HTML */
+       $("#conteudo3").append("<h1>1</h1>")
+                      .append("<h1>2</h1>")
+                      .prepend("<h1>0<h1>")
+        
+        /*
+         A função html é de escrita e de leitura, na escrita ele substitui todo o conteúdo
+         de dentro dos elementos selecionados ,porém ela considera tags HTML como tags de fato,
+         e é dessa forma que o browser as interpreta também.
+        */
+        console.log($("#conteudo3").html())
+
+        $("#conteudo3").html("<h1>Alexandre</h1>")
+
+        /* 
+         A função text é de escrita e de leitura, na escrita ele substitui todo o conteúdo
+         de dentro dos elementos selecionados, porém , ela considera tags HTML como texto e não
+         tags de fato, oque faz com que o browser interprete as tags como texto.
+        */
+        $("#conteudo3").text("<h1>Duzentos</h1>")
+
+        // Alterando todos
+        $("div[id]").html("<strong>Todos!</strong>")
+    </script>
+</body>

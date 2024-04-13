@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Animação #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+    <style>
+        body {
+            position: relative;
+            background-color: #999;
+            color: #000;
+        }
+
+        div {
+            position: absolute;
+            display: inline;
+            border: solid 10px #000;
+            padding: 50px;
+            font-size: 3em;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Animar!</div>
+
+    <script>
+        /* Animações personalizadas com o uso da função animate */
+
+        // valor: uso variado
+        // duracao: duração da animação
+        // callback: função que será executada quando animação terminar
+        // A função alterarLargura é responsável por executar uma etapa da animação que é alterar a largura do elemento.
+        function alterarLargura(valor, duracao){
+
+           /* 
+              A função animate performa uma animação personalizada de um conjunto de
+              propriedades css.
+
+              Ela recebe como argumento um objeto de propriedades e valores CSS para o qual
+              a animação se moverá.
+
+               `+=${valor} -> sintaxe que o Jquery usa para dizer uma largura(width) receberá um
+                valor adicional ou seja, será incrementado.
+           */
+             const promise = new Promise((resolve, reject) => {
+                $('div').animate({width: `+=${valor}`}, duracao, resolve)
+             })
+
+             return promise
+          
+        }
+
+         // A função moverDiagonal é responsável por executar uma etapa da animação que é mover o elemento na diagonal.
+        function moverDiagonal(valor, duracao){
+            const callback = null
+           $('div').animate({top: `+=${valor}`, left: `+=${valor}`}, duracao, callback)
+        }
+
+         // A função moverDiagonal é responsável por executar uma etapa da animação que é rotacionar o elemento.
+        function girar(valor, duracao){
+            const callback = null
+            /* a cada vez que valor for incrementando, a função step será executada e para ela passada o valor */
+           $("div").animate({transform: `+=${valor}`}, {
+             step: function(valor){
+                $(this).css("transform", `rotate(${valor}deg)`)
+             },
+             duracao
+           }, 'linear', callback) // o parâmetro linear é o modo(ritmo) como a animação de desenrolará, desde o ínicio ao fim ela se desenrolará linearmente, ou seja, não começara mais rápido e terminará mais lento ou vice-versa.
+        }
+
+
+         /* Solução com uso de promise, para evitar o uso da estratégia callback hell */
+        alterarLargura(300, 100)
+                    .then((value) =>  moverDiagonal(300, 600))
+                    .then((value) => girar(3300, 3000))
+        
+    </script>
+</body>

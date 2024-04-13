@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Eventos #03</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+    <style>
+        input {
+            font-size: 2em;
+        }
+
+        #resultado {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Eventos #03</h1>
+    <div id='div1'>1</div>
+    <div id='div2'>1</div>
+    <input id='input1' type='text' placeholder='Digite Algo!'>
+    <span id='resultado'></span>
+
+    <script>
+        /* propriedades do objeto event */
+        function exibirDadosEvento(e){
+            $("#resultado").empty()
+            const div1 = $("<div>")
+            const div2 = $("<div>")
+
+            $("#resultado").append(div1, div2)
+            div1.append(`Target: ${e.target.id}`)
+
+            /* 
+               A propriedade relatedTarget retorna o outro elemento DOM envolvido no evento
+               se houver algum.
+              */
+            const rt = e.relatedTarget ? e.relatedTarget.tagName : null
+
+            div1.append(`<br> RelatedTarget: ${rt}`)
+
+            /* A propriedade type retorna o tipo do evento disparado */
+            div1.append(`<br> type: ${e.type}`)
+
+            /*
+            A propriedade which num evento de teclado mostra qual tecla foi clicada 
+            e num evento do mouse, mostra qual tecla do cursor do mouse está pressionada,
+            no evento de keyup mostra a correspondência numérica da tecla clica na tabela ascii
+            */
+            div1.append(`<br> Which: ${e.which}`)
+
+            /*
+             A propriedade metaKey retorna um valor booleano indicando se a tecla windows ou
+             Command no mac está pressionada.
+             */
+            div1.append(`<br> metaKey: ${e.metaKey}`)
+            
+            /*
+             Tanto o page quanto o client retornam as coordenadas do cursor do mouse
+             no eixo x e y em eventos do mouse(mouseEvents)
+            */
+            div2.append(`<br> PageX:  ${e.pageX}`)
+            div2.append(`<br> PageY:  ${e.pageY}`)
+            div2.append(`<br> clientX:  ${e.clientX}`)
+            div2.append(`<br> clientY:  ${e.clientY}`)
+
+            const obs = e.data ? e.data.obs : null
+            div2.append(`<br> Obs: ${obs}`)
+        }
+
+        /*
+         É possível passar mais atributos para objeto event, e esses atributos são
+         acessados a partir da propriedade data do objeto event.
+        */
+        $("#div1, #div2").on("mouseenter mouseleave", {obs : "Funciona"}, exibirDadosEvento)
+
+        $("input").keyup(exibirDadosEvento)
+    </script>
+</body>

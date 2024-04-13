@@ -51,9 +51,9 @@ const getTurma = (letra, callback) => {
 let nomes = []
 
 /*
- Estratégia chamada callback hell, é uma estratégia em que temos callbacks chamadas de callbacks
+ Estratégia chamada callback hell, é uma estratégia em que temos chamadas de callbacks
  aninhadas.
-*/
+ */
 getTurma("A", alunos => {
     const nomesTurmaA = alunos.map((aluno) => `A: ${aluno.nome}`)
     nomes = nomes.concat(nomesTurmaA)

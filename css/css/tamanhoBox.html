@@ -17,13 +17,13 @@
             border:20px solid;
 
             /*
-             A declaração abaixo considerará o content-box, o padding-box e o border-box no cálculo
-             para determinar o width e height total da caixa em questão, ou seja, o width de 100% do seletor
-             já inclui o content-box, o padding-box e o border-box.
-              
-             content-box: é o width e o height do conteúdo apenas, que é formado pelo width.
-             padding-box: é o width e o height do padding apenas.
-             border-box:é o width e o height da border apenas.
+             O box-model é composto pelo content -> padding -> border -> margin
+
+             O width é a largura do content da box.
+
+             content-box: cálculo total do tamanho da box = content + padding + border
+             padding-box: cálculo total do tamanho da box = content + border
+             border-box: cálculo total do tamanho da box = content
 
              O objetivo desse valor na propriedade é evitar que a caixa cresça muito.
             */

@@ -1,0 +1,157 @@
+<!-- Título (jumbotron) -->
+<div class="jumbotron p-4 my-1">
+    <h1 class="display-4">Fundamentos</h1>
+    <p class="lead m-1">Alguns recursos importantes do bootstrap
+    </p>
+ </div>
+<!-- Breadcrumb -->
+<nav class="mb-5">
+   <ol class="breadcrumb">
+       <li class="breadcrumb-item">
+          <a href="#/bemVindo.html">Home</a>
+       </li>
+       <li class="breadcrumb-item active">Fundamentos</li>
+   </ol>
+</nav>
+
+<div class="exercicio">
+    <h1>1. Tipografia -
+        <small>
+            <a href="https://getbootstrap.com/docs/4.0/content/typography/" target="_black">Documentação Oficial</a>
+        </small>
+    </h1>
+    <hr>
+
+    <ul>
+        <li><strong>Reboot</strong> - Torna consistente o estilo entre diferentes browser!</li>
+        <li><strong>Rems</strong> - Baseado no raiz</li>
+        <li>Evita <strong>margin-top</strong> - Provavelmente será necessário adicionar algum espaço</li>
+        <li><strong>box-sizing</strong> border-box</li>
+        <li>Fontes nativas</li>
+    </ul>
+
+    <h1 class="mt-5">2. Espaços -
+        <small>
+            <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/" target="_black">Documentação Oficial</a>
+        </small>
+    </h1>
+    <hr>
+
+    <!-- Espaços -->
+     <!-- A classe mb-5 aplica um margin-bottom de 5px, o  valor vai de 0 a 5 -->
+  <div class="mb-5">1</div>
+
+  <!--
+     A classe m-4 aplica uma margin em todas as direções de 4px e a classe, o valor vai
+     de 0 a 5.
+
+     py-4 aplica um padding no eixo vertical de 4px, o valor vai de 0 a 5
+  s-->
+  <div class="m-4 py-4">2</div>
+
+  <!-- A classe pt-4 aplica um padding-top de 5px em todas as direções, o valor vai de 0 a 5 -->
+  <div class="pt-5">3</div>
+
+    <h1 class="mt-5">3. Cores -
+        <small>
+            <a href="https://getbootstrap.com/docs/4.0/utilities/colors/" target="_black">Documentação Oficial</a>
+        </small>
+    </h1>
+    <hr>
+
+    <!-- Cores -->
+    <!--
+       A classe bg-boostrapcolor aplica uma cor de fundo pré-definida pelo bootstrap
+       A classe text-bootstrapcolor aplica uma cor de texto pré-definida pelo bootstrap
+    -->
+    <div class="my-1 p-3 bg-primary text-light">1</div>
+    <div class="my-1 p-3 bg-danger text-white">2</div>
+    <div class="my-1 p-3 bg-warning text-success">3</div>
+
+    <h1 class="mt-5">4. Flex -
+        <small>
+            <a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_black">Documentação Oficial</a>
+        </small>
+    </h1>
+    <hr>
+
+    <!-- Flex -->
+    <!--
+        A classe d-flex seta o display de um elemento como flex, oque faz dele um flex-container
+        A classe flex-column-reverse seta flex-direction do flex-container como flex-column-reverse. 
+        A classe align-self alinha os flex-items no cross axis.
+
+        breakpoints para que o flex-box seja aplicado(do breakpoint para dimensões superiores
+        o flex-box será aplicado), isso ajuda a trabalhar com responsividade.
+        d-sm-flex - small
+        d-md-flex - medium
+        d-lg-flex - large
+        d-xl-flex - extra large
+    -->
+    <div class="d-md-flex flex-column-reverse p-2">
+        <div class="align-self-end">1</div>
+        <div class="align-self-center">2</div>
+        <div class="align-self-start">3</div>
+    </div>
+
+    <h1 class="mt-5">5. Imagens -
+        <small>
+            <a href="https://getbootstrap.com/docs/4.0/content/images/" target="_black">Documentação Oficial</a>
+        </small>
+    </h1>
+    <hr>
+
+    <!-- Imagens -->
+    <!--
+      .mx-auto - classe para centralizar imagens no eixo x, ou seja, no eixo horizontal,
+       aplica um margin-left:auto e margin-right:auto.
+
+      .d-block - classe que seta o display como block.
+
+      .img-thumbnail - classe que aplica a imagem a aparência de uma borda de 1 px
+
+      .img-fluid - classe que faz a imagem ficar responsiva,
+       um max-width: 100%; e height: auto; são aplicados para a imagem para que ela cresca
+       respeitando o elemento pai.
+    -->
+    <div class="p-2">
+        <img src="../imgs/img1.png" class="mx-auto d-block" alt="imagem 1" width="400px">
+        <img src="../imgs/img1.png" class="img-thumbnail" alt="imagem 1" width="400px">
+        <img src="../imgs/img1.png" class="img-fluid rounded" alt="imagem 1" width="400px">
+    </div>
+
+    <h1 class="mt-5">6. Float -
+        <small>
+            <a href="https://getbootstrap.com/docs/4.0/utilities/float/" target="_black">Documentação Oficial</a>
+        </small>
+    </h1>
+    <hr>
+
+    <!-- Float -->
+    <!--
+        .float-left - classe que flutua os elementos par esquerda em todos os tamanhos de
+         viewport.
+
+        .float-right - classe que flutua os elementos para direita em todos os tamanhos do
+         viewport.
+
+         As classes abaixo ajudam a trabalhar com responsivade.
+         
+         .float-lg-right - classe que flutua para direita elementos para viewport lg(large) ou
+         maior.
+
+         .float-sm-right - classe que flutua para direita elementos para viewport sm(small) ou
+         maior.
+    -->
+    <div class="my-1 p-3 float-left">1</div>
+    <div class="my-1 p-3 float-right">2</div>
+    <div class="my-1 p-3 float-lg-right">3</div>
+    <div class="my-1 p-3 float-sm-right">4</div>
+</div>
+
+<style>
+    .exercicio div {
+        border: solid 8px #000;
+        font-size: 2rem;
+    }
+</style>

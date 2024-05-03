@@ -1,0 +1,299 @@
+<!-- Título (jumbotron) -->
+<div class="jumbotron p-4 my-1">
+    <h1 class="display-4">Componentes</h1>
+    <p class="lead m-1">Exemplo de alguns componentes do Bootstrap.
+    </p>
+ </div>
+<!-- Breadcrumb -->
+<nav class="mb-5">
+   <ol class="breadcrumb">
+       <li class="breadcrumb-item">
+          <a href="#/bemVindo.html">Home</a>
+       </li>
+       <li class="breadcrumb-item active">Componentes</li>
+   </ol>
+</nav>
+
+<h1>1. Botões -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Botões -->
+<!--
+     .btn - classe que indica que o elemento é um botão
+     .btn-primary - classe que indica a cor do botão
+     .btn-outline-success - classe que aplica uma outline de uma cor específica para o elemento
+
+      disabled - atributo booleano, ou seja, há um valor booleano associado a ele, quando
+      presente especifíca que o elemento deve estar desabilitado,  um elemento disabled é 
+      inutilizável.
+
+      data-toggle="button" - atributo que fará botão ter estado, ou seja, responder a clicks,
+      hovers e aplica também um estilo css associado paa cada uma das ações nele efetuadas.
+-->
+<div>
+    <div class="mb-3">
+        <button class="btn btn-primary">Salvar</button>
+        <button class="btn btn-secondary">Cancelar</button>
+        <button class="btn btn-outline-success">Finalizar</button>
+        <button class="btn btn-danger" disabled>Excluir</button>
+        <button class="btn btn-warning" data-toggle="button">Selecione</button>
+    </div>
+</div>
+
+<!--
+     .btn-group - classe que agrupa um conjunto de buttons
+     .active - classe que aplica um estilo ao elemento indicando que ele está ativo.
+ -->
+<div class="btn-group mb-3">
+    <button class="btn btn-info">Esquerda</button>
+    <button class="btn btn-info active">Centro</button>
+    <button class="btn btn-info">Direita</button>
+</div>
+
+<!-- 
+    .btn-lg - classe para setar largura do botão para large.
+    .dropdown-toggle - classe para adiciona o ícone do dropdown
+    .dropdown-item - classe que indica que o elemento é um item de um dropdown
+-->
+<div class="dropdown">
+    <button class="btn btn-danger btn-lg dropdown-toggle"
+     data-toggle="dropdown">Comprar</button>
+     <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Paypal</a>
+        <a href="#" class="dropdown-item">Pagseguro</a>
+     </div>
+</div>
+
+<h1 class="mt-5">2. Progresso -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/progress/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Progresso -->
+<!--
+     .progress - classe que indica qual é o elemento pai da progress bar, esse elemento marcado 
+     com essa classe pode agrupar várias progress-bar e cada um com um cor diferente, para dar
+     uma espécie de gradiente para a progress-bar.
+
+     .progress-bar - classe que indica que um elemento é a progress bar.
+-->
+ <div class="progress mb-4">
+    <div class="progress-bar" style="width:25%">25%</div>
+ </div>
+
+ <!--
+     .progress-bar-striped - classe que aplica um estilo diferenciado na progress-bar,
+      coloca faixas nela, alguma forma de gradiente alternado.
+-->
+ <div class="progress mb-4">
+    <div class="progress-bar progress-bar-striped bg-success" style="width:50%">50%</div>
+ </div>
+
+ <!--
+     Agrupando várias progress-bar dentro de um elemento marcado com a classe
+    .progress, para criar alguma espécie de gradiente para a progress bar.
+ -->
+ <div class="progress">
+    <div class="progress-bar bg-danger" style="width: 15%">15%</div>
+    <div class="progress-bar bg-primary" style="width: 30%">30%</div>
+    <div class="progress-bar bg-info" style="width: 20%">20%</div>
+    <div class="progress-bar bg-warning" style="width: 25%">25%</div>
+ </div>
+
+<h1 class="mt-5">3. Mensagens (Alertas) -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Alertas -->
+<!--
+    .alert - classe que marca um elemento como sendo um elemento em que será exibido alguma
+    alerta, seja de erro, sucesso, aviso ou perigo.
+
+    .alert-success - classe que marca um elemento como sendo um elemento em que será exibido
+    um alerta de sucesso.
+
+    .alert-heading - classe para título de um alerta.
+-->
+<div class="alert alert-success">
+     Operação realizada com sucesso!
+</div>
+<div class="alert alert-warning">
+    <strong>Cuidado</strong> Operação gerou um impacto no stock!
+</div>
+<div class="alert alert-danger">
+    <strong>Erro</strong> Ocorreu um erro inesperado!
+    <a href="#"  class="alert-link">Mais detalhes</a>
+</div>
+
+<div class="alert alert-success">
+   <h4 class="alert-heading">Parabéns!</h4>
+   <p>Processo realizado com sucesso</p>
+   <p class="mb-0">Pode ficar orgulhoso!</p>
+</div>
+
+<h1 class="mt-5">4. Paginação -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/pagination/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Peginação -->
+<!--
+    .pagination - classe que marca o elemento pai de todos os items da páginação
+    .page-item - classe que marca um item de paginação(li)
+    .page-link - classe que marca um link de um item da paginação(a)
+
+    .active - classe que indica qual item da paginação está ativo, ou seja, aquele cujo
+    seus resultados  estão sendo renderizados na página.
+
+    O link que o elemento marcado com a classe .page-link possui quando clicado
+    enviará um requisição para servidor para trazer os dados da página correspondente
+    a ele.
+-->
+<div>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link">Anterior</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<h1 class="mt-5">5. Tooltip -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/tooltip/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Tooltip -->
+ <div class="alert alert-danger">
+    Precisa chamar uma função JS!
+    <strong>E agora?</strong>
+ </div>
+
+ <!--
+     data-toggle='tooltip'  - propriedade que serve para alternar a exibição de uma
+     dica(textozinho) quando cursor do mouse ficar sob o elemento e sair dele.
+
+     data-placement='right' - propriedade que serve para informar qual será a posição em
+     que a dica será exibida, as opções de exibição são top, bottom, left, right.
+-->
+ <button class="btn btn-danger"
+         data-toggle="tooltip" data-placement="right"
+         title="Pense antes!">
+         Excluir
+ </button>
+
+<h1 class="mt-5">6. Slider -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/carousel/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Slider -->
+<div>
+    <div id="slider" class="carousel slide"  data-ride="carousel">
+       <div class="carousel-inner bg-dark">
+           <div class="carousel-item active">
+               <img src="../imgs/slide1.png" alt="Slide1" class="d-block mx-auto">
+           </div>
+           <div class="carousel-item">
+               <img src="../imgs/slide2.png" alt="Slide2" class="d-block mx-auto">
+           </div>
+           <div class="carousel-item">
+               <img src="../imgs/slide3.png" alt="Slide3" class="d-block mx-auto">
+           </div>
+       </div>
+       <a href="#slider" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+       </a>
+       <a href="#slider" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+     </a>
+    </div>
+</div>
+
+
+<h1 class="mt-5">7. Accordion -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/collapse/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Accordion -->
+<div class="mb-5" id="accordion">
+    <!-- Início card 1 -->
+   <div class="card">
+      <div class="card-header" id="pergunta1">
+        <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#resposta1">
+                Quem é o professor de programação mais legal??
+            </button>
+        </h5>
+      </div>
+      <div class="collapse" id="resposta1" data-parent="accordion">
+         <div class="card-body">
+             Posso dizer? :)
+         </div>
+      </div>
+   </div>
+   <!-- Fim card 1 -->
+
+   <!-- Início card 2 -->
+   <div class="card">
+    <div class="card-header" id="pergunta2">
+      <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#resposta2">
+              Teste2?
+          </button>
+      </h5>
+    </div>
+    <div class="collapse" id="resposta2" data-parent="accordion">
+       <div class="card-body">
+           Teste2!
+       </div>
+    </div>
+ </div>
+ <!-- Fim card 2-->
+</div>
+
+<!--
+  O código que está dentro da tag script e que foi obtido por meio de uma requisição ajax
+  não é executado na página de destino.
+-->
+<script>
+    /* Habilitando o tooltip */
+
+    /*
+       código não será executado por estar sendo obtido
+       a partir de uma requisição ajax sendo feita para
+       o servidor na qual essa página está hospedada.
+    */
+    $('[data-toggle="tooltip"]').tooltip() 
+</script>

@@ -60,3 +60,21 @@ outra máquina(da internet)?
 R: por causa do endereço ip, se endereço ip do endereço usado for 127.0.0.1, então a
 requisição será enviada para a minha própria máquina, se for outro endereço válido na
 internet, então a requisição será enviada para um processo(aplicação) a rodar na internet.
+
+Um servidor é um software responsável por aceitar pedidos em HTTP de clientes, geralmente os
+navegadores e servi-los com respostas em http, incluíndo opcionalmente dados, que geralmente
+são páginas web, tais como documentos HTML com objetos embutidos(imagens, etc).
+
+como o cliente envia a requisição do cliente para o servidor?
+R: por meio de uma url, que corresponde ao endereço na qual o servidor está hospedado.
+
+O http-server faz um cache dos arquivos que ele serve no browser, a menos que a opção
+-c-1 seja habilitada durante sua inicialização.
+
+o http-server é um servidor, que servirá os arquivos estáticos dentro de um determinado
+diretório, para que o cliente(navegador por exemplo) possa ter acesso a esses arquivos
+que estão hospedados no servidor, ele precisa fazer um requisição para endereço na qual
+o servidor está hospedado, num ambiente de desenvolvimento local, o servidor fica hospedado
+no endereço http://localhost:8080, o número que vem após o dois pontos(:) é a porta, que 
+representa qual processo com comunicação com rede rodando dentro da minha máquina atenderá
+a requisição.

@@ -1,0 +1,185 @@
+
+<!-- Título (jumbotron) -->
+<div class="jumbotron p-4 my-1">
+    <h1 class="display-4">Sistema de grid</h1>
+    <p class="lead m-1">Revolução da responsividade: Containers, Linhas e 12 colunas
+    </p>
+ </div>
+<!-- Breadcrumb -->
+<nav class="mb-5">
+   <ol class="breadcrumb">
+       <li class="breadcrumb-item">
+          <a href="#/bemVindo.html">Home</a>
+       </li>
+       <li class="breadcrumb-item active">Grid</li>
+   </ol>
+</nav>
+<p class="lead">
+    <a href="https://getbootstrap.com/docs/4.0/layout/grid/"
+        target="_black">Documentação Oficial</a>
+</p>
+
+<div class="exercicio">
+    <h1>1. Grid Básica</h1>
+    <hr>
+
+    <!-- Grid Básica -->
+    <!--
+        .container-fluid - classe que aplica um width: 100% para todos os viewports e
+        tamanhos de dispositivos.
+
+        .row - classe que indica que o elemento representa uma row do container
+
+       .col, .col-sm, .col-xs - classes que indicam que o elemento representa uma column de
+        uma row, mas sem especificar a largura específica para a columm(ou seja o número de
+        colunas das doze colunas por linha que ele ocupará), graças ao flexbox,
+        as colunas do grid sem uma largura especificada serão automaticamente dispostas
+        como colunas de largura igual.
+
+        .col-sm-6 - classes que indicam que o elemento representa uma column de uma row, 
+        e essa column ocupará 6 colunas das 12 por row do bootstrap  de dispositivos
+        small para cima.
+
+        breakpoints - width para colunas de uma grid em múltiplos dispositivos.
+        .col - classe que será aplicada para dispositivos extra small ou superior(isso caso não seja aplicada outra classe de breakpoint)
+        .col-sm - classe que será aplicada para dispositivos small ou superior(isso caso não seja aplicada outra classe de breakpoint)
+        .col-md - classe que será aplicada para disposivos médios ou superior(isso caso não seja aplicada outra classe de breakpoint)
+        .col-lg - classe que será aplicada para dispositivos largos ou superior(isso caso não seja aplicada outra classe de breakpoint)
+        .col.xl - classe que será aplicada para dispositivos extra largos ou superior(isso caso não seja aplicada outra classe de breakpoint)
+
+        .col-4 - classe que indica que o elemento representa uma coluna e que esse
+        elemento ocupará o equivalente a 4 colunas das 12 colunas possíveis por linha, isso
+        para dispositivos extra small ou superior(isso caso não seja aplicada outra classe de breakpoint)
+          
+     -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col bg-primary">1</div>
+            <div class="col bg-danger">2</div>
+            <div class="col bg-warning">3</div>
+            <div class="col bg-info">4</div>
+        </div>
+        <div class="row mt-3">
+            <div class="col bg-danger">1</div>
+            <div class="col-4 bg-warning">2</div>
+            <div class="col-5 bg-info">3</div>
+            <div class="col bg-primary">4</div>
+        </div>
+    </div>
+
+    <h1 class="mt-5">2. Grid Responsiva</h1>
+    <hr>
+   <!--
+     Aplicando mais de um  breakpoint para a largura das columns, ou seja, dependendo
+     do tamanho da tela, as colunas terão larguras diferentes, ou seja, ocuparão quantidades
+     diferentes de colunas das 12 colunas por linha.
+   -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-primary">1</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-danger">2</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">3</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-info">4</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-success">5</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-secondary">6</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-danger">7</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-info">8</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-success">9</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-secondary">10</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">11</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-primary">12</div>
+        </div>
+    </div>
+
+
+    <!-- Grid Responsiva -->
+
+    <h1 class="mt-5">3. Quebra de Linha</h1>
+    <hr>
+
+    <!-- Quebra de Linha -->
+    <!--
+        .w-100 - classe que quebra a row antes de outras columns ocuparem toda sua
+        largura, pois ela fará o elemento na qual ela é aplicada ocupe o restante da
+        largura da row, logo, as próximas columns da row estarão na linha abaixo(isso
+        apenas visualmente)  pois fisicamente(na marcação html) todas as columns estarão
+        dentro da mesma row, ela força próximas colunas a quebrar para uma nova row, ela 
+        é uma largura de 100%.
+    -->
+    <div class="container-fluid">
+       <div class="row">
+           <div class="col-3 bg-primary">1</div>
+           <div class="col-3 bg-danger">2</div> <!-- row quebrará aqui, 3 columns + 3 columns + 7 columns ultrapassa as 12 columns por row, nesse caso é desnecessário a classe -w-100 para quebrar a linha, pois 3 columns + 3 columns + 7 columns = 13 columns já não caibem na mesma row, ele já quebrará naturalmente -->
+           <div class="col-7 bg-danger">2</div> 
+           <div class="w-100 bg-success">2.1</div>
+           <div class="col-3 bg-warning">3</div>
+       </div>
+    </div>
+
+    <h1 class="mt-5">4. Ordem</h1>
+    <hr>
+
+    <!-- Ordem -->
+    <!--
+         .order-5 - classe que aplica uma ordem para a column, quando maior a ordem, mais
+          elemento fica no final da row e quanto menor, mais o elemento fica no início
+          da row.
+    -->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 order-5 bg-primary">1</div>
+          <div class="col-4 order-12 bg-danger">2</div>
+          <div class="col-4 order-1 bg-warning">3</div>
+        </div>
+    </div>
+
+    <h1 class="mt-5">5. Offset</h1>
+    <hr>
+
+    <!-- Offset -->
+    <!--
+        offset-7 - classe que aplica um deslocamento dado em colunas numa célula, nesse
+        caso a célula se deslocará 7 colunas, isso para telas extra-small ou superior.
+
+        breakpoints para vários dispositivos para deslocamento da célula.
+        offset-sm-7 - deslocamento de 7 células para telas small ou superior
+        offset-md-7 - deslocamento de 7 células para telas medium ou superior
+        offset-lg-7 - deslocamento de 7 células para telas large ou superior
+        offset-xl-7 - deslocamento de 7 células para telas extra large ou superior
+    -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 offset-7 bg-primary">1</div>
+            <div class="col-4 offset-3 bg-primary">1</div>
+        </div>
+    </div>
+
+    <h1 class="mt-5">6. Alinhamento</h1>
+    <hr>
+
+    <!-- Alinhamento -->
+    <!--
+        O sistema de grid do bootstrap é baseado no flexbox, então tem como
+        usar recursos do flexbox para fazer alinhamento.
+
+        .align-self - classe que posiciona elementos no cross axis, que nesse caso é
+         o eixo vertical, pois por padrão o main-axis do flexbox é a row(eixo horizontal).
+    -->
+    <div class="container-fluid">
+        <div class="row h-300">
+            <div class="col-4 align-self-end bg-primary">1</div>
+            <div class="col-4 align-self-center bg-danger">2</div>
+            <div class="col-4 align-self-start bg-warning">3</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .exercicio div {
+        font-size: 1.5em;
+    }
+
+    .h-300 {
+        height: 300px;
+    }
+</style>

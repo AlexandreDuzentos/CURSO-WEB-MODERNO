@@ -12,7 +12,7 @@
 
        /*
          A declaração display flex fará com esse elemento se transforme num flex-container
-         e todos os elementos dentro dele serão flex-items, o eixo principal por padrão
+         e todos os elementos dentro dele serão flex-items, o eixo principal(main-axis) por padrão
          é o eixo da linha(row).
        */
        .flex-container{
@@ -20,10 +20,10 @@
            display:flex;
 
             /*
-            O valor row-reverse faz o mesmo que apenas o row, com exceção que as direções
-            do main start e do main end são trocadas e os flex-items flutuam para a direita(right)
+            O valor row-reverse faz com que main-axis seja o eixo x, os os flex-items ficarão
+            o display inline.
            */
-           flex-direction:row-reverse;
+           flex-direction:row;
 
 
             /*
@@ -66,7 +66,8 @@
              o flex-wrap faz com que os flex-items respeitem as delimitações(dimensões do flex
              container).
 
-             o nowrap faz o inverso do wrap.
+             o nowrap faz o inverso do wrap, ou seja, os flex-items podem transpor as delimitações
+             (dimensões do flex-container).
             */
            flex-wrap:wrap;
 
@@ -130,7 +131,7 @@
             /* o flex-end alinha os flex-items no final do cross end */
             align-items:flex-end;
 
-            /* o center alinha os flex-items no centro do cross axis */
+            /* o center alinha os flex-items no centro do cross axis, ou seja, entre o cross start e o cross end */
             align-items:center;
 
 

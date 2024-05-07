@@ -17,7 +17,8 @@ modo de production.
 "scripts": {
     "start": "webpack"
 }
-npm start - comando que executará o comando webpack para rodar o webpack no modo de development.
+npm start - comando que executará o comando webpack para rodar o webpack no modo de
+development e gerará um novo build com os arquivos atualizados.
 
 
 "scripts": {
@@ -26,7 +27,9 @@ npm start - comando que executará o comando webpack para rodar o webpack no mod
 npm start - quando for executado, inicializará o servidor webpack-dev-server, e também executará
 internamente o webpack, e o webpack-dev-server servirá os arquivos que estão dentro de sua pasta raíz, que
 é a pasta public, quando ocorrer alguma alteração nos arquivos que estão no radar do webpack, o
-web-dev-server se recarregará automaticamente e gerará um novo build com os arquivos atualizados
+web-dev-server se recarregará automaticamente e gerará um novo build com os arquivos atualizados em 
+memória, ou seja, ele não gera arquivos físicos no disco, quem gera arquivos físicos é
+apenas o comando setado acima desse que executa o projeto no modo development.
 
 E webpack-dev-server é um servidor local, logo, ele ficará hospedado na minha própria máquina,
 logo, o acesso a ele será feito através do endereço http://localhost:9090.

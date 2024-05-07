@@ -1,0 +1,17 @@
+/*
+Importando arquivo sass do bootstrap(extensão scss) de dentro da pasta node_modules, é para isso 
+que serve o tíl(~), para referenciar a pasta node_modules, colocar a extensão scss é
+opcional.
+*/
+@import "~bootstrap/scss/bootstrap.scss";
+
+/*
+Sobrescrevendo variável do sass do font-awesome para dizer onde ele vai encontrar o 
+diretório das fonts.
+*/
+$fa-font-path: "~font-awesome/fonts";
+
+/* Importando arquivo sass do font-awesome de dentro da pasta node_modules  */
+@import "~font-awesome/scss/font-awesome.scss";
+
+@import "custom";

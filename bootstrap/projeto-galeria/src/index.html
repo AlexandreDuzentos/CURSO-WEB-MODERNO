@@ -8,9 +8,20 @@
     <title>Galeria de Fotos</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
+     <header wm-include="/pages/template/header.html"></header>
 
+     <!--
+         Quando uma página obtida a partir de uma requisição ajax é incluída
+         noutra página, quando dentro dessa página que foi recebida há a necessidade
+         de ser executado algum código javascript, para interpretar por exemplo
+         alguma atributo que foi setado no html da página obtida via ajax, esse código
+         não é chamado por padrão, eu só poderia chamar esse código que interpreta 
+         esse atributo que foi definido na página html obtida via ajax se eu pudesse
+         interceptar o código js que seria executado para aquela página.
+    -->
+     <main class="bg-light" wm-include="/pages/galery/galery.html"></main>
+     <footer class="" wm-include="/pages/template/footer.html"></footer>
     <script src="app.js"></script>
 </body>
 

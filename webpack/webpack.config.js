@@ -6,7 +6,9 @@
  * O arquivo de configuração do webpack fica no diretório raíz do projeto.
  */
 
-/** process.env retorna um objeto contendo o ambiente do usuário */
+/** process.env retorna um objeto contendo o ambiente do usuário e do ambiente do usuário
+ * está sendo acessado a variável de ambiente NODE_ENV.
+ */
 const modoDev = process.env.NODE_ENV != "production"
 
 const fileLoader = require("file-loader") // loader para atender arquivos de imagem
@@ -44,7 +46,7 @@ module.exports = {
        port: 9000
     },
 
-    /** Toda configuração contida na prop optimization é executada apenas se o webpack estiver em modo de produção(production) */
+    /** Toda configuração contida na prop optimization é executada apenas se o projeto estiver em modo de produção(production) */
    optimization: {
         minimizer: [
            new UglifyJSPlugin({
@@ -91,7 +93,7 @@ module.exports = {
               /*
               loader para atender arquivos de imagem, os arquivos de imagem já entram no radar do
               webpack através do import do arquivo de css, pois o arquivos de css fazem referência
-              aos arquivo de imagem, e o arquivo de imagem será movido para a pasta de saída do gulp
+              aos arquivo de imagem, e o arquivo de imagem será movido para a pasta de saída do webpack
               do webpack.
               */
               "file-loader" 

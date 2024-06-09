@@ -1,0 +1,32 @@
+Create React App é uma forma oficial suportada para criar aplicações single page React.
+Ele oferece um setup moderno para com zero configuração.
+
+Não é necessário instalar or configurar ferramentas como o gulp  ou o webpack. elas
+são pré-configuradas e ocultadas para que você possa se focar no código da aplicação
+de fato.
+
+O pacote create-react-app usa um build do webpack por baixo dos panos, nós não
+teremos acesso direto aos scripts do webpack que foram gerados por ele por padrão.
+
+Mas tem como ter acesso aos scripts do webpack gerados por ele.
+
+Passo a passo para criar e rodar um projeto react usando o pacote create-react-app
+
+1 - rodar o comando npx create-react-app nome_da_app
+2 - acessar a pasta da aplicação - cd nome_da_app
+3 - rodar a aplicação - npm start
+
+documentação do pacote creact-react-app: https://create-react-app.dev/docs/getting-started/
+
+ "scripts": {
+    "start": "react-scripts start", - o script start inicia a aplicação react
+    "build": "react-scripts build", - o script build constrói o build da sua aplicação para ser enviado para a produção
+    "test": "react-scripts test", - o script test executa os testes da minha aplicação
+    "eject": "react-scripts eject" - o script eject faz com que o projeto exponha o build do webpack, para que você possa eventualmente personaliza-lo
+  },
+
+react-dom : é o pacote do react que comunica-se especificamente com a DOM, com a página.
+
+react: é o pacote do core da biblioteca, ele terá todas a chamadas que serão geradas a partir
+da conversão dos elementos JSX(<h1></h1>) para de fato chamar todas as funções internas do
+React para gerar isso.

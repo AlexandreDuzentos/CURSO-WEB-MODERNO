@@ -32,3 +32,7 @@ compatibilidade entre as versões das dependências. Ao instalar uma nova depend
 se ela é compatível com as versões das dependências já presentes no projeto para evitar
 conflitos e problemas de funcionamento. Pode ser necessário analisar a documentação das
 dependências e realizar testes para garantir que tudo funcione corretamente.
+
+Package-lock-json  reference:
+
+https://medium.com/@allangrds/tudo-que-voc%C3%AA-queria-saber-sobre-o-package-lock-json-mas-estava-com-vergonha-de-perguntar-e70589f2855f

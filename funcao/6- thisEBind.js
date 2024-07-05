@@ -68,3 +68,9 @@ speak2()
 
 /** Tudo oque está dentro de um objeto faz parte do seu contexto */
 
+/*
+O This dentro de uma função varia de acordo com quem chama a função ou seja em
+qual contexto foi chamada a função, para que o this dentro de uma função aponte para
+um local específico podemos usar a função bind para atingir esse objetivo.
+ */
+

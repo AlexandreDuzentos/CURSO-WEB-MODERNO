@@ -1,0 +1,16 @@
+json-server: é um pacote que disponibiliza uma API
+rest falsa,ou seja,  sem a necessidade de programarmos
+a API(Backend), é uma API completa na qual os dados são enviados
+para o cliente ou consumidor da API no formato JSON, ele suporta
+todos os verbos de requisição http.
+
+O json-server foi criado para desenvolvedores front-end que precisam de um backend rápido
+para protitipar e mockar(ter os dados de mentirinha e não os dados verdadeiros do banco de dados).
+
+Todas as operação do crud serão feitas com base no arquivo db.json, que é uma simulação
+de um banco de dados real.
+
+O json-server é um servidor na qual o minha API REST fake fica hospedada, ele representa
+a minha aplicação backend.
+
+e o banco de dados é representado pelo arquivo db.json.

@@ -1,0 +1,42 @@
+Criando um projeto nextjs
+
+npx create-next-app nomeDaApp - comando para criar um projeto next js.
+
+Durante o wizard de instalação, para que eu escolha as opções yes/no para
+instalar determinada dependência, preciso usar as setar de direção do teclado.
+
+npm run dev - comando para rodar o projeto nextJS no modo de desenvolvimento.
+
+ next JS:
+
+ O Next.JS nada mais é do que um framework para React, a principal biblioteca para
+ desenvolvimento web. Ele acrescenta uma série de funcionalidades para o react,
+ As principais funcionalidades do Next são a renderização estática
+ e pelo lado do servidor (SSR), possuir suporte para o TypeScript e um serviço próprio de
+ tratamento de rotas.
+
+ O next.JS é um framework FullStack, ele vai te dar tanto a parte do front-end, como ele
+ vai também permitir que você crie a sua API dentro dele.
+
+ Estrutura de pastas: 
+ 
+ Por padrão o next usa a pasta styles para armazenar os arquivos de css da sua aplicação.
+
+ Os arquivos css no Next seguem dois padrões de nomenclatura: 
+ 
+ 1- fileName.css - arquivo css global, ou seja, todo e qualquer componente está sujeito a ser modificado por um css desse tipo.
+ 2- FileName.module.css -  arquivo css escopado ou modularizado, esse css irá impactar componentes específicos.
+
+ Por padrão a pasta public é usada para armazenar arquivos de imagens, arquivos de fontes,
+ eventualmente um vídeo que você queira colocar.
+
+ Eu preciso exportar as funções que o Next consiga ler(enchergar) essas funções e executá-las.
+
+ Arquivos criados dentro da pasta pages com extensão jsx, permitem que eu tenha acesso
+ a um caminho com o nome respectivo daquele arquivo na URL.
+
+ Por exemplo, se eu criar um arquivo teste.jsx dentro da pasta pages, automáticamente a partir
+ da URL eu consigo acessar esse arquivo a partir do endereço e da porta na qual a aplicação
+ next está rodando + o nome do arquivo, que seria nesse caso http://localhost:8080/teste e 
+ também consigo navegar entre pastas pela url, caso haja pastas entre a pasta pages e o arquivo jsx.
+ 

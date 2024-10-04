@@ -39,4 +39,6 @@ npm run dev - comando para rodar o projeto nextJS no modo de desenvolvimento.
  da URL eu consigo acessar esse arquivo a partir do endereço e da porta na qual a aplicação
  next está rodando + o nome do arquivo, que seria nesse caso http://localhost:8080/teste e 
  também consigo navegar entre pastas pela url, caso haja pastas entre a pasta pages e o arquivo jsx.
+
+ extensões suportadas pelo nextJS: js,ts,jsx,tsx.
  

@@ -1,0 +1,10 @@
+Instalação do vue:
+
+npm i -g @vue/cli - instala o vue de forma global
+vue create app_name - cria um aplicação vue chamada app_name
+
+vue add vuetity - adicionando o pacote vuetify, que é um framework que prové
+uma série de componentes vue prontos.
+
+vue add electron-builder - adicionando o pacote electron-builder, que é o pacote
+que precisamos para incluirmos o electron na nossa aplicação vue. 

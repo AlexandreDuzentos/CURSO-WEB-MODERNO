@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diretiva Personalizada</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+     <div id="app">
+        <input type="text" v-model="nome">
+
+        <!--
+          O valor associado a diretiva v-inverter é interpretado
+          pelo vue como uma propriedade ou atributo calculado
+          presente na vue instance.
+         -->
+        <div v-inverter="nome"></div>
+     </div>
+    <script>
+        /* Criação de diretivas personalizadas */
+        Vue.directive('inverter', {
+
+            /*
+             A função abaixo será invocada quando o estado do
+             componente for modificado.
+
+             el: representa o elemento na qual a diretiva encontra-se
+
+             binding: é o valor associado a diretiva, que nesse caso,
+             é a propriedade nome que faz parte do estado do
+             componente, o bindind é o valor para qual a diretiva aponta.
+             */
+            componentUpdated(el, binding){
+               const invertido = binding.value.split("")
+               .reverse()
+               .join()
+               .replaceAll(",", "")
+
+               el.innerHTML = invertido
+            }
+        })
+
+        new Vue({
+                el: "#app",
+                data: {
+                    nome: ""
+                }
+            })
+    </script>
+</body>
+</html>

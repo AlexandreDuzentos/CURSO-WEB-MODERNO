@@ -8,6 +8,12 @@ const n3 = 3
 const numbers = {n1:n1, n2:n2, n3:n3}
 console.log(numbers)
 
+
+/*
+ Se o nome da variável de onde provém o valor é igual ao nome da
+ chave que queremos usar no objeto, não precisamos repetir a chave.
+*/
+
 // Sintaxe na versão ES5(ecmascript 2016)
 const numbers2 = {n1, n2, n3}
 console.log(numbers2)

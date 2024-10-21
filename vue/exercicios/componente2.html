@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Componente</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+     <div id="app">
+        <contador></contador>
+        <contador></contador>
+        <contador></contador>
+     </div>
+    <script>
+        Vue.component("contador", {
+            /*
+              O estado do componente é retornado pela função
+              abaixo e o estado é único para cada componente,
+              pois o estado é retornado dentro de um objeto
+              pela função, e cada objeto retornado possui uma
+              referênciadiferente e portanto os dados são
+              independentes de componente para componente.
+            */     
+            data: function(){
+                return {
+                    contador: 0
+                }
+            },
+
+            methods: {
+                /* O método incrementar modificará o estado do componente */
+                incrementar(){
+                   this.contador++
+                }
+            },
+            template: `
+               <div>
+                  <h1>{{ this.contador }}</h1>
+                  <button @click="this.incrementar">+1</button>
+               </div>
+               
+            `
+        })
+        new Vue({
+            el: "#app"
+        })
+    </script>
+</body>
+</html>

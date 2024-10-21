@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicando Estilo</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+    <style>
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body class="exercicio">
+    <!--
+       O :(dois pontos) antes do atributo class fará com que o vue
+       monitore ele, ou seja, faça um binding
+
+       Nesse exemplo, a classe vermelho será aplicada de forma
+       condicional, caso a variável aplicarCor seja true, a classe
+       será aplicada, caso contrário, a classe não será aplicada.
+
+       Se o seletor não for um identificador válido para o JS, coloque
+       ele entre aspas simples.
+     -->
+     <div id="app" v-on:click="mudarCor"
+        :class="{'vermelho': aplicarCor}">
+         Teste
+     </div>
+    <script>
+         new Vue({
+            el: "#app",
+            data: {
+                aplicarCor: false
+            },
+            methods: {
+                mudarCor(){
+                    this.aplicarCor ? this.aplicarCor = false : this.aplicarCor = true
+                    return this.aplicarCor
+                }
+            }
+         })
+    </script>
+</body>
+</html>

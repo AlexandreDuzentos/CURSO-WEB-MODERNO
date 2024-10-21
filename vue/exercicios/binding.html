@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Binding</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+    <div id="app">
+        <!--
+          Uma diretiva fará com o valor associado a ela seja interpretado
+         como um valor presente na vue instance.
+         -->
+         
+        <p>{{ link }}</p>
+        <!--
+         Colocar o double mustache diretamente dentro do
+         valor de um atributo não funciona, precisamos usar
+         alguma diretiva, como o  v-bind ou v-model
+        -->
+        <p><a href="{{ link }}">Youtube</a></p>
+
+        <!--
+         O v-bind é uma diretiva do vue, de uma forma geral, ua
+         diretiva é uma indicação, instrução ou norma que deve orientar
+         uma atividade ou ação, nesse caso essa diretiva indicará que
+         a valor da propriedade link deve ser resolvido(tratado), e a
+         esse processo, nós chamamos de binding.
+         -->
+        <p><a v-bind:href="link">Canal</a></p>
+
+        <!--
+          O uso do v-bind: é opcional, apenas o :(dois pontos) antes
+          da propriedade html é o suficiente.
+         -->
+        <p><a :href="link">Canal</a></p>
+
+        <p>
+            <!--
+             Com o uso do v-model, quando eu modificar o 
+             valor presente no input na interface gráfica,
+             o valor presente na instância do vue mudará, e
+             quando eu modificar o valor na instância do vue,
+             o valor presente na interface gráfica também mudará
+             ou seja, o que teremos aqui é um two-way data-binding.    
+             -->
+            <input type="text" v-model="nome">
+
+            <!--
+             Com o uso do v-bind, quando eu modificar o 
+             valor presente no input na interface gráfica,
+             o valor presente na instância do vue não mudará, e
+             quando eu modificar o valor na instância do vue,
+             o valor presente na interface gráfica mudará
+             ou seja, o que teremos aqui é um one-way data-binding. 
+             
+             o dois pontos(:) value faz o mesmo que v-bind:value.
+             -->
+            <input type="text" :value="nome">
+            <span>{{ nome }}</span>
+        </p>
+
+    </div>
+    <script>
+        /*
+         O objeto passado como argumento para a
+         minha instância serve para configura-la
+        */
+        new Vue({
+            el: "#app",
+            data: {
+              nome: "Maria",
+              link: "https://youtube.com/cod3rcursos"
+            },
+            watch: { // dentro desse objeto eu posso ter várias funções que monitoram a alteração de valores de alguma propriedade na interface gráfica, isso funciona apenas para o caso do v-model
+                /* Função que monitora a alteração de valor na propriedade nome */
+                nome(novoValor){
+                 console.log(novoValor)
+              }
+
+            }
+
+        })
+    </script>
+</body>
+</html>

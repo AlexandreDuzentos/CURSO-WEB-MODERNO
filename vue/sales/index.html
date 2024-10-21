@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/vue.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Relatório de Vendas</title>
+</head>
+
+<body>
+    <div id="app">
+       <div class="container">
+          <h1 class="mt-3">{{ titulo }}</h1>
+          <table class="mt-5 table" v-if="totalByProduct">
+              <thead>
+                 <tr>
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td>Total</td>
+                 </tr>
+              </thead>
+              <tbody>
+                 <tr v-for="(sale, index) in totalByProduct">
+                    <td>{{ sale.ID }}</td>
+                    <td>{{ sale.name }}</td>
+                    <td v-money="'R$'">{{ sale.value }}</td>
+                 </tr>
+              </tbody>
+              <tfoot>
+                 <tr>
+                    <td>+</td>
+                    <td>Total</td>
+                    <td v-money="'R$'">{{ calculateTotal(totalByProduct) }}</td>
+                 </tr>
+              </tfoot>
+          </table>
+          <!--
+          <table class="mt-5 table">
+              <thead>
+                  <tr>
+                     <td>ID</td>
+                     <td>Nome</td>
+                     <td>Preco</td>
+                     <td>Qtde</td>
+                     <td>Data</td>
+                     <td>Total</td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr v-for="sale in sales">
+                    <td>{{ sale.id }}</td>
+                    <td>{{ sale.name }}</td>
+                    -->
+                    <!--
+                     O vue interpretará o valor associado a
+                     diretiva v-money como uma string literal,
+                     se as aspas simples não estivessem sendo usadas,
+                     a vue tentaria interpretar o valor como uma propriedade
+                     ou atributo calculado presente na vue instance.
+                    -->
+                     <!--
+                    <td v-money="'R$'">{{ sale.price }}</td>
+                    <td>{{ sale.qtde }}</td>
+                    <td>{{ sale.date }}</td>
+                    <td v-money="'R$'">{{ sale.price * sale.qtde}}</td>
+                  </tr>
+              </tbody>
+          </table>
+        -->
+       </div>
+    </div>
+    <script>
+        Vue.directive("money", {
+            /*
+              A função inserted é chamada quando o elemento que
+              estiver associado a diretiva for adicionado na DOM.
+
+               o el é o elemento associado à diretiva.
+               o binding é o valor associado à diretiva, que pode
+               ser interpretado como uma String ou uma propriedade
+               dependendo da forma como ele é associado a diretiva.
+
+               v-money="R$" - dessa maneira o vue tentará interpretar
+               o valor dentro da diretiva v-money como uma propriedade
+               da minha vue instance.
+
+               v-money="'R$'" - dessa maneira o vue interpretará
+               o valor dentro da diretiva v-money como uma String
+               da minha vue instance.
+            */
+            inserted(el, binding){
+                const amount = parseFloat(el.innerHTML)
+                               .toFixed(2)
+                               .replace(".", ",")
+                               .replace(/(\d)(?=(\d{3})+\,)/g, '$1.')
+
+                    el.innerHTML = `${binding.value} ${amount}`
+            }
+        })
+
+        new Vue({
+            el: "#app",
+            data: {
+                titulo: "Relatório de vendas",
+                sales: null
+            },
+            methods: {
+                getSales(){
+                    fetch("/data/sales.json")
+                    .then(resp => resp.json())
+                    .then(data => this.sales = data)
+                    
+                },
+                /* Função responsável por calculacar o total geral */
+                calculateTotal(sales){
+                    if(!sales) return 0
+                       return sales.reduce((total, atual) => total + atual.value, 0)     
+                },
+            },
+
+            computed: {
+                /* Função responsável por calcular o total por produto */
+                totalByProduct(){
+                   if(!this.sales) return null
+
+                   const salesByProduct = this.sales.reduce((grouped, sale) => {
+                        if(!grouped.hasOwnProperty(sale.name)){
+                             grouped[sale.name] = {
+                                ID: sale.id,
+                                name: sale.name,
+                                value: sale.price * sale.qtde
+                             }
+                             return grouped
+                        }
+
+                        grouped[sale.name].value += sale.price * sale.qtde
+                        return grouped
+                   }, {})
+
+                   return Object.values(salesByProduct)
+                }
+            },
+
+            /*
+             A função mounted será chamada quando vue instance
+             for montar o template associado a ele, ou seja, 
+             antes do elemento controlado pelo vue ser renderizado.
+            */
+            mounted(){
+               this.getSales()
+            }
+
+             
+        })
+    </script>
+</body>
+
+</html>

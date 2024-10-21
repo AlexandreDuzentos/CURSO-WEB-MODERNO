@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Componente</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+     <div id="app">
+        <saudacao nome="Alexandre" idade="21" dataNascimento="16/05/2003"></saudacao>
+     </div>
+    <script>
+        /* Criação de componente em vue */
+        /*
+          Dentro do componente também podemos ter o atributo
+          data e methods e outros também.
+        */
+        Vue.component("saudacao", {
+            /* Propriedades que devem ser passadas para o componente saudacao */
+             props: ['nome', 'idade', 'dataNascimento'],
+             /*
+              Quando estivermos a trabalhar com dados dentro
+              de um componente, teremos que retornar uma função, isso porque
+              para cada componente você terá que retornar os dados que
+              pertencem a áquele componente, ou seja, um objeto com uma referência
+              única que possui os dados daquele componente, para cada
+              componente a referência do objeto será diferente.
+             */
+             data: function(){
+                  return {
+                    contador: 0
+                  }
+             },
+
+             /* Texto que será renderizado pelo componente saudacao */
+             template: ` 
+                  <p>Meu nome é {{this.nome}}, tenho {{this.idade}}.</p>
+             `
+        })
+
+        new Vue({
+            el: "#app"
+        })
+    </script>
+</body>
+</html>

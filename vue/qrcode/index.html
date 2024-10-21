@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/vue.min.js"></script>
+    <!--
+      o qriuos é uma biblioteca js que permite gerar
+      código qr.
+     -->
+    <script src="js/qrious.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerador de QRCode</title>
+</head>
+
+<body>
+   <div id="app">
+       <h1>{{ title }}</h1>
+       <div>
+           <!--
+             o @input é um evento do próprio vue que é
+             disparado quando algum texto é digitado dentro
+             do input.
+            -->
+           <input type="text" size="25"
+             placeholder="Digite para gerar"
+             v-model="text"
+             >
+
+             <div v-if="text" class="output">
+                 <img :src="newQRCode" alt="QRCode">
+             </div>
+       </div>
+   </div>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                title: "gerador de QRCode",
+                text: "http://www.cod3r.com.br",
+                qrCode: new QRious({
+                    size: 300
+                })
+            },
+            computed: {
+                newQRCode(){
+                    /*
+                     O atributo value representa o valor que estará
+                     codificado dentro do qrCode.
+                    */
+                    this.qrCode.value = this.text
+
+                    /*      
+                     Gerando o QRCode
+
+                     A função toDataURL Gera um URI de dados codificado
+                     em base64 para o código QR.
+
+                     Base64 é um grupo de esquemas de codificação
+                     binário-para-texto que transforma dados binários
+                     em uma sequência de caracteres imprimíveis,
+                     limitados a um conjunto de 64 caracteres
+                     exclusivos.
+                    */
+                    return this.qrCode.toDataURL()
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

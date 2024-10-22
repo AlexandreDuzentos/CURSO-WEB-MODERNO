@@ -1,0 +1,4550 @@
+﻿1
+00:00:00,935 --> 00:00:03,003
+(ELEVATOR WHIRRING)
+
+2
+00:00:08,843 --> 00:00:10,745
+(ELEVATOR DINGS)
+
+3
+00:00:42,142 --> 00:00:49,751
+
+4
+00:00:49,851 --> 00:00:53,721
+(WIND BLOWING)
+
+5
+00:01:06,834 --> 00:01:09,303
+ANA:
+<i>When I was a child,</i>
+<i>my mother told me that</i>
+
+6
+00:01:09,403 --> 00:01:12,372
+<i>humans are capable</i>
+<i>of the best and the worst.</i>
+
+7
+00:01:13,908 --> 00:01:15,309
+She was wrong.
+
+8
+00:01:15,409 --> 00:01:18,111
+Some are
+only capable of the worst.
+
+9
+00:01:23,851 --> 00:01:27,321
+<i>The natives have a legend</i>
+<i>about those people:</i>
+
+10
+00:01:27,421 --> 00:01:30,457
+<i>a legend as old as the mountains</i>
+<i>of this region.</i>
+
+11
+00:01:34,194 --> 00:01:36,463
+<i>They say that in time of famine,</i>
+
+12
+00:01:36,564 --> 00:01:39,466
+<i>an evil spirit comes out</i>
+<i>of the woods to possess</i>
+
+13
+00:01:39,567 --> 00:01:42,870
+<i>those who had cannibalised</i>
+<i>the flesh of their peers.</i>
+
+14
+00:01:45,372 --> 00:01:48,141
+<i>It appears first in the dreams,</i>
+
+15
+00:01:48,241 --> 00:01:50,143
+<i>but it's already</i>
+<i>too late for them.</i>
+
+16
+00:01:54,549 --> 00:01:58,052
+<i>They're damned,</i>
+<i>condemned to become like it:</i>
+
+17
+00:01:58,151 --> 00:02:01,421
+<i>a wandering soul seeking</i>
+<i>human flesh.</i>
+
+18
+00:02:01,522 --> 00:02:05,994
+<i>Always insatiable.</i>
+<i>Never satisfied.</i>
+
+19
+00:02:06,094 --> 00:02:14,602
+(♪♪♪)
+
+20
+00:02:52,907 --> 00:02:53,741
+(ENGINE STARTS)
+
+21
+00:02:53,841 --> 00:02:55,409
+NEWSREADER: (ON RADIO)
+(INDISTINCT SPEECH)
+
+22
+00:02:55,510 --> 00:02:57,879
+<i>Our top story this hour is</i>
+<i>still the weather outside</i>
+
+23
+00:02:57,979 --> 00:03:00,615
+<i>being not just frightful,</i>
+<i>but downright deadly.</i>
+
+24
+00:03:00,715 --> 00:03:03,483
+<i>50 below zero range,</i>
+<i>temperatures below minus 20,</i>
+
+25
+00:03:03,584 --> 00:03:05,185
+<i>and whether you're being</i>
+<i>naughty or nice,</i>
+
+26
+00:03:05,285 --> 00:03:08,255
+<i>frostbite and hypothermia</i>
+<i>are all on the list.</i>
+
+27
+00:03:08,355 --> 00:03:10,257
+<i>With no relief sight</i>
+<i>until Friday,</i>
+
+28
+00:03:10,357 --> 00:03:12,927
+<i>even Santa Claus may not be</i>
+<i>coming to town.</i>
+
+29
+00:03:13,027 --> 00:03:14,796
+<i>More on this at 10:41.</i>
+
+30
+00:03:14,896 --> 00:03:23,938
+(♪♪♪)
+
+31
+00:03:27,642 --> 00:03:31,378
+<i>♪ A few more days to Christmas ♪</i>
+
+32
+00:03:31,478 --> 00:03:34,582
+<i>♪ My favorite time of year ♪</i>
+
+33
+00:03:34,682 --> 00:03:38,653
+<i>♪ If we're lucky,</i>
+<i>we'll see Santa ♪</i>
+
+34
+00:03:38,753 --> 00:03:42,023
+<i>♪ Rudolph</i>
+<i>and his eight reindeer ♪</i>
+
+35
+00:03:42,123 --> 00:03:45,960
+<i>♪ The snow keeps on falling ♪</i>
+
+36
+00:03:46,060 --> 00:03:49,463
+<i>♪ Sledding down the hill ♪</i>
+
+37
+00:03:49,564 --> 00:03:53,167
+<i>♪ Frost keeps frozen</i>
+<i>on the log ♪</i>
+
+38
+00:03:53,266 --> 00:03:56,704
+<i>♪ Counting down the days until ♪</i>
+
+39
+00:03:56,804 --> 00:04:00,407
+<i>♪ We gather round,</i>
+<i>decorate the tree ♪</i>
+
+40
+00:04:00,508 --> 00:04:03,911
+<i>♪ Singing holiday songs ♪</i>
+
+41
+00:04:04,011 --> 00:04:07,181
+<i>♪ Spices fill the air ♪</i>
+
+42
+00:04:07,280 --> 00:04:11,052
+<i>♪ Smell the cookies everywhere ♪</i>
+
+43
+00:04:11,152 --> 00:04:14,589
+<i>♪ A few more days to Christmas ♪</i>
+
+44
+00:04:14,689 --> 00:04:18,425
+<i>♪ The very best time of year ♪</i>
+
+45
+00:04:18,526 --> 00:04:25,265
+<i>♪ Firelight is glowing on</i>
+<i>everything we hold dear ♪</i>
+
+46
+00:04:25,365 --> 00:04:29,369
+<i>♪ Just a few more days</i>
+<i>till Christmas ♪</i>
+
+47
+00:04:29,469 --> 00:04:34,341
+<i>♪ A few more days</i>
+<i>till Christmas is here ♪</i>
+
+48
+00:04:34,441 --> 00:04:39,547
+(♪♪♪)
+
+49
+00:04:40,848 --> 00:04:44,018
+(WIND BLOWING)
+
+50
+00:04:44,118 --> 00:04:45,119
+ANA:
+More coffee, John?
+
+51
+00:04:45,219 --> 00:04:47,522
+-JOHN: Ah, you bet.
+-No good today?
+
+52
+00:04:47,622 --> 00:04:49,456
+Yeah. Looks like he bit
+off more than he can chew.
+
+53
+00:04:49,557 --> 00:04:50,825
+I'm actually watching my weight
+right now.
+
+54
+00:04:50,925 --> 00:04:52,392
+-I'm on a diet.
+-Really?
+
+55
+00:04:52,492 --> 00:04:54,762
+It's cold out there.
+You gotta build up your energy.
+
+56
+00:04:54,862 --> 00:04:56,264
+If you wanna drive that
+snowplough one day
+
+57
+00:04:56,363 --> 00:04:58,199
+like your old man,
+you'd better eat up.
+
+58
+00:04:58,298 --> 00:05:00,367
+I don't wanna drive a
+snowplough. It's boring.
+
+59
+00:05:00,467 --> 00:05:02,335
+What do you wanna
+be when you grow up?
+
+60
+00:05:02,435 --> 00:05:04,005
+Something around
+video games, I guess.
+
+61
+00:05:04,105 --> 00:05:04,772
+-Hmm.
+-(SCOFFS)
+
+62
+00:05:04,872 --> 00:05:06,908
+Video games. Kids.
+
+63
+00:05:07,008 --> 00:05:08,408
+I'll get a doggy bag.
+
+64
+00:05:08,509 --> 00:05:10,244
+What's so wrong
+with video games?
+
+65
+00:05:10,343 --> 00:05:12,079
+You can't raise a family
+on video games.
+
+66
+00:05:12,180 --> 00:05:14,782
+-Billy. Billy!
+-(SIZZLING)
+
+67
+00:05:16,184 --> 00:05:17,417
+Wrap this to go, will ya?
+
+68
+00:05:17,518 --> 00:05:18,886
+-It's already done.
+-You can leave after that.
+
+69
+00:05:18,986 --> 00:05:21,421
+(TEXT MESSAGE PING)
+
+70
+00:05:25,126 --> 00:05:26,727
+(DOORBELL RINGS)
+
+71
+00:05:30,298 --> 00:05:33,901
+(INDISTINCT LYRICS)
+
+72
+00:05:40,675 --> 00:05:42,610
+JOHN:
+Pleasure as ever.
+See you after the storm.
+
+73
+00:05:42,710 --> 00:05:44,078
+RAY:
+Yeah. Thanks Ana.
+
+74
+00:05:44,178 --> 00:05:44,679
+Be careful.
+It's slippery out there!
+
+75
+00:05:44,779 --> 00:05:46,047
+RAY:
+See you after the storm.
+
+76
+00:05:57,024 --> 00:05:58,092
+What can I get you?
+
+77
+00:05:58,192 --> 00:05:59,426
+I could kill
+for a hot cup of coffee.
+
+78
+00:05:59,527 --> 00:06:00,728
+I can fix that.
+
+79
+00:06:00,828 --> 00:06:03,430
+And a rare steak and some
+potatoes would be perfect.
+
+80
+00:06:03,531 --> 00:06:06,499
+Sorry, the cook just left
+because of the incoming storm.
+
+81
+00:06:06,601 --> 00:06:09,303
+I can get you a piece of
+our world famous cherry pie.
+
+82
+00:06:09,402 --> 00:06:10,171
+World famous, huh?
+
+83
+00:06:10,271 --> 00:06:11,572
+Well, some people's worlds
+
+84
+00:06:11,672 --> 00:06:14,041
+are a lot smaller than others,
+right?
+
+85
+00:06:15,408 --> 00:06:17,345
+Look, if I can have a hot
+coffee to go
+
+86
+00:06:17,444 --> 00:06:19,547
+and a slice of that pie,
+I'll be on my way.
+
+87
+00:06:21,048 --> 00:06:24,685
+(TRUCK ENGINE STARTS)
+
+88
+00:06:30,925 --> 00:06:32,026
+Here you go.
+
+89
+00:06:32,126 --> 00:06:34,729
+-Thank you.
+-And careful, the coffee's hot.
+
+90
+00:06:36,731 --> 00:06:38,799
+The sugar's right
+there if you need any.
+
+91
+00:06:38,900 --> 00:06:40,034
+Thanks.
+
+92
+00:06:42,469 --> 00:06:43,704
+(SIGHS)
+
+93
+00:06:43,804 --> 00:06:45,039
+Oh shit.
+
+94
+00:06:50,044 --> 00:06:51,078
+Ana!
+
+95
+00:06:54,148 --> 00:06:56,416
+You fucking bitch.
+
+96
+00:06:56,517 --> 00:06:57,484
+Can't you read? It's closed.
+
+97
+00:06:57,585 --> 00:06:58,552
+Why are you dodging my calls?
+
+98
+00:06:58,653 --> 00:06:59,687
+Because
+I have nothing to say to you
+
+99
+00:06:59,787 --> 00:07:01,656
+and you have nothing to say
+to me I want to hear.
+
+100
+00:07:01,756 --> 00:07:03,624
+Now get the hell out of here
+before I call the cops.
+
+101
+00:07:03,724 --> 00:07:05,259
+Hey. I wanna see my daughter.
+
+102
+00:07:05,359 --> 00:07:09,163
+Our daughter! And she doesn't
+want see you. She hates you.
+
+103
+00:07:09,263 --> 00:07:10,331
+Yeah.
+
+104
+00:07:10,430 --> 00:07:11,532
+Yeah,
+because of all the bullshit
+
+105
+00:07:11,632 --> 00:07:12,867
+-you keep feeding her about me.
+-No!
+
+106
+00:07:12,967 --> 00:07:16,270
+No, because of this!
+This is who she sees now!
+
+107
+00:07:16,370 --> 00:07:17,672
+A drunk fuck!
+
+108
+00:07:17,772 --> 00:07:20,408
+Listen, you and that
+asshole judge can't stop me
+
+109
+00:07:20,508 --> 00:07:23,277
+from seeing her,
+you hear me? Do you hear me?
+
+110
+00:07:23,377 --> 00:07:24,477
+You do one stupid thing
+
+111
+00:07:24,578 --> 00:07:26,314
+and your ass is going straight
+back to jail.
+
+112
+00:07:26,414 --> 00:07:27,515
+Now get the hell out of here!
+
+113
+00:07:27,615 --> 00:07:29,717
+I'm not done talking to you.
+I am not done talking!
+
+114
+00:07:29,817 --> 00:07:31,519
+DAVID:
+Though I wish you were.
+
+115
+00:07:35,790 --> 00:07:36,724
+(SCOFFS)
+
+116
+00:07:38,225 --> 00:07:39,827
+I'm sorry,
+what did you say?
+
+117
+00:07:42,263 --> 00:07:43,463
+Say it again.
+
+118
+00:07:48,536 --> 00:07:51,939
+Well, come on pal.
+Say it again.
+
+119
+00:07:52,039 --> 00:08:01,115
+(♪♪♪)
+
+120
+00:08:10,591 --> 00:08:14,595
+(MUNCHING)
+
+121
+00:08:20,334 --> 00:08:21,936
+(SPITS)
+
+122
+00:08:27,408 --> 00:08:28,809
+Eat it.
+
+123
+00:08:38,619 --> 00:08:40,054
+-Vince, please...
+-Shut up!
+
+124
+00:08:49,997 --> 00:08:51,132
+Eat it.
+
+125
+00:08:55,202 --> 00:08:57,104
+I get it.
+You're angry.
+
+126
+00:08:59,440 --> 00:09:02,443
+I heard that a judge won't let
+you see your daughter anymore,
+
+127
+00:09:02,543 --> 00:09:05,246
+probably because of the
+excessive alcohol,
+
+128
+00:09:05,346 --> 00:09:06,447
+substance abuse,
+
+129
+00:09:06,547 --> 00:09:10,451
+which also explains how easily
+you just grabbed Ana there.
+
+130
+00:09:10,551 --> 00:09:12,586
+You guys knew each other.
+You're fucking her.
+
+131
+00:09:12,686 --> 00:09:16,323
+I'm just a customer, pal.
+She has a nametag.
+
+132
+00:09:16,424 --> 00:09:19,126
+Listen though, Vincent, right?
+
+133
+00:09:21,128 --> 00:09:23,564
+The way I see it,
+you have two options.
+
+134
+00:09:23,664 --> 00:09:25,099
+Option one:
+
+135
+00:09:25,199 --> 00:09:27,034
+you'll notice there aren't
+any surveillance cameras
+
+136
+00:09:27,134 --> 00:09:30,505
+in this place, but there's Ana
+and there's me.
+
+137
+00:09:30,604 --> 00:09:32,006
+And if you touch either of us
+
+138
+00:09:32,106 --> 00:09:34,442
+with any semblance
+of aggression again,
+
+139
+00:09:34,543 --> 00:09:37,244
+we'll have each other to say
+that it was you.
+
+140
+00:09:37,344 --> 00:09:40,281
+And then you're looking at never
+seeing your daughter again.
+
+141
+00:09:41,982 --> 00:09:45,419
+Option two:
+much better option, you'll see.
+
+142
+00:09:45,520 --> 00:09:46,654
+You leave here right now.
+
+143
+00:09:47,655 --> 00:09:50,624
+You realise
+you have the opportunity
+
+144
+00:09:50,724 --> 00:09:53,994
+to wake up in the morning sober
+
+145
+00:09:54,095 --> 00:09:56,931
+and start being the father
+your daughter deserves.
+
+146
+00:09:58,065 --> 00:10:01,570
+And with time and a little
+or lot of rehab,
+
+147
+00:10:01,669 --> 00:10:03,337
+you can go back
+to that asshole judge
+
+148
+00:10:03,437 --> 00:10:06,173
+and convince him you deserve
+to see your daughter.
+
+149
+00:10:07,875 --> 00:10:09,710
+That's all you have,
+two choices.
+
+150
+00:10:10,744 --> 00:10:12,146
+So, the real question:
+
+151
+00:10:14,715 --> 00:10:16,784
+how much do you love
+your daughter, Vincent?
+
+152
+00:10:20,321 --> 00:10:28,996
+(♪♪♪)
+
+153
+00:10:31,098 --> 00:10:33,334
+You're lucky
+I'm in a good mood tonight.
+
+154
+00:10:33,434 --> 00:10:37,606
+(INDISTINCT LYRICS)
+
+155
+00:10:37,705 --> 00:10:39,173
+I'll be seeing you again.
+
+156
+00:10:43,811 --> 00:10:49,016
+Vince... Sober up
+and we'll talk. I promise.
+
+157
+00:10:58,759 --> 00:11:00,427
+(DOORBELL RINGS)
+
+158
+00:11:03,297 --> 00:11:04,198
+(DOOR CLOSES)
+
+159
+00:11:04,298 --> 00:11:06,033
+(DUSTBIN THUDS)
+
+160
+00:11:11,272 --> 00:11:14,909
+(ENGINE STARTS, REVVS)
+
+161
+00:11:17,378 --> 00:11:19,680
+(BREATHS HEAVILY)
+
+162
+00:11:19,780 --> 00:11:21,148
+I'm sorry about that.
+
+163
+00:11:21,248 --> 00:11:22,149
+Don't be sorry.
+
+164
+00:11:24,385 --> 00:11:26,220
+Okay, thanks.
+
+165
+00:11:26,320 --> 00:11:28,455
+(SNIFFLES)
+
+166
+00:11:28,557 --> 00:11:30,291
+You know he wasn't
+always like that.
+
+167
+00:11:30,391 --> 00:11:33,294
+You know, he was a good person
+when I married him.
+
+168
+00:11:33,394 --> 00:11:35,262
+It's hard to believe, I know.
+
+169
+00:11:35,362 --> 00:11:37,998
+He got fired and then
+started to drink.
+
+170
+00:11:38,966 --> 00:11:41,636
+Or maybe it
+was the other way around.
+
+171
+00:11:41,735 --> 00:11:44,838
+Anyway, it's gotten worse
+and worse since.
+
+172
+00:11:45,873 --> 00:11:48,475
+Well, they say you only
+really know
+
+173
+00:11:48,577 --> 00:11:50,878
+someone when
+they become your enemy.
+
+174
+00:11:50,978 --> 00:11:53,914
+Yeah. You married?
+
+175
+00:11:54,014 --> 00:11:56,317
+-Yeah.
+-(ANA CHUCKLES)
+
+176
+00:11:56,417 --> 00:11:57,418
+I'm David, by the way.
+
+177
+00:11:57,519 --> 00:11:59,053
+-Ana.
+-Yeah.
+
+178
+00:12:00,622 --> 00:12:02,122
+Guess you're
+not gonna finish that.
+
+179
+00:12:02,223 --> 00:12:03,724
+World famous cherry pie, right?
+
+180
+00:12:03,824 --> 00:12:05,859
+(LAUGHS) Yeah.
+
+181
+00:12:11,566 --> 00:12:13,100
+How would you like your steak?
+
+182
+00:12:14,235 --> 00:12:16,937
+Err... Rare.
+
+183
+00:12:20,542 --> 00:12:23,477
+(WIND BLOWING)
+
+184
+00:12:28,583 --> 00:12:32,753
+(ENGINE STARTS, REVVS)
+
+185
+00:13:18,299 --> 00:13:19,534
+(CAR DOOR CLOSES)
+
+186
+00:13:26,641 --> 00:13:35,550
+(♪♪♪)
+
+187
+00:13:47,161 --> 00:13:48,329
+Hi.
+
+188
+00:13:48,429 --> 00:13:53,601
+I'll take the cookie, err,
+$20 on pump two and 20'
+
+189
+00:13:53,702 --> 00:13:56,070
+you know, 40 Holmes Menthol.
+
+190
+00:13:57,505 --> 00:13:59,574
+$54.
+
+191
+00:13:59,674 --> 00:14:00,742
+Yeah, I'm a couple
+of bucks short.
+
+192
+00:14:00,841 --> 00:14:02,577
+Err, I'll leave
+the cookies, thanks.
+
+193
+00:14:02,677 --> 00:14:03,877
+We take credit cards.
+
+194
+00:14:05,012 --> 00:14:06,648
+I-- I just remembered
+that my wife has it,
+
+195
+00:14:06,748 --> 00:14:08,248
+which is never a good thing.
+
+196
+00:14:10,484 --> 00:14:14,121
+(WUIND BLOWING)
+
+197
+00:14:21,261 --> 00:14:22,463
+Yeah.
+
+198
+00:14:26,634 --> 00:14:27,868
+Shit.
+
+199
+00:14:27,968 --> 00:14:37,645
+(♪♪♪)
+
+200
+00:14:37,746 --> 00:14:39,079
+-Do you want something?
+-OFFICER MILLER: No thanks.
+
+201
+00:14:39,179 --> 00:14:40,515
+I don't know how
+you can that shit.
+
+202
+00:14:40,615 --> 00:14:41,649
+What can I say?
+
+203
+00:14:41,750 --> 00:14:43,484
+Since I quit smoking,
+I compensate.
+
+204
+00:15:02,970 --> 00:15:04,338
+(ENGINE STARTS)
+
+205
+00:15:04,438 --> 00:15:05,472
+(KNOCKING ON WINDOW)
+
+206
+00:15:09,811 --> 00:15:11,679
+-Officer.
+-Sir, that needs to be fixed.
+
+207
+00:15:11,780 --> 00:15:12,980
+You can't drive
+with that taped up.
+
+208
+00:15:13,080 --> 00:15:14,415
+Yeah, I know.
+You're right.
+
+209
+00:15:14,516 --> 00:15:17,017
+As soon as I get to a garage,
+it'll be fixed, I promise.
+
+210
+00:15:21,989 --> 00:15:23,323
+OFFICER MILLER:
+Drive safely, Sir.
+
+211
+00:15:30,899 --> 00:15:33,400
+(ENGINE REVVING)
+
+212
+00:15:33,500 --> 00:15:42,309
+(♪♪♪)
+
+213
+00:15:49,950 --> 00:15:53,987
+(CARS WHOOSHES)
+
+214
+00:16:15,042 --> 00:16:19,647
+(WIND BLOWING)
+
+215
+00:16:33,494 --> 00:16:42,469
+(♪♪♪)
+
+216
+00:16:43,972 --> 00:16:48,776
+(ENGINE REVVING)
+
+217
+00:16:51,713 --> 00:16:55,617
+(HORN BLARING)
+
+218
+00:17:06,528 --> 00:17:15,302
+(♪♪♪)
+
+219
+00:17:30,117 --> 00:17:32,052
+Fucking shit!
+
+220
+00:17:43,096 --> 00:17:46,099
+(TYRES SCREECHES)
+
+221
+00:17:52,040 --> 00:17:56,410
+(WIND BLOWING)
+
+222
+00:18:05,019 --> 00:18:09,691
+(ENGINE REVVING)
+
+223
+00:18:09,791 --> 00:18:14,394
+(WIND BLOWING)
+
+224
+00:18:52,634 --> 00:18:55,003
+(TYRES SCREECHES)
+
+225
+00:18:55,103 --> 00:19:00,140
+(WIND BLOWING)
+
+226
+00:19:00,240 --> 00:19:00,975
+(ENGINE REVVING)
+
+227
+00:19:01,075 --> 00:19:02,610
+Oh shit.
+
+228
+00:19:09,117 --> 00:19:10,484
+Come on!
+
+229
+00:19:14,088 --> 00:19:15,489
+Fuck!
+
+230
+00:19:27,769 --> 00:19:28,903
+Shit!
+
+231
+00:19:30,038 --> 00:19:31,506
+Ah!
+
+232
+00:19:39,714 --> 00:19:42,016
+(GRUNTING)
+
+233
+00:19:42,116 --> 00:19:43,985
+Come on!
+
+234
+00:19:44,085 --> 00:19:45,553
+Fuck!
+
+235
+00:19:48,623 --> 00:19:49,924
+(GRUNTS)
+
+236
+00:19:58,733 --> 00:19:59,701
+Ah!
+
+237
+00:20:00,768 --> 00:20:01,936
+Come on!
+
+238
+00:20:04,806 --> 00:20:06,641
+Ah!
+
+239
+00:20:06,741 --> 00:20:08,275
+Ah.
+
+240
+00:20:08,375 --> 00:20:12,980
+(DAVID GASPING)
+
+241
+00:20:38,940 --> 00:20:40,474
+DAVID:
+Oh shit.
+
+242
+00:20:45,713 --> 00:20:47,247
+(LIGHTER CLINK)
+
+243
+00:20:47,347 --> 00:20:52,352
+(WIND BLOWING)
+
+244
+00:20:58,291 --> 00:21:07,467
+(♪♪♪)
+
+245
+00:21:15,009 --> 00:21:17,512
+(DRAGS CIGARETTE)
+
+246
+00:21:28,321 --> 00:21:32,660
+(WIND HOWLING)
+
+247
+00:21:37,131 --> 00:21:42,335
+(STEPS REACHING)
+
+248
+00:21:52,847 --> 00:21:54,615
+(GROWLS)
+
+249
+00:22:09,163 --> 00:22:17,972
+(♪♪♪)
+
+250
+00:22:34,055 --> 00:22:37,325
+(WIND BLOWING)
+
+251
+00:22:37,424 --> 00:22:41,662
+(WATER FLOWING)
+
+252
+00:22:42,897 --> 00:22:44,364
+God damn.
+
+253
+00:22:59,981 --> 00:23:01,782
+(SIGHS)
+
+254
+00:23:23,504 --> 00:23:28,475
+(BREATHS HEAVILY)
+
+255
+00:23:31,979 --> 00:23:36,017
+(WIND BLOWING)
+
+256
+00:24:27,101 --> 00:24:34,408
+(♪♪♪)
+
+257
+00:24:34,508 --> 00:24:39,146
+(ANA WHIMPERING)
+
+258
+00:24:41,716 --> 00:24:43,050
+DAVID:
+Don't go anywhere.
+
+259
+00:24:58,933 --> 00:25:03,971
+-(WHIMPERING)
+-(WIND HOWLING)
+
+260
+00:25:04,071 --> 00:25:09,010
+(GRUNTING)
+
+261
+00:25:23,057 --> 00:25:25,226
+(GASPING)
+
+262
+00:25:25,326 --> 00:25:29,830
+(WHIMPERING)
+
+263
+00:25:32,033 --> 00:25:33,567
+(GRUNTS)
+
+264
+00:25:34,935 --> 00:25:38,906
+(GASPING)
+
+265
+00:25:40,141 --> 00:25:44,678
+(KICKING)
+
+266
+00:25:46,047 --> 00:25:47,081
+Help!
+
+267
+00:25:54,455 --> 00:25:58,959
+(GASPING)
+
+268
+00:26:02,430 --> 00:26:05,066
+(GRUNTS)
+
+269
+00:26:32,593 --> 00:26:33,861
+Fuck.
+
+270
+00:26:33,961 --> 00:26:38,833
+(GRUNTING)
+
+271
+00:26:38,933 --> 00:26:42,703
+(GASPING)
+
+272
+00:26:51,045 --> 00:26:54,715
+(SHRIEKING)
+
+273
+00:27:09,730 --> 00:27:13,634
+(GASPING)
+
+274
+00:27:44,865 --> 00:27:49,270
+(SOBBING, PANTING)
+
+275
+00:27:53,174 --> 00:28:02,216
+(♪♪♪)
+
+276
+00:28:24,673 --> 00:28:28,943
+(DAVID SHOUTING, SCREAMING)
+
+277
+00:28:42,691 --> 00:28:46,961
+(GASPING)
+
+278
+00:28:55,704 --> 00:29:00,174
+(WHIMPERS, BREATHING HEAVILY)
+
+279
+00:29:03,645 --> 00:29:07,181
+(GASPING)
+
+280
+00:29:09,684 --> 00:29:11,519
+(GROANS)
+
+281
+00:29:17,726 --> 00:29:22,429
+(GRUNTING)
+
+282
+00:29:26,467 --> 00:29:31,205
+(BREATHING HEAVILY)
+
+283
+00:29:57,097 --> 00:29:58,465
+(GROANS)
+
+284
+00:30:20,655 --> 00:30:22,923
+(MUFFLED SCREAMS)
+
+285
+00:30:29,798 --> 00:30:33,500
+(GROANING)
+
+286
+00:30:42,744 --> 00:30:44,211
+Ah!
+
+287
+00:30:48,315 --> 00:30:49,617
+Ah!
+
+288
+00:31:18,145 --> 00:31:22,349
+(GASPING, WIND HOWLING)
+
+289
+00:31:42,704 --> 00:31:47,207
+(GROANING)
+
+290
+00:31:48,576 --> 00:31:52,446
+(WHIMPERING)
+
+291
+00:32:18,472 --> 00:32:27,114
+(♪♪♪)
+
+292
+00:32:27,214 --> 00:32:31,686
+(BRAETHING HEAVILY)
+
+293
+00:33:30,512 --> 00:33:35,517
+(SCREAMING)
+
+294
+00:34:53,962 --> 00:34:58,398
+(GRUNTING AND SCUFFLING)
+
+295
+00:35:01,002 --> 00:35:05,272
+(PANTING)
+
+296
+00:35:09,877 --> 00:35:18,953
+(♪♪♪)
+
+297
+00:35:19,053 --> 00:35:23,591
+(SOBBING, GASPING)
+
+298
+00:35:31,099 --> 00:35:34,468
+(WIND HOWLING)
+
+299
+00:35:34,569 --> 00:35:43,511
+(♪♪♪)
+
+300
+00:36:29,791 --> 00:36:33,895
+(INDISTINCT WHISPERING)
+
+301
+00:36:41,102 --> 00:36:51,512
+(♪♪♪)
+
+302
+00:36:52,780 --> 00:36:54,716
+One wrong move
+and I'll slit your throat.
+
+303
+00:36:56,050 --> 00:36:57,719
+I should kill you right now.
+
+304
+00:37:00,353 --> 00:37:03,323
+-Is that my hat?
+-You speak once spoken to!
+
+305
+00:37:04,625 --> 00:37:08,896
+Now, I have some questions,
+and you answer them and maybe--
+
+306
+00:37:08,996 --> 00:37:11,799
+maybe I'll keep you alive
+long enough for the police
+
+307
+00:37:11,899 --> 00:37:12,900
+to take you.
+
+308
+00:37:14,334 --> 00:37:15,636
+Where are we?
+
+309
+00:37:17,270 --> 00:37:19,107
+I have no idea.
+
+310
+00:37:19,207 --> 00:37:21,274
+I got lost in the storm.
+
+311
+00:37:21,374 --> 00:37:22,944
+Somewhere in the
+Black Mountains.
+
+312
+00:37:25,213 --> 00:37:26,581
+Where's my phone?
+
+313
+00:37:26,681 --> 00:37:28,281
+Tossed it.
+
+314
+00:37:28,381 --> 00:37:30,450
+-And yours?
+-In my pocket.
+
+315
+00:37:30,551 --> 00:37:32,220
+If you untie me a little,
+I can get it out for you
+
+316
+00:37:32,319 --> 00:37:34,655
+-if you'd like.
+-Do I look fucking stupid?
+
+317
+00:37:43,798 --> 00:37:46,768
+As nice as that feels,
+inside pocket.
+
+318
+00:37:51,438 --> 00:37:52,940
+You fuck with me?
+
+319
+00:38:01,115 --> 00:38:02,784
+Pin code.
+
+320
+00:38:02,884 --> 00:38:03,985
+It's a dead zone.
+
+321
+00:38:05,352 --> 00:38:07,021
+4-5-5-6.
+
+322
+00:38:12,160 --> 00:38:13,895
+Oh shit.
+
+323
+00:38:13,995 --> 00:38:15,462
+Sucks, doesn't it?
+
+324
+00:38:15,563 --> 00:38:18,599
+You can never trust the coverage
+maps in those commercials.
+
+325
+00:38:20,168 --> 00:38:22,904
+I'm surprised the cold
+didn't kill you back there.
+
+326
+00:38:23,004 --> 00:38:24,304
+You're a tough one.
+
+327
+00:38:26,641 --> 00:38:27,675
+My mom must have noticed.
+
+328
+00:38:27,775 --> 00:38:29,476
+I'm not back yet.
+
+329
+00:38:29,577 --> 00:38:32,113
+She's probably already
+called the cops.
+
+330
+00:38:32,213 --> 00:38:35,283
+Well,
+she thinks you're with Vince
+
+331
+00:38:35,382 --> 00:38:36,818
+-trying to patch things up.
+-What?
+
+332
+00:38:36,918 --> 00:38:39,319
+I sent a little
+message from your phone.
+
+333
+00:38:39,419 --> 00:38:40,588
+I used your fingerprint.
+
+334
+00:38:41,856 --> 00:38:43,624
+You son of a bitch.
+
+335
+00:38:43,724 --> 00:38:46,194
+You planned this all along, huh?
+
+336
+00:38:46,294 --> 00:38:47,528
+DAVID:
+Almost all.
+
+337
+00:38:48,763 --> 00:38:51,098
+Is that a habit of yours
+to kidnap women
+
+338
+00:38:51,199 --> 00:38:52,667
+and put them in your trunk?
+
+339
+00:38:54,969 --> 00:38:56,369
+Answer me!
+
+340
+00:38:59,173 --> 00:39:00,373
+I don't know
+what came over me.
+
+341
+00:39:01,642 --> 00:39:03,476
+I've never done anything
+like this before.
+
+342
+00:39:04,712 --> 00:39:06,814
+Someone driving around
+with a hunter's knife,
+
+343
+00:39:06,914 --> 00:39:08,916
+duct tape
+and a bottle of chloroform
+
+344
+00:39:09,016 --> 00:39:10,218
+looks pretty prepared to me.
+
+345
+00:39:10,318 --> 00:39:11,953
+Common misconception.
+
+346
+00:39:12,053 --> 00:39:13,788
+Everybody thinks chloroform.
+
+347
+00:39:13,888 --> 00:39:16,123
+I mean, people watch movies,
+they read books and they think
+
+348
+00:39:16,224 --> 00:39:17,291
+chloroform's the way to go.
+
+349
+00:39:17,390 --> 00:39:21,262
+By people you mean
+murderers like you?
+
+350
+00:39:21,361 --> 00:39:23,097
+Well, right now
+I'm just a kidnapper.
+
+351
+00:39:23,197 --> 00:39:26,133
+I haven't murdered you, yet.
+
+352
+00:39:26,234 --> 00:39:28,468
+Ah!
+
+353
+00:39:28,569 --> 00:39:30,972
+Stop whining.
+I barely touched you.
+
+354
+00:39:31,072 --> 00:39:33,074
+-It's my leg.
+-What's wrong with your leg?
+
+355
+00:39:33,174 --> 00:39:34,675
+DAVID:
+It's fucked!
+
+356
+00:39:34,775 --> 00:39:36,844
+Broken.
+Bone's sticking out.
+
+357
+00:39:36,944 --> 00:39:39,113
+-Does it hurt?
+-What the fuck do you think?
+
+358
+00:39:41,448 --> 00:39:43,284
+Good.
+
+359
+00:39:43,383 --> 00:39:44,919
+I hope it gets worse.
+
+360
+00:39:48,623 --> 00:39:51,626
+I bet you didn't expect this
+to be used against you, huh?
+
+361
+00:39:51,726 --> 00:39:54,695
+Pretty effective stuff,
+I have to admit.
+
+362
+00:39:54,795 --> 00:39:55,763
+What is it?
+
+363
+00:39:57,298 --> 00:39:58,666
+You wanna
+know my trade secret?
+
+364
+00:39:58,766 --> 00:39:59,800
+Mm-hmm.
+
+365
+00:40:01,736 --> 00:40:04,138
+There are so many
+options from desflurane
+
+366
+00:40:04,238 --> 00:40:06,807
+to sevoflurane isoflurane.
+
+367
+00:40:06,908 --> 00:40:10,511
+Basically, my recipe ends
+in 'flurane', if that helps.
+
+368
+00:40:10,611 --> 00:40:11,746
+Keep that to yourself.
+
+369
+00:40:11,846 --> 00:40:14,048
+I'm sure the cops
+will be thrilled to hear that.
+
+370
+00:40:19,287 --> 00:40:20,688
+I tried chloroform at the start.
+
+371
+00:40:20,788 --> 00:40:22,623
+I thought
+you never did this before.
+
+372
+00:40:25,559 --> 00:40:27,460
+But chloroform,
+
+373
+00:40:27,561 --> 00:40:28,829
+you can take up
+to five minutes for someone
+
+374
+00:40:28,930 --> 00:40:30,798
+to pass out from inhaling
+that shit.
+
+375
+00:40:32,333 --> 00:40:34,035
+Do you know
+how long five minutes is?
+
+376
+00:40:36,504 --> 00:40:37,939
+Five minutes.
+
+377
+00:40:39,140 --> 00:40:40,841
+And in that time, they--
+
+378
+00:40:40,942 --> 00:40:44,779
+they kick, they punch,
+they grab...
+
+379
+00:40:46,080 --> 00:40:48,516
+tear at your hair,
+
+380
+00:40:48,616 --> 00:40:51,018
+and you have no control over
+how much they're inhaling
+
+381
+00:40:51,118 --> 00:40:53,721
+because it's all
+based on their breathing.
+
+382
+00:40:53,821 --> 00:40:58,960
+And if they're panicked they
+breathe too deeply, too quickly,
+
+383
+00:40:59,060 --> 00:41:00,061
+you know what happens?
+
+384
+00:41:01,729 --> 00:41:05,232
+They die,
+right there in your arms.
+
+385
+00:41:07,467 --> 00:41:08,803
+Kind of takes the fun out of it.
+
+386
+00:41:10,071 --> 00:41:11,739
+So, no chloroform.
+
+387
+00:41:11,839 --> 00:41:13,908
+I like to keep control.
+
+388
+00:41:16,377 --> 00:41:18,646
+You're no longer in control,
+asshole!
+
+389
+00:41:19,847 --> 00:41:20,915
+A knife doesn't put you
+in control
+
+390
+00:41:21,015 --> 00:41:22,083
+unless you're prepared
+to use it.
+
+391
+00:41:22,183 --> 00:41:23,250
+Don't tempt me.
+
+392
+00:41:25,653 --> 00:41:26,620
+At least I'm free.
+
+393
+00:41:26,721 --> 00:41:29,090
+-Free? Really?
+-Mmm.
+
+394
+00:41:29,190 --> 00:41:32,059
+You can choose between
+dying slowly in here
+
+395
+00:41:32,159 --> 00:41:33,427
+or quickly outside.
+
+396
+00:41:33,527 --> 00:41:35,730
+That's the only
+freedom you have.
+
+397
+00:41:35,830 --> 00:41:39,266
+So, tell me, why the hell
+are you still inside then?
+
+398
+00:41:45,139 --> 00:41:46,207
+Oh, I get it.
+
+399
+00:41:47,341 --> 00:41:48,809
+You've already tried.
+
+400
+00:41:50,244 --> 00:41:54,749
+(LAUGHS)
+
+401
+00:41:54,849 --> 00:41:57,752
+I'm just imagining you escaping
+from the trunk back there,
+
+402
+00:41:57,852 --> 00:42:00,488
+getting outside
+and then realising
+
+403
+00:42:00,588 --> 00:42:01,589
+there's nowhere to go
+
+404
+00:42:01,689 --> 00:42:03,090
+and you'd have to get back
+into the car.
+
+405
+00:42:03,190 --> 00:42:05,259
+Oh, that's brutal!
+
+406
+00:42:05,359 --> 00:42:08,829
+It's just funny that you swapped
+one cage for another.
+
+407
+00:42:10,097 --> 00:42:12,500
+Only this time the
+shark's inside with you.
+
+408
+00:42:12,600 --> 00:42:13,901
+A shark with no teeth.
+
+409
+00:42:14,001 --> 00:42:15,136
+Hmm.
+
+410
+00:42:19,974 --> 00:42:21,242
+So, what now?
+
+411
+00:42:22,276 --> 00:42:24,278
+What do you plan to do
+with me, Annie Wilkes?
+
+412
+00:42:24,378 --> 00:42:25,780
+I don't give
+a shit about you.
+
+413
+00:42:27,048 --> 00:42:29,650
+As soon as things calm down,
+I'll take my chances outside.
+
+414
+00:42:29,750 --> 00:42:30,951
+Oh, good luck then.
+
+415
+00:42:32,753 --> 00:42:34,955
+How far do you think
+you'll get in this blizzard?
+
+416
+00:42:35,056 --> 00:42:35,956
+500 yards?
+
+417
+00:42:36,057 --> 00:42:37,858
+A mile?
+
+418
+00:42:37,958 --> 00:42:39,960
+It's minus four degrees outside.
+
+419
+00:42:40,061 --> 00:42:43,130
+-I'll make it.
+-No, you won't.
+
+420
+00:42:43,230 --> 00:42:46,167
+I climbed up that hill
+and nearly died in ten minutes.
+
+421
+00:42:46,267 --> 00:42:47,868
+You're not equipped
+to make it through this storm.
+
+422
+00:42:47,968 --> 00:42:50,204
+Even with my hat and my gloves.
+
+423
+00:42:51,138 --> 00:42:54,075
+Many factors can keep
+you alive during the storm.
+
+424
+00:42:54,175 --> 00:42:57,311
+The body will work overtime
+to protect its vitals,
+
+425
+00:42:57,411 --> 00:42:58,813
+the head and the organs.
+
+426
+00:42:58,913 --> 00:43:00,981
+It doesn't care
+about extremities.
+
+427
+00:43:01,082 --> 00:43:03,918
+So, I intend to walk away
+from here with everything
+
+428
+00:43:04,018 --> 00:43:05,653
+I have intact.
+
+429
+00:43:06,555 --> 00:43:07,955
+On the other hand,
+
+430
+00:43:08,055 --> 00:43:11,025
+many factors can
+accelerate hypothermia:
+
+431
+00:43:11,125 --> 00:43:14,161
+body fat, age,
+alcohol consumption,
+
+432
+00:43:14,261 --> 00:43:17,264
+injury- sorry- and wetness.
+
+433
+00:43:18,699 --> 00:43:20,501
+Your clothes are soaked.
+
+434
+00:43:20,601 --> 00:43:22,636
+They'll freeze pretty fast.
+
+435
+00:43:23,572 --> 00:43:25,039
+I'm not sure you'll make it.
+
+436
+00:43:26,307 --> 00:43:27,542
+-Fuck me.
+-Mmhmm.
+
+437
+00:43:27,641 --> 00:43:29,110
+Waitress with
+a medical degree.
+
+438
+00:43:29,210 --> 00:43:31,979
+I don't need one.
+I grew up in the cold.
+
+439
+00:43:33,414 --> 00:43:36,250
+Your best chance of survival
+is to stay in here with me.
+
+440
+00:43:36,350 --> 00:43:38,953
+That'd be the smartest choice,
+given the circumstances.
+
+441
+00:43:39,954 --> 00:43:41,789
+-Trust me.
+-Trust you?
+
+442
+00:43:43,090 --> 00:43:47,529
+You know, you and I
+got off on the wrong foot.
+
+443
+00:43:47,628 --> 00:43:49,063
+There's no 'you and I', asshole.
+
+444
+00:43:49,163 --> 00:43:50,798
+Well,
+whether you like it or not,
+
+445
+00:43:50,898 --> 00:43:52,366
+we're both in the same shit now.
+
+446
+00:43:52,466 --> 00:43:53,968
+Not for long.
+
+447
+00:43:54,068 --> 00:43:56,270
+You know
+what I'll do before I go.
+
+448
+00:43:56,370 --> 00:43:57,972
+I'll make damn sure that you are
+
+449
+00:43:58,072 --> 00:44:00,808
+attached and strapped
+down to this chair,
+
+450
+00:44:00,908 --> 00:44:03,811
+and then I'll leave the car
+doors wide open
+
+451
+00:44:03,911 --> 00:44:05,212
+and with some luck,
+
+452
+00:44:05,312 --> 00:44:07,715
+we'll find your frozen body
+by the end of the winter.
+
+453
+00:44:07,815 --> 00:44:08,983
+Unless of course
+
+454
+00:44:09,083 --> 00:44:11,418
+the wild animals have taken care
+of you first.
+
+455
+00:44:25,799 --> 00:44:27,268
+How long have I been out?
+
+456
+00:44:27,368 --> 00:44:28,335
+Not long enough.
+
+457
+00:44:28,435 --> 00:44:30,104
+Listen, if you wanna survive,
+
+458
+00:44:30,204 --> 00:44:33,140
+we've got to start saving
+on the fuel and on the battery.
+
+459
+00:44:33,240 --> 00:44:34,708
+We can only use the heat
+for a couple of minutes
+
+460
+00:44:34,808 --> 00:44:36,810
+every day or else
+we won't last long.
+
+461
+00:44:36,911 --> 00:44:38,212
+I don't intend
+to stay here long.
+
+462
+00:44:38,312 --> 00:44:39,713
+You don't know if we have
+to stay here two hours,
+
+463
+00:44:39,813 --> 00:44:41,282
+two days or two weeks.
+
+464
+00:44:41,382 --> 00:44:43,618
+We can survive without
+food, but without heat.
+
+465
+00:44:43,717 --> 00:44:45,686
+The cold's gonna kill
+us in a couple of hours.
+
+466
+00:44:45,786 --> 00:44:47,321
+Hypothermia, remember?
+
+467
+00:44:50,525 --> 00:44:51,892
+Turn it off.
+
+468
+00:44:55,597 --> 00:44:56,997
+Turn it off!
+
+469
+00:45:01,969 --> 00:45:03,304
+You move one muscle.
+
+470
+00:45:03,404 --> 00:45:08,042
+(WIND HOWLING)
+
+471
+00:45:19,286 --> 00:45:21,355
+You are not from around here,
+are you?
+
+472
+00:45:21,455 --> 00:45:23,190
+I like to travel.
+
+473
+00:45:23,290 --> 00:45:25,259
+David Herman Petersen.
+
+474
+00:45:25,359 --> 00:45:26,794
+That name.
+
+475
+00:45:26,894 --> 00:45:28,495
+Is that your real name at least?
+
+476
+00:45:29,664 --> 00:45:31,098
+It's not important.
+
+477
+00:45:31,198 --> 00:45:33,801
+To me you're just
+Fucked Up Motherfucker.
+
+478
+00:45:33,901 --> 00:45:35,502
+You don't mind if I call
+you that, do you,
+
+479
+00:45:35,604 --> 00:45:38,038
+Fucked Up Motherfucker?
+
+480
+00:45:43,744 --> 00:45:45,846
+Seems like nobody
+knows who you really are.
+
+481
+00:45:45,946 --> 00:45:47,649
+I'm a shy guy.
+
+482
+00:45:47,748 --> 00:45:49,216
+And I'm guessing you
+don't have a kid either.
+
+483
+00:45:49,316 --> 00:45:51,118
+Oh, you're a smart girl.
+
+484
+00:45:51,218 --> 00:45:52,886
+That must be where Ella gets her
+brain's from,
+
+485
+00:45:52,987 --> 00:45:55,055
+'cause it ain't from Vince.
+
+486
+00:45:55,155 --> 00:45:56,423
+How do you know
+my daughter's name?
+
+487
+00:45:56,524 --> 00:46:00,094
+Oh, I know a lot about you Ana,
+and you know shit about me.
+
+488
+00:46:00,194 --> 00:46:02,096
+I know more than
+enough about you.
+
+489
+00:46:03,264 --> 00:46:06,100
+And don't you ever bring up
+my daughter's name again.
+
+490
+00:46:13,474 --> 00:46:17,878
+(WIND HOWLING)
+
+491
+00:46:23,752 --> 00:46:24,818
+Those fucking seats
+are expensive.
+
+492
+00:46:24,918 --> 00:46:26,186
+You're gonna pay for that.
+
+493
+00:46:33,595 --> 00:46:34,529
+What?
+
+494
+00:46:35,929 --> 00:46:36,830
+My bonds are too tight.
+
+495
+00:46:36,930 --> 00:46:38,667
+They're cutting into my wrists.
+
+496
+00:46:38,767 --> 00:46:40,034
+Don't worry about it.
+
+497
+00:46:40,134 --> 00:46:41,569
+After a while, you won't even
+feel your hands anymore.
+
+498
+00:46:50,512 --> 00:46:51,579
+Why didn't you kill me?
+
+499
+00:46:53,480 --> 00:46:55,517
+I made up my own theory
+back in the trunk.
+
+500
+00:46:56,584 --> 00:46:57,818
+Wanna hear it?
+
+501
+00:46:58,819 --> 00:47:00,789
+Superiority complex.
+
+502
+00:47:00,888 --> 00:47:02,056
+You got sloppy.
+
+503
+00:47:02,156 --> 00:47:04,358
+-I'm never sloppy.
+-You were overconfident.
+
+504
+00:47:04,458 --> 00:47:06,193
+You still are.
+
+505
+00:47:06,293 --> 00:47:08,228
+You should have killed
+me when you could.
+
+506
+00:47:08,329 --> 00:47:10,898
+If I wanted to just kill
+you, you'd be dead by now.
+
+507
+00:47:12,099 --> 00:47:13,967
+You had other
+plans for me, right?
+
+508
+00:47:16,671 --> 00:47:18,540
+Sick motherfucker.
+
+509
+00:47:22,577 --> 00:47:23,911
+Why didn't you kill me?
+
+510
+00:47:24,978 --> 00:47:26,847
+It would've been so easy
+when I was out cold.
+
+511
+00:47:26,947 --> 00:47:28,849
+Because I'm not like you.
+
+512
+00:47:28,949 --> 00:47:30,284
+I'm not a monster.
+
+513
+00:47:30,384 --> 00:47:32,219
+Oh.
+
+514
+00:47:32,319 --> 00:47:35,289
+Oh, in the right circumstances,
+we can all be cruel.
+
+515
+00:47:35,389 --> 00:47:36,890
+Even you.
+
+516
+00:47:39,193 --> 00:47:40,729
+Imagine.
+
+517
+00:47:40,829 --> 00:47:42,296
+Just imagine.
+
+518
+00:47:43,665 --> 00:47:45,499
+Someone hurting little Ella.
+
+519
+00:47:49,069 --> 00:47:52,339
+Don't you ever mention
+my daughter's name again.
+
+520
+00:47:52,439 --> 00:47:54,108
+Okay.
+
+521
+00:47:54,208 --> 00:47:55,442
+Okay.
+
+522
+00:47:55,543 --> 00:47:56,944
+Okay.
+
+523
+00:48:04,786 --> 00:48:06,053
+You see?
+
+524
+00:48:07,121 --> 00:48:08,989
+It's just about circumstance.
+
+525
+00:48:16,130 --> 00:48:17,431
+First time's never easy.
+
+526
+00:48:18,899 --> 00:48:20,334
+But after time,
+you get used to it.
+
+527
+00:48:22,837 --> 00:48:24,004
+Who knows?
+
+528
+00:48:25,005 --> 00:48:26,641
+Ana, you could even enjoy it.
+
+529
+00:48:28,041 --> 00:48:29,376
+Oh, I could teach
+you some things.
+
+530
+00:48:29,476 --> 00:48:31,011
+Shut up!
+
+531
+00:48:38,152 --> 00:48:39,319
+You got anything to eat?
+
+532
+00:48:39,420 --> 00:48:40,921
+(LAUGHS)
+
+533
+00:48:41,021 --> 00:48:42,289
+What's so funny?
+
+534
+00:48:42,389 --> 00:48:45,292
+I nearly bought a pack of
+cookies back at the gas station.
+
+535
+00:48:45,392 --> 00:48:47,027
+I didn't wanna use
+my credit card.
+
+536
+00:48:47,127 --> 00:48:49,029
+They can trace you so easily
+with a credit card.
+
+537
+00:48:50,364 --> 00:48:52,933
+I only had enough cash
+for gas and cigarettes.
+
+538
+00:48:54,468 --> 00:48:56,036
+(LAUGHS)
+
+539
+00:48:56,136 --> 00:48:58,272
+My doc always said
+the smokes will kill me.
+
+540
+00:48:58,372 --> 00:49:00,941
+(LAUGHS)
+
+541
+00:49:07,047 --> 00:49:08,282
+I'm gonna take a little nap.
+
+542
+00:49:09,383 --> 00:49:11,185
+You should try
+and get some sleep too.
+
+543
+00:49:11,285 --> 00:49:12,754
+I don't intend to sleep.
+
+544
+00:49:12,854 --> 00:49:14,988
+Oh, you'll sleep.
+
+545
+00:49:15,088 --> 00:49:16,490
+The cold will make you.
+
+546
+00:49:18,392 --> 00:49:19,460
+It's inevitable.
+
+547
+00:49:24,599 --> 00:49:26,133
+In that case.
+
+548
+00:49:27,468 --> 00:49:28,502
+(SHOUTING)
+
+549
+00:49:28,603 --> 00:49:29,704
+(MUFFLED VOICE)
+You fucking bitch!
+You fucking...
+
+550
+00:49:29,804 --> 00:49:33,741
+(GROANS)
+
+551
+00:49:33,842 --> 00:49:38,947
+(MUFFLED VOICE)
+
+552
+00:49:39,046 --> 00:49:43,016
+(WIND BLOWING)
+
+553
+00:49:52,760 --> 00:49:55,329
+(BREATHS HEAVILY)
+
+554
+00:49:55,429 --> 00:50:04,572
+(♪♪♪)
+
+555
+00:50:37,005 --> 00:50:46,480
+(♪♪♪)
+
+556
+00:50:53,888 --> 00:50:58,458
+(INDISTINCT WHISPERING)
+
+557
+00:51:11,573 --> 00:51:13,708
+(GASPING)
+
+558
+00:51:13,808 --> 00:51:15,242
+ANA:
+Bad dream?
+
+559
+00:51:17,277 --> 00:51:19,814
+I wonder what nightmares
+like yours look like.
+
+560
+00:51:21,015 --> 00:51:23,250
+Mine like all normal people
+are crowded
+
+561
+00:51:23,350 --> 00:51:27,287
+with twisted fucks like you,
+but yours,
+
+562
+00:51:27,387 --> 00:51:29,691
+I mean, what
+do they look like?
+
+563
+00:51:29,791 --> 00:51:30,792
+What scares you?
+
+564
+00:51:32,192 --> 00:51:34,662
+Being caught by the police?
+
+565
+00:51:34,762 --> 00:51:35,930
+Being executed?
+
+566
+00:51:36,030 --> 00:51:37,331
+No?
+
+567
+00:51:38,766 --> 00:51:44,038
+Maybe they're about normal
+people, happiness, family.
+
+568
+00:51:44,137 --> 00:51:46,406
+You know,
+everything you'll never have.
+
+569
+00:52:01,522 --> 00:52:03,290
+There's a bottle
+back there somewhere.
+
+570
+00:52:07,160 --> 00:52:08,863
+Go ahead.
+
+571
+00:52:08,963 --> 00:52:10,865
+I don't mind sharing.
+
+572
+00:52:10,965 --> 00:52:12,600
+I won't look, I promise.
+
+573
+00:52:31,019 --> 00:52:32,687
+Don't go anywhere.
+
+574
+00:52:32,787 --> 00:52:36,691
+(WIND BLOWING)
+
+575
+00:52:38,960 --> 00:52:40,394
+Bitch.
+
+576
+00:52:42,930 --> 00:52:47,334
+(GRUNTING)
+
+577
+00:52:48,301 --> 00:52:49,904
+(DAVID GASPING)
+
+578
+00:52:50,004 --> 00:52:56,376
+(♪♪♪)
+
+579
+00:52:56,476 --> 00:53:00,682
+-(GROANS)
+-(WIND HOWLING)
+
+580
+00:53:00,782 --> 00:53:05,620
+(GRUNTING, GASPING)
+
+581
+00:53:05,720 --> 00:53:10,390
+(WIND HOWLING)
+
+582
+00:53:10,490 --> 00:53:14,762
+(GRUNTING, GASPING)
+
+583
+00:53:28,543 --> 00:53:32,212
+(LAUGHS)
+
+584
+00:53:36,884 --> 00:53:38,318
+(GRUNTS)
+
+585
+00:53:38,418 --> 00:53:40,320
+Fucking open.
+
+586
+00:53:40,420 --> 00:53:41,689
+Open this door!
+
+587
+00:53:41,789 --> 00:53:43,791
+I'd love to help
+but my hands are tied.
+
+588
+00:53:45,059 --> 00:53:46,460
+(SCREAMS)
+
+589
+00:53:47,729 --> 00:53:48,796
+You fucking bitch.
+
+590
+00:53:48,896 --> 00:53:51,833
+(GRUNTS)
+
+591
+00:54:06,614 --> 00:54:07,347
+(GROWLS)
+
+592
+00:54:07,447 --> 00:54:08,583
+(BREATHS HEAVILY)
+
+593
+00:54:08,683 --> 00:54:10,651
+(WINDOW BANGS)
+
+594
+00:54:10,752 --> 00:54:11,886
+What the fuck?
+
+595
+00:54:14,889 --> 00:54:18,693
+(GRUNTING)
+
+596
+00:54:27,467 --> 00:54:28,301
+(GLASS SMASHES)
+
+597
+00:54:28,401 --> 00:54:32,439
+(BOTH GROANING)
+
+598
+00:54:35,610 --> 00:54:37,712
+Ah! I'll fucking kill you!
+
+599
+00:54:37,812 --> 00:54:39,213
+Ah!
+
+600
+00:54:39,312 --> 00:54:41,549
+Ah!
+
+601
+00:54:47,320 --> 00:54:51,759
+(GRUNTING)
+
+602
+00:54:57,031 --> 00:54:58,132
+(GASPS)
+
+603
+00:54:58,232 --> 00:55:02,502
+(WIND HOWLING)
+
+604
+00:55:04,071 --> 00:55:08,743
+(GASPING)
+
+605
+00:55:08,843 --> 00:55:12,814
+(WIND HOWLING)
+
+606
+00:55:58,025 --> 00:56:06,801
+(♪♪♪)
+
+607
+00:56:15,643 --> 00:56:20,447
+(ANA BREATHS HEAVILY)
+
+608
+00:57:20,541 --> 00:57:30,117
+(♪♪♪)
+
+609
+00:58:06,587 --> 00:58:08,022
+Finish snooping?
+
+610
+00:58:10,358 --> 00:58:11,959
+How long have
+you been following me?
+
+611
+00:58:12,059 --> 00:58:13,861
+Long enough.
+
+612
+00:58:13,961 --> 00:58:16,496
+Like I said, I know
+a lot about you.
+
+613
+00:58:16,597 --> 00:58:17,932
+Why me?
+
+614
+00:58:18,032 --> 00:58:20,601
+Always the same question.
+What do you want me to say?
+
+615
+00:58:20,701 --> 00:58:22,236
+You're special.
+You're the one?
+
+616
+00:58:23,471 --> 00:58:26,574
+I saw... an opportunity.
+
+617
+00:58:27,608 --> 00:58:29,510
+You're single.
+You live alone with your kid.
+
+618
+00:58:29,610 --> 00:58:30,511
+You have no friends.
+
+619
+00:58:30,611 --> 00:58:32,480
+Your mother's family.
+
+620
+00:58:32,580 --> 00:58:36,917
+Just another ordinary immigrant
+that no-one really cares about.
+
+621
+00:58:37,018 --> 00:58:38,052
+It was easy.
+
+622
+00:58:38,152 --> 00:58:39,553
+Except for Vince.
+
+623
+00:58:40,721 --> 00:58:42,423
+I didn't plan on that idiot.
+
+624
+00:58:42,523 --> 00:58:44,558
+He nearly fucked everything up.
+
+625
+00:58:44,658 --> 00:58:46,727
+Is that how you do it?
+
+626
+00:58:46,827 --> 00:58:49,397
+You help damsels in distress
+to gain their trust
+
+627
+00:58:49,497 --> 00:58:51,198
+and then you kidnap them?
+
+628
+00:58:51,298 --> 00:58:52,433
+(SOBS)
+
+629
+00:58:52,533 --> 00:58:55,169
+Is that what you did
+with Ashley Mitchell?
+
+630
+00:58:55,269 --> 00:58:56,904
+-Who?
+-Ashley Mitchell!
+
+631
+00:58:57,004 --> 00:58:58,139
+Her!
+
+632
+00:59:00,274 --> 00:59:02,009
+How many women have you killed?
+
+633
+00:59:03,110 --> 00:59:04,345
+I've never counted.
+
+634
+00:59:04,445 --> 00:59:05,713
+I'm sure you have.
+
+635
+00:59:06,747 --> 00:59:09,784
+That's what all twisted
+fucks like you do.
+
+636
+00:59:09,884 --> 00:59:12,253
+And that's why you
+have all these IDs.
+
+637
+00:59:15,524 --> 00:59:17,591
+How many?
+
+638
+00:59:17,691 --> 00:59:18,993
+Well, it's
+difficult to answer.
+
+639
+00:59:20,529 --> 00:59:21,796
+There was one who only
+afterwards
+
+640
+00:59:21,896 --> 00:59:23,197
+I discovered was pregnant.
+
+641
+00:59:23,297 --> 00:59:26,400
+Now, does that count as two?
+
+642
+00:59:26,500 --> 00:59:30,671
+Oh, and there was this very
+cute brunette I really liked.
+
+643
+00:59:31,705 --> 00:59:33,407
+She looked a bit like you,
+
+644
+00:59:33,508 --> 00:59:35,176
+but she talked a lot
+fucking less.
+
+645
+00:59:36,410 --> 00:59:37,111
+What was her name?
+
+646
+00:59:37,211 --> 00:59:38,779
+Maria, Mia.
+
+647
+00:59:39,880 --> 00:59:42,583
+Well, she choked on her
+own vomit under my gag.
+
+648
+00:59:42,683 --> 00:59:46,020
+Now, is that murder or
+is that an accident?
+
+649
+00:59:47,121 --> 00:59:47,855
+(INDISTINCT SPEECH)
+
+650
+00:59:47,955 --> 00:59:49,023
+You asked.
+
+651
+00:59:50,391 --> 00:59:54,328
+All those lives ended
+because they were in the wrong
+
+652
+00:59:54,428 --> 00:59:56,430
+place at the wrong time.
+
+653
+00:59:56,531 --> 00:59:58,699
+Because they crossed
+path with a psycho.
+
+654
+01:00:00,000 --> 01:00:01,602
+You're going to listen
+to the names
+
+655
+01:00:01,702 --> 01:00:02,970
+of all of these women.
+
+656
+01:00:04,038 --> 01:00:07,942
+Amanda Walker, Maddie Parker.
+
+657
+01:00:11,779 --> 01:00:13,714
+Elizabeth Guzman.
+
+658
+01:00:13,814 --> 01:00:14,715
+Look at them.
+
+659
+01:00:14,815 --> 01:00:16,617
+Open your eyes!
+
+660
+01:00:19,286 --> 01:00:21,655
+(ANA SOBBING)
+
+661
+01:00:21,755 --> 01:00:23,324
+Cassie Beckerman.
+
+662
+01:00:23,424 --> 01:00:24,559
+Your son of a bitch.
+
+663
+01:00:24,692 --> 01:00:25,960
+Look at her.
+
+664
+01:00:26,060 --> 01:00:27,194
+Oh, Cassie.
+
+665
+01:00:28,530 --> 01:00:29,997
+Yes.
+
+666
+01:00:30,097 --> 01:00:31,232
+I remember her.
+
+667
+01:00:33,134 --> 01:00:34,902
+She was my first.
+
+668
+01:00:35,002 --> 01:00:36,937
+We never forget
+our first, do we?
+
+669
+01:00:38,105 --> 01:00:40,174
+A total mess.
+I did everything wrong.
+
+670
+01:00:41,375 --> 01:00:43,545
+I-- I didn't even know
+I was hunting that day.
+
+671
+01:00:43,644 --> 01:00:44,845
+I just was going out to pick up
+
+672
+01:00:44,945 --> 01:00:46,480
+chicks and see
+if I could drop them off.
+
+673
+01:00:46,581 --> 01:00:47,915
+I was testing myself.
+
+674
+01:00:49,116 --> 01:00:51,852
+I learned so much about
+the female psychology back then.
+
+675
+01:00:55,689 --> 01:00:58,993
+<i>Some women were</i>
+<i>always suspicious.</i>
+
+676
+01:00:59,093 --> 01:01:01,795
+<i>They see a single</i>
+<i>guy in his car alone.</i>
+
+677
+01:01:02,863 --> 01:01:03,998
+<i>I wanted to change</i>
+<i>the situation</i>
+
+678
+01:01:04,098 --> 01:01:06,267
+<i>so they wanted</i>
+<i>to get into the car.</i>
+
+679
+01:01:06,367 --> 01:01:08,202
+<i>It was a game.</i>
+
+680
+01:01:08,302 --> 01:01:11,839
+<i>Each time I was testing myself,</i>
+<i>seeing how far I would go.</i>
+
+681
+01:01:12,907 --> 01:01:14,708
+<i>I didn't want to get caught.</i>
+
+682
+01:01:14,808 --> 01:01:16,177
+<i>But there I was,</i>
+
+683
+01:01:16,277 --> 01:01:19,113
+<i>driving for hours and hours</i>
+<i>and then suddenly...</i>
+
+684
+01:01:20,381 --> 01:01:21,382
+<i>I got lucky.</i>
+
+685
+01:01:22,483 --> 01:01:31,392
+(♪♪♪)
+
+686
+01:01:34,629 --> 01:01:37,298
+(INDICATOR BEEPING)
+
+687
+01:01:37,398 --> 01:01:40,034
+(WINDOW OPENS)
+
+688
+01:01:42,469 --> 01:01:43,572
+-Hey.
+-Hi.
+
+689
+01:01:43,672 --> 01:01:45,172
+Um, I have to go to Lakeside.
+
+690
+01:01:45,272 --> 01:01:46,006
+Oh, I'm sorry.
+
+691
+01:01:46,106 --> 01:01:47,576
+I'm- I'm going to Columbia
+Falls.
+
+692
+01:01:47,676 --> 01:01:48,776
+-CASSIE BECKERMAN: Oh.
+-Sorry.
+
+693
+01:01:48,876 --> 01:01:50,344
+DAVID:
+<i>I didn't say</i>
+<i>I was going to Lakeside</i>
+
+694
+01:01:50,444 --> 01:01:52,046
+<i>or offerto take her</i>
+<i>straight away.</i>
+
+695
+01:01:52,146 --> 01:01:53,682
+<i>That would've been too</i>
+<i>much of a coincidence.</i>
+
+696
+01:01:53,781 --> 01:01:54,583
+Much too eager.
+
+697
+01:01:54,683 --> 01:01:56,518
+I mean,
+
+698
+01:01:56,618 --> 01:01:58,786
+I guess I could swing around,
+get you closer to Lakeside,
+
+699
+01:01:58,886 --> 01:02:00,187
+if that helps.
+
+700
+01:02:02,022 --> 01:02:04,693
+DAVID:
+<i>I looked at my watch</i>
+<i>as if to say,</i>
+
+701
+01:02:04,825 --> 01:02:06,493
+<i>do I really have time?</i>
+
+702
+01:02:06,595 --> 01:02:09,263
+<i>You'd be surprised how effective</i>
+<i>something like that is.</i>
+
+703
+01:02:12,601 --> 01:02:13,668
+<i>Her mother must have told her</i>
+
+704
+01:02:13,767 --> 01:02:16,270
+<i>not to get into a stranger's car</i>
+<i>on her own.</i>
+
+705
+01:02:18,739 --> 01:02:19,940
+<i>Then she looked at me.</i>
+
+706
+01:02:21,041 --> 01:02:24,613
+<i>You could see she was</i>
+<i>like, yeah, he's a dork.</i>
+
+707
+01:02:24,713 --> 01:02:27,014
+<i>-He wouldn't hurt a fly.</i>
+-Um, okay.
+
+708
+01:02:27,114 --> 01:02:28,617
+-DAVID: <i>And then.</i>
+-Sure, yeah.
+
+709
+01:02:28,717 --> 01:02:29,651
+Thank you.
+Thank you so much.
+
+710
+01:02:29,750 --> 01:02:31,885
+DAVID:
+Yeah. She got in.
+
+711
+01:02:34,154 --> 01:02:35,889
+<i>She should have trusted her gut.</i>
+
+712
+01:02:45,099 --> 01:02:48,769
+<i>She had these</i>
+<i>incredible brown eyes,</i>
+
+713
+01:02:48,869 --> 01:02:51,438
+<i>long blonde hair</i>
+<i>and these bouncing breasts</i>
+
+714
+01:02:51,539 --> 01:02:53,240
+<i>that were just driving me wild.</i>
+
+715
+01:02:54,875 --> 01:02:55,876
+So, do you like music?
+
+716
+01:02:55,976 --> 01:02:57,077
+Yeah. Yeah, I do.
+
+717
+01:02:57,177 --> 01:02:59,079
+-I like music.
+-DAVID: Play music you want.
+
+718
+01:02:59,179 --> 01:03:00,615
+Sure.
+
+719
+01:03:00,715 --> 01:03:02,149
+See if there's anything on.
+
+720
+01:03:03,951 --> 01:03:05,152
+(I'M YOUR BOOGIE MAN PLAYS)
+
+721
+01:03:05,252 --> 01:03:06,521
+-I love this song.
+-DAVID: Yeah?
+
+722
+01:03:06,621 --> 01:03:08,222
+I do, yes. (LAUGHS)
+
+723
+01:03:08,322 --> 01:03:12,293
+DAVID:
+<i>She laughed at things I said</i>
+<i>that even I knew weren't funny.</i>
+
+724
+01:03:12,393 --> 01:03:14,094
+<i>I let her think</i>
+<i>she was in control.</i>
+
+725
+01:03:17,331 --> 01:03:18,767
+Going to see your boyfriend,
+or...?
+
+726
+01:03:18,866 --> 01:03:21,235
+No, I don't actually
+have a boyfriend.
+
+727
+01:03:21,335 --> 01:03:22,102
+-DAVID: No?
+-No.
+
+728
+01:03:22,202 --> 01:03:23,837
+I'm just gonna
+visit some friends.
+
+729
+01:03:23,937 --> 01:03:25,640
+DAVID:
+<i>She started playing a game.</i>
+
+730
+01:03:25,740 --> 01:03:26,840
+<i>Not quite teasing me,</i>
+<i>but you know,</i>
+
+731
+01:03:26,940 --> 01:03:28,909
+<i>these games men and women play.</i>
+
+732
+01:03:30,679 --> 01:03:34,549
+<i>I had this craving,</i>
+<i>this awful, raging feeling.</i>
+
+733
+01:03:34,649 --> 01:03:36,518
+<i>It was consuming my insides.</i>
+
+734
+01:03:39,587 --> 01:03:41,488
+Hey, I think you just
+missed the turn actually.
+
+735
+01:03:41,589 --> 01:03:42,757
+This, this isn't the right way,
+
+736
+01:03:42,856 --> 01:03:45,192
+This road's much faster.
+I know this road so well.
+
+737
+01:03:45,292 --> 01:03:47,161
+Oh! Okay.
+
+738
+01:03:47,261 --> 01:03:48,929
+DAVID:
+<i>She knew something was wrong.</i>
+
+739
+01:03:51,899 --> 01:03:53,033
+You know, it's-- honestly,
+
+740
+01:03:53,133 --> 01:03:54,435
+you could totally just pull over
+right here
+
+741
+01:03:54,536 --> 01:03:56,870
+and I could just jump out,
+get another ride.
+
+742
+01:03:56,970 --> 01:03:58,439
+It's all-- It's okay.
+
+743
+01:03:58,540 --> 01:04:00,341
+No need to stress, it's fine.
+
+744
+01:04:02,811 --> 01:04:03,944
+Okay.
+
+745
+01:04:04,044 --> 01:04:05,245
+Can you please pull over
+and just let me out?
+
+746
+01:04:05,346 --> 01:04:06,380
+You can just let
+me out right here.
+
+747
+01:04:06,480 --> 01:04:08,449
+DAVID:
+<i>I was trying</i>
+<i>to buy myself time,</i>
+
+748
+01:04:08,550 --> 01:04:10,552
+<i>but at this point</i>
+<i>she was completely hysterical.</i>
+
+749
+01:04:10,652 --> 01:04:12,119
+Okay. Seriously,
+
+750
+01:04:12,219 --> 01:04:13,020
+if you don't let me out right
+now, I'm gonna call the cops.
+
+751
+01:04:13,120 --> 01:04:14,254
+Would you-- Don't even.
+
+752
+01:04:14,355 --> 01:04:15,557
+-What is wrong with you?
+-Hey!
+
+753
+01:04:15,657 --> 01:04:16,591
+Let me out!
+
+754
+01:04:16,691 --> 01:04:17,424
+DAVID:
+<i>I tried to keep her quiet,</i>
+
+755
+01:04:17,525 --> 01:04:19,561
+<i>but she just wouldn't shut</i>
+<i>the fuck up.</i>
+
+756
+01:04:19,661 --> 01:04:21,061
+Unlock this fucking door!
+
+757
+01:04:21,161 --> 01:04:21,995
+DAVID:
+<i>And that's when I lost it.</i>
+
+758
+01:04:22,096 --> 01:04:23,631
+Unlock this fucking door!
+
+759
+01:04:23,732 --> 01:04:24,932
+Ah!
+
+760
+01:04:25,966 --> 01:04:27,234
+DAVID:
+<i>I really fucked up.</i>
+
+761
+01:04:28,335 --> 01:04:29,303
+ANA:
+<i>Enough!</i>
+
+762
+01:04:30,672 --> 01:04:31,972
+<i>That's enough!</i>
+
+763
+01:04:35,810 --> 01:04:37,378
+That's enough!
+
+764
+01:04:39,380 --> 01:04:43,884
+(WIND WHISTLING)
+
+765
+01:04:51,158 --> 01:04:54,294
+Suddenly I was just
+standing there and I.
+
+766
+01:04:56,631 --> 01:04:57,599
+<i>I couldn't believe it.</i>
+
+767
+01:04:57,699 --> 01:05:01,034
+<i>I-- I fucking did it.</i>
+
+768
+01:05:04,471 --> 01:05:06,039
+<i>I fucking did it.</i>
+
+769
+01:05:08,208 --> 01:05:11,078
+She didn't die instantly
+like she was supposed to.
+
+770
+01:05:12,614 --> 01:05:13,648
+<i>Like in the movies.</i>
+
+771
+01:05:15,149 --> 01:05:16,417
+<i>It doesn't happen like that.</i>
+
+772
+01:05:18,385 --> 01:05:20,622
+When you stab someone,
+they bleed out slowly.
+
+773
+01:05:20,722 --> 01:05:24,224
+They lose blood pressure
+and you have to stab them again
+
+774
+01:05:24,324 --> 01:05:26,393
+and again and again and again.
+
+775
+01:05:27,294 --> 01:05:29,531
+These things take time.
+
+776
+01:05:29,631 --> 01:05:31,533
+I could have stabbed her
+in the heart, but...
+
+777
+01:05:33,635 --> 01:05:36,103
+I couldn't bring myself
+to damage those breasts.
+
+778
+01:05:38,472 --> 01:05:40,441
+She ended up getting
+her throat slit.
+
+779
+01:05:43,678 --> 01:05:46,046
+I dumped what was left of her
+body under a pile of wood
+
+780
+01:05:46,146 --> 01:05:48,248
+and that's where she was
+found two days later.
+
+781
+01:05:49,349 --> 01:05:51,719
+The cops were all over it.
+Local news picked it up.
+
+782
+01:05:53,153 --> 01:05:55,857
+Cassie was the daughter
+of a judge.
+
+783
+01:05:55,956 --> 01:05:57,324
+So, fucking stupid.
+
+784
+01:05:58,927 --> 01:06:01,962
+I had to hide for weeks waiting
+for everything to die down.
+
+785
+01:06:02,996 --> 01:06:04,498
+She made me change
+my whole game.
+
+786
+01:06:06,033 --> 01:06:09,069
+From then on,
+I was very careful.
+
+787
+01:06:11,171 --> 01:06:13,307
+DAVID:
+The next one
+was an immigrant.
+
+788
+01:06:13,407 --> 01:06:14,876
+Cassie was still in the news.
+
+789
+01:06:14,975 --> 01:06:18,445
+But with this low class chick,
+nothing.
+
+790
+01:06:19,747 --> 01:06:22,416
+I hadn't anticipated the lack
+of effort in finding
+
+791
+01:06:22,517 --> 01:06:26,286
+the murderer of a poor woman,
+low-lives or immigrants.
+
+792
+01:06:27,421 --> 01:06:29,189
+It's even convenient for some.
+
+793
+01:06:31,158 --> 01:06:32,727
+It opened up a whole
+new world to me.
+
+794
+01:06:34,161 --> 01:06:35,697
+I've got bad
+news for you, David.
+
+795
+01:06:37,130 --> 01:06:39,834
+Your winning streak
+ends right here.
+
+796
+01:06:39,934 --> 01:06:42,369
+The next time they talk
+of your exploits,
+
+797
+01:06:42,469 --> 01:06:44,539
+it'll be as they walk you
+to Death Row.
+
+798
+01:06:46,541 --> 01:06:47,341
+I feel pity for you.
+
+799
+01:06:47,441 --> 01:06:49,309
+(LAUGHS)
+Fuck you and your pity.
+
+800
+01:06:49,409 --> 01:06:51,746
+Your life must be miserable.
+
+801
+01:06:53,180 --> 01:06:56,885
+No friends, no wife,
+no-one to talk to.
+
+802
+01:06:56,985 --> 01:06:58,118
+No-one to confide in.
+
+803
+01:06:58,218 --> 01:06:59,119
+DAVID:
+Yeah.
+
+804
+01:06:59,219 --> 01:07:00,822
+You and I have
+so much in common.
+
+805
+01:07:00,922 --> 01:07:02,289
+We have nothing in common.
+
+806
+01:07:02,389 --> 01:07:04,224
+Nothing.
+
+807
+01:07:04,324 --> 01:07:06,895
+I wonder how you
+became what you are.
+
+808
+01:07:06,995 --> 01:07:08,663
+Why you're so afraid of women?
+
+809
+01:07:08,763 --> 01:07:11,766
+Because that's what
+it's all about, right?
+
+810
+01:07:11,866 --> 01:07:14,268
+Women scare the shit out of you.
+
+811
+01:07:14,368 --> 01:07:16,036
+Are you incapable
+of getting a hard-on?
+
+812
+01:07:16,136 --> 01:07:17,170
+DAVID:
+Oh, come on...
+
+813
+01:07:17,271 --> 01:07:19,172
+ANA:
+Did they laugh at you?
+
+814
+01:07:19,273 --> 01:07:21,743
+I wanna know.
+Tell me, what is it?
+
+815
+01:07:21,843 --> 01:07:23,176
+Is it because of your mom?
+
+816
+01:07:23,277 --> 01:07:25,279
+Don't you dare talk about my
+mother, you fucking whore!
+
+817
+01:07:25,379 --> 01:07:30,284
+Oh, mama's little murderer
+has a sensitive spot.
+
+818
+01:07:36,958 --> 01:07:41,295
+What did you mean when you said
+what was left of the body?
+
+819
+01:07:41,395 --> 01:07:43,598
+Do you ever stop asking
+fucking questions?
+
+820
+01:07:43,698 --> 01:07:45,567
+What did you do with them?
+
+821
+01:07:48,368 --> 01:07:50,370
+DAVID:
+Well, were dead anyway.
+
+822
+01:07:52,072 --> 01:07:53,675
+The world is gonna be
+a better place
+
+823
+01:07:53,775 --> 01:07:55,409
+when you get the needle.
+
+824
+01:07:56,644 --> 01:08:00,548
+Yesterday at the café,
+there was something between
+
+825
+01:08:00,648 --> 01:08:01,950
+you and me.
+
+826
+01:08:02,050 --> 01:08:04,519
+An electricity. I saw it.
+
+827
+01:08:04,619 --> 01:08:06,186
+Go on. Admit it.
+
+828
+01:08:06,286 --> 01:08:07,287
+Keep on dreaming.
+
+829
+01:08:07,387 --> 01:08:10,058
+Go on.
+That's all you have left.
+
+830
+01:08:10,157 --> 01:08:11,926
+Oh, when I saved you
+from your abusive husband,
+
+831
+01:08:12,026 --> 01:08:13,528
+that made you hot.
+
+832
+01:08:13,628 --> 01:08:14,361
+That turns you on.
+
+833
+01:08:14,461 --> 01:08:16,129
+It's okay. You can admit it.
+
+834
+01:08:16,229 --> 01:08:17,431
+You're delusional.
+
+835
+01:08:17,532 --> 01:08:19,634
+-DAVID: Really?
+-Nice guys get me hot.
+
+836
+01:08:19,734 --> 01:08:20,835
+Not psychos.
+
+837
+01:08:20,935 --> 01:08:23,071
+Well, why did you marry Vince?
+
+838
+01:08:23,170 --> 01:08:23,938
+He's pretty violent.
+
+839
+01:08:24,038 --> 01:08:25,673
+Not really a nice guy.
+
+840
+01:08:25,773 --> 01:08:27,008
+He was drinking.
+
+841
+01:08:27,107 --> 01:08:29,010
+He... he was depressed,
+he lost his job.
+
+842
+01:08:29,109 --> 01:08:31,713
+Excuses, excuses, excuses.
+
+843
+01:08:31,813 --> 01:08:32,880
+What about the guy before Vince?
+
+844
+01:08:32,981 --> 01:08:34,549
+There was one before him, right?
+
+845
+01:08:34,649 --> 01:08:36,084
+Was he violent too?
+
+846
+01:08:36,183 --> 01:08:37,250
+Would he beat you
+and then give you flowers
+
+847
+01:08:37,351 --> 01:08:39,119
+that you couldn't smell
+through your broken nose?
+
+848
+01:08:39,219 --> 01:08:40,788
+And did you make
+excuses for him?
+
+849
+01:08:40,888 --> 01:08:42,090
+Yeah. Drinking, depression.
+
+850
+01:08:42,189 --> 01:08:43,256
+Lost his job. Bang.
+
+851
+01:08:43,357 --> 01:08:44,559
+Oh, I'm sorry. Flowers.
+
+852
+01:08:44,659 --> 01:08:46,259
+Drinking, depression,
+lost his job.
+
+853
+01:08:46,360 --> 01:08:48,128
+Oh, bang. Oh, I'm sorry.
+
+854
+01:08:48,228 --> 01:08:49,329
+Here's some flowers.
+
+855
+01:08:49,429 --> 01:08:52,265
+(LAUGHS) Drinking, depression,
+lost his job.
+
+856
+01:08:52,366 --> 01:08:54,736
+Bang! Oh, I'm sorry...
+
+857
+01:08:55,970 --> 01:08:57,805
+I'm sick of hearing you.
+
+858
+01:09:03,778 --> 01:09:07,682
+(WIND BLOWING)
+
+859
+01:09:18,559 --> 01:09:22,329
+(TICKING)
+
+860
+01:09:37,477 --> 01:09:41,883
+(ANIMAL HOWLING IN DISTANCE)
+
+861
+01:10:17,719 --> 01:10:21,689
+(FOOT STEPS)
+
+862
+01:11:02,864 --> 01:11:04,297
+I think it's gone...
+
+863
+01:11:04,397 --> 01:11:10,403
+(THUDDING, BANGING)
+
+864
+01:11:13,473 --> 01:11:14,542
+ANA:
+What?
+
+865
+01:11:14,642 --> 01:11:15,777
+(MUMBLING)
+
+866
+01:11:15,877 --> 01:11:16,711
+What?
+
+867
+01:11:16,811 --> 01:11:19,881
+(MUMBLING)
+
+868
+01:11:19,981 --> 01:11:20,982
+Wait, what?
+
+869
+01:11:21,082 --> 01:11:22,016
+(MUMBLING)
+
+870
+01:11:22,116 --> 01:11:23,684
+(INDISTINCT SPEECH)
+
+871
+01:11:26,020 --> 01:11:30,725
+(RADIO PLAYS, HORN BLARING)
+
+872
+01:12:05,193 --> 01:12:06,928
+ANA:
+What was that?
+
+873
+01:12:13,301 --> 01:12:14,836
+I don't know.
+
+874
+01:12:14,936 --> 01:12:16,503
+Whatever it was,
+it must've been attracted
+
+875
+01:12:16,604 --> 01:12:18,005
+to the car by the scent
+of your piss.
+
+876
+01:12:18,105 --> 01:12:19,941
+ANA:
+Could've been your blood.
+
+877
+01:12:23,177 --> 01:12:24,377
+Let's turn the heat on.
+
+878
+01:12:24,477 --> 01:12:26,147
+We have to be sparing, remember?
+
+879
+01:12:26,247 --> 01:12:28,182
+-Just a few minutes come on.
+-No.
+
+880
+01:12:28,282 --> 01:12:29,650
+I'm freezing my ass off here,
+goddammit!
+
+881
+01:12:29,750 --> 01:12:31,351
+Well, you should've thought
+about that before you made me
+
+882
+01:12:31,451 --> 01:12:33,821
+smash that fucking window!
+
+883
+01:12:40,761 --> 01:12:41,295
+15 minutes.
+
+884
+01:12:41,394 --> 01:12:42,763
+That's it.
+
+885
+01:12:54,407 --> 01:12:56,510
+I need to use the boy's room.
+
+886
+01:12:58,478 --> 01:12:59,947
+Seriously, I need to go.
+
+887
+01:13:00,047 --> 01:13:02,149
+You're optimistic.
+
+888
+01:13:02,250 --> 01:13:03,985
+Well, at least give me a hand.
+
+889
+01:13:08,356 --> 01:13:10,224
+Don't make me piss myself.
+
+890
+01:13:10,324 --> 01:13:12,360
+Please.
+
+891
+01:13:12,492 --> 01:13:14,494
+I ain't setting you free.
+
+892
+01:13:29,310 --> 01:13:31,512
+You see?
+
+893
+01:13:31,612 --> 01:13:34,615
+I told you you were capable
+of being cruel.
+
+894
+01:13:34,715 --> 01:13:37,151
+At least it'll keep you warm
+for a while.
+
+895
+01:13:43,124 --> 01:13:44,725
+What now?
+
+896
+01:13:45,960 --> 01:13:47,427
+DAVID:
+My leg.
+
+897
+01:13:54,535 --> 01:13:56,637
+ANA:
+Skin has turned black.
+
+898
+01:13:56,737 --> 01:13:57,972
+Shit.
+
+899
+01:14:00,341 --> 01:14:04,444
+If the storm keeps going
+like this, I'm gonna lose it.
+
+900
+01:14:04,545 --> 01:14:07,381
+If the storm goes on like this,
+it'll be the least
+
+901
+01:14:07,480 --> 01:14:09,183
+of your worries.
+
+902
+01:14:15,488 --> 01:14:20,127
+(WIND HOWLING)
+
+903
+01:14:24,098 --> 01:14:26,968
+ANA:
+Looks like we're in the middle
+of a reservation.
+
+904
+01:14:30,638 --> 01:14:34,108
+Here, the natives have a legend.
+
+905
+01:14:35,475 --> 01:14:37,812
+Talks of a spirit living
+in the forest
+
+906
+01:14:37,912 --> 01:14:40,181
+which comes to hunt people
+like you.
+
+907
+01:14:41,515 --> 01:14:44,819
+Those who have committed
+the worst of atrocities.
+
+908
+01:14:44,919 --> 01:14:48,022
+Those who have ceased
+to act like civilised men.
+
+909
+01:14:49,857 --> 01:14:52,693
+They say it first appears
+in dreams.
+
+910
+01:14:54,228 --> 01:14:58,933
+When their time has come,
+it comes to get them,
+
+911
+01:14:59,033 --> 01:15:00,968
+and they become it.
+
+912
+01:15:01,068 --> 01:15:03,637
+A soul condemned
+to wander in the woods.
+
+913
+01:15:07,341 --> 01:15:09,577
+You believe that bullshit?
+
+914
+01:15:09,677 --> 01:15:11,245
+The natives do.
+
+915
+01:15:17,051 --> 01:15:18,185
+Oh shit.
+
+916
+01:15:18,285 --> 01:15:19,420
+ANA:
+What?
+
+917
+01:15:19,520 --> 01:15:21,155
+DAVID:
+Battery just died.
+
+918
+01:15:24,291 --> 01:15:24,992
+ANA:
+No!
+
+919
+01:15:25,092 --> 01:15:26,494
+Shit!
+
+920
+01:15:26,627 --> 01:15:28,295
+Shit!
+
+921
+01:15:30,231 --> 01:15:31,632
+DAVID:
+Now we're fucked.
+
+922
+01:15:31,732 --> 01:15:40,841
+(♪♪♪)
+
+923
+01:16:23,417 --> 01:16:26,287
+(ANA GASPING)
+
+924
+01:16:39,400 --> 01:16:41,001
+ANA:
+Don't forget I have a knife.
+
+925
+01:16:46,140 --> 01:16:50,344
+We fall asleep this time,
+we won't wake up.
+
+926
+01:16:50,444 --> 01:16:52,179
+ANA:
+We won't.
+
+927
+01:16:52,279 --> 01:16:54,148
+The storm's gonna stop.
+
+928
+01:16:57,218 --> 01:17:00,855
+I'm trying to remember the
+last time a woman touched me.
+
+929
+01:17:02,089 --> 01:17:05,960
+I mean,
+really wanted to touch me.
+
+930
+01:17:08,329 --> 01:17:09,930
+ANA:
+I'm not touching you.
+
+931
+01:17:10,030 --> 01:17:13,334
+I'm taking your body
+heat to keep me alive.
+
+932
+01:17:17,938 --> 01:17:20,174
+I wish I was a better person.
+
+933
+01:17:20,274 --> 01:17:22,343
+ANA:
+It's a little late
+to feel guilty.
+
+934
+01:17:24,311 --> 01:17:26,881
+I don't expect you
+to have sympathy for me.
+
+935
+01:17:28,782 --> 01:17:31,252
+But life hasn't been kind.
+
+936
+01:17:31,352 --> 01:17:34,989
+My dad, the piece of shit...
+
+937
+01:17:36,891 --> 01:17:38,792
+he ran out on us
+when I was nine.
+
+938
+01:17:41,262 --> 01:17:43,297
+Never saw him again.
+
+939
+01:17:43,397 --> 01:17:45,366
+My mother was already a drinker.
+
+940
+01:17:46,867 --> 01:17:49,670
+One of the only two
+things they had in common.
+
+941
+01:17:50,738 --> 01:17:52,339
+The other one was me.
+
+942
+01:17:54,241 --> 01:17:58,212
+But when he left,
+all she did is drink.
+
+943
+01:18:00,881 --> 01:18:04,185
+She was much more
+violent than my father.
+
+944
+01:18:04,285 --> 01:18:09,423
+After he left, I got scared
+and I pissed the bed.
+
+945
+01:18:12,860 --> 01:18:18,199
+When she found out,
+she beat me.
+
+946
+01:18:20,701 --> 01:18:23,204
+And every night
+I pissed the bed.
+
+947
+01:18:25,139 --> 01:18:26,373
+Every night.
+
+948
+01:18:28,475 --> 01:18:29,777
+(SOBS)
+
+949
+01:18:29,877 --> 01:18:32,079
+I grew up in an orphanage.
+
+950
+01:18:33,648 --> 01:18:39,353
+At nine, I got lucky and I
+was adopted by a nice couple.
+
+951
+01:18:41,722 --> 01:18:44,425
+The mother was affectionate.
+
+952
+01:18:44,526 --> 01:18:46,160
+The father was attentive.
+
+953
+01:18:48,028 --> 01:18:50,497
+But not long after I arrived,
+
+954
+01:18:52,933 --> 01:18:55,736
+the attention became
+more than I wanted.
+
+955
+01:18:57,338 --> 01:18:59,406
+Than any child wants.
+
+956
+01:19:02,309 --> 01:19:08,048
+Things happen in... in silence
+until I was 15.
+
+957
+01:19:10,284 --> 01:19:12,753
+And then I started
+getting into trouble.
+
+958
+01:19:12,853 --> 01:19:15,189
+Sound familiar?
+
+959
+01:19:16,423 --> 01:19:22,396
+And then I finally spoke up
+and my father went to jail.
+
+960
+01:19:24,666 --> 01:19:31,472
+And then came the drink,
+the drugs, the violence, jail.
+
+961
+01:19:33,807 --> 01:19:37,444
+Then... then I became a mother.
+
+962
+01:19:39,847 --> 01:19:46,020
+And I've only given
+Ella love and kindness.
+
+963
+01:19:46,120 --> 01:19:49,023
+even though life
+wasn't kind to me.
+
+964
+01:19:50,291 --> 01:19:54,094
+And the truth is,
+you're looking for excuses,
+
+965
+01:19:54,194 --> 01:19:56,130
+but you don't have any.
+
+966
+01:19:57,131 --> 01:19:59,266
+They won't bring back
+the lives you took.
+
+967
+01:20:01,201 --> 01:20:03,337
+It has nothing to
+do with your mother.
+
+968
+01:20:06,775 --> 01:20:08,510
+It doesn't matter now anyway.
+
+969
+01:20:10,578 --> 01:20:13,080
+In a couple of hours,
+the cold will take us.
+
+970
+01:20:14,815 --> 01:20:16,950
+That solves everything.
+
+971
+01:20:19,953 --> 01:20:23,991
+It was one advantage to the cold
+that I didn't expect.
+
+972
+01:20:25,125 --> 01:20:27,861
+I can't feel the pain
+in my leg anymore.
+
+973
+01:20:29,430 --> 01:20:33,367
+There's one other thing
+that really surprises me.
+
+974
+01:20:35,336 --> 01:20:36,738
+ANA:
+What?
+
+975
+01:20:36,837 --> 01:20:39,306
+The cold makes everything
+so fragile.
+
+976
+01:20:39,406 --> 01:20:41,041
+ANA:
+Yeah.
+
+977
+01:20:41,141 --> 01:20:43,277
+DAVID:
+Including this tape.
+
+978
+01:20:44,845 --> 01:20:48,182
+(ANA AND DAVID GRAPPLING)
+
+979
+01:20:50,685 --> 01:20:52,486
+(DAVID AND ANA SHOUTING)
+
+980
+01:20:53,887 --> 01:20:55,856
+(ANA GROANING)
+
+981
+01:20:57,858 --> 01:20:59,126
+(LAUGHS)
+
+982
+01:20:59,226 --> 01:21:01,095
+Oh, you should've killed me,
+instead of talking on
+
+983
+01:21:01,195 --> 01:21:03,063
+and on like my
+bitch of a mother.
+
+984
+01:21:03,163 --> 01:21:06,333
+I killed her ten years ago.
+
+985
+01:21:06,433 --> 01:21:08,603
+I ripped out her fucking
+throat to shut her up.
+
+986
+01:21:08,703 --> 01:21:10,204
+(LAUGHS)
+
+987
+01:21:10,304 --> 01:21:14,576
+Oh, oh, oh Ana,
+I'm gonna do something
+
+988
+01:21:14,676 --> 01:21:16,210
+so special with you.
+
+989
+01:21:16,310 --> 01:21:18,780
+(LAUGHS)
+
+990
+01:21:18,879 --> 01:21:21,482
+Because we're pals now.
+
+991
+01:21:21,583 --> 01:21:25,886
+I'm really gonna enjoy the
+moment with a friend,
+
+992
+01:21:27,655 --> 01:21:31,992
+and when I get outta here,
+the first place I'm gonna go...
+
+993
+01:21:32,092 --> 01:21:34,461
+I'm gonna go play
+with little Ella.
+
+994
+01:21:34,562 --> 01:21:35,362
+(LAUGHS)
+
+995
+01:21:35,462 --> 01:21:38,666
+(ANA SCREAMS)
+
+996
+01:21:38,767 --> 01:21:41,168
+(THUD)
+
+997
+01:21:41,268 --> 01:21:42,637
+(GROANING)
+
+998
+01:21:55,750 --> 01:21:57,317
+(DAVID SCREAMING)
+
+999
+01:22:05,993 --> 01:22:08,162
+(STRUGGLING)
+
+1000
+01:22:21,743 --> 01:22:22,744
+Ah!
+
+1001
+01:22:22,844 --> 01:22:24,546
+(WIND HOWLING)
+
+1002
+01:22:24,646 --> 01:22:26,246
+(ANA GASPING)
+
+1003
+01:22:58,913 --> 01:23:00,981
+Fall asleep.
+
+1004
+01:23:01,081 --> 01:23:02,750
+I won't fall asleep.
+
+1005
+01:23:04,886 --> 01:23:06,386
+I promise.
+
+1006
+01:23:06,487 --> 01:23:09,990
+(GASPING)
+
+1007
+01:23:12,125 --> 01:23:14,194
+I won't fall asleep.
+
+1008
+01:23:14,294 --> 01:23:17,164
+I won't fall asleep, I promise.
+
+1009
+01:23:49,463 --> 01:23:52,901
+(ENGINE RUMBLES)
+
+1010
+01:23:53,001 --> 01:24:02,142
+(♪♪♪)
+
+1011
+01:24:37,979 --> 01:24:40,180
+(MUSIC FADES)
+
+1012
+01:24:43,051 --> 01:24:52,192
+(♪♪♪)
+
+1013
+01:25:43,143 --> 01:25:45,013
+Oh shit.
+
+1014
+01:25:45,113 --> 01:25:49,449
+(♪♪♪)
+
+1015
+01:25:50,918 --> 01:25:51,552
+(GASPS)
+
+1016
+01:25:51,653 --> 01:25:55,155
+<i>♪ A few more days to Christmas ♪</i>
+
+1017
+01:25:55,255 --> 01:25:58,526
+<i>♪ My favorite time of year ♪</i>
+
+1018
+01:25:58,626 --> 01:26:02,530
+<i>♪ If we're lucky,</i>
+<i>we'll see Santa ♪</i>
+
+1019
+01:26:02,630 --> 01:26:05,933
+<i>♪ Rudolph</i>
+<i>and his eight reindeer ♪</i>
+
+1020
+01:26:06,034 --> 01:26:09,837
+<i>♪ The snow keeps on falling ♪</i>
+
+1021
+01:26:09,937 --> 01:26:13,407
+<i>♪ Sledding down the hill ♪</i>
+
+1022
+01:26:13,508 --> 01:26:17,111
+<i>♪ Frost keeps frozen</i>
+<i>on the log ♪</i>
+
+1023
+01:26:17,210 --> 01:26:20,615
+<i>♪ Counting down the days until ♪</i>
+
+1024
+01:26:20,715 --> 01:26:24,585
+<i>♪ We gather round,</i>
+<i>decorate the tree ♪</i>
+
+1025
+01:26:24,686 --> 01:26:29,590
+(♪♪♪)
+

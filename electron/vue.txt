@@ -8,3 +8,20 @@ uma série de componentes vue prontos.
 
 vue add electron-builder - adicionando o pacote electron-builder, que é o pacote
 que precisamos para incluirmos o electron na nossa aplicação vue. 
+
+IPC é uma sigla para inter process communication ou em português, comunicação
+entre processos.
+
+Na nossa aplicação electron, temos dois processos rodando, um processo será
+a minha aplicação vue, que roda no browser e outro processo é a janela do electron
+onde essa aplicação está rodando, o meu projeto vue e electron são coisas
+separadas e o IPC serve para permitir que esses dois processos se comuniquem.
+De certa forma a aplicação vue e electron já estão integrados, mas nós não conseguimos
+transferir dados de um processo para outro. O que isso significa? O meu projeto vue
+é um projeto web e em consequência disso eu não terei acesso ao sistema de arquivos
+do sistema operacional, que é algo que a gente precisa nesse projeto, mas o electron
+que é o nosso segundo processo, ele consegue fazer isso, pois ele tem uma integração
+muito maior com o nosso sistema de arquivos e com outros elementos do nosso sistema
+operacional. a gente pode entender o proceso do electron como sendo um backend
+da nossa aplicação, enquanto o nosso processo vue seria um front-end.
+

@@ -42,3 +42,7 @@ console.log(isAtivo)
   
   let age
   console.log(age || 20)
+
+  console.log("--------------------")
+
+  console.log(parseInt("r"))

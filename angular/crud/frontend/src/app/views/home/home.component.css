@@ -1,0 +1,23 @@
+.home {
+  background-color: #ffffffe3;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  height: 95px;
+  border-radius: unset;
+}
+
+.home .title {
+  font-size: 3rem;
+  font-weight: 300px;
+  line-height: 1.2px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.home .subtitle {
+    font-size:1.1rem;
+    margin-left: 10px;
+}
+

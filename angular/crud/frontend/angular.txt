@@ -1,0 +1,456 @@
+npm i @angular/cli - comando para instalar o cli do Angular
+ng new app_name  - comando para criar uma aplicação Angular
+
+ng add @angular/material - comando para adicionar o material
+design no meu projeto e termos acessos a inúmeros componente
+pré-prontos.
+
+ng generate component components/template/header - comando para criar
+um componente num determinado diretório dentro do módulo ou pasta app que
+fica dentro da pasta src, o que significa que o prefixo para cada
+componente será o nome do módulo onde ele se encontra, que no caso
+será app, um componente é uma coletanêa de três
+arquivos, dentre eles: app.component.html, app.component.ts e app.component.css.
+
+ng generate service services/product - comando responsável por criar um service chamado
+product.
+
+ng generate directive directives/red - comando responsável por criar uma diretiva
+no Angular chamada red.
+
+ng generate @angular/material:material_component component_name - comando responsável por gerar
+um componente do Angular material, esse comando também é conhecido por schematic.
+
+No contexto do **Angular Material**, um **schematic** é uma ferramenta ou um
+conjunto de instruções automatizadas que ajuda a gerar, modificar ou
+configurar elementos dentro de uma aplicação Angular. Os **schematics** são
+parte de um sistema de geração de código no Angular, frequentemente usados
+por meio do Angular CLI para acelerar o desenvolvimento e garantir que o
+código gerado siga as melhores práticas e convenções do Angular.
+
+No caso específico do **Angular Material**, um **schematic** pode ser
+utilizado para:
+
+1. **Gerar componentes**: Como botões, formulários, menus, entre outros, já
+com a estrutura necessária e aplicando as convenções de estilo do Angular
+Material.
+   
+2. **Adicionar módulos**: Você pode adicionar facilmente novos módulos do
+Angular Material à sua aplicação, como `MatButtonModule`, `MatTableModule`,
+`MatDialogModule`, etc.
+
+3. **Configurar temas**: Os schematics podem ajudar a configurar rapidamente
+um tema Material no seu projeto.
+
+4. **Atualizações de versão**: Durante o processo de atualização do Angular
+Material, os schematics podem ser usados para aplicar mudanças de código
+necessárias, como ajustar a estrutura de arquivos ou as dependências.
+
+### Exemplos de como usar os schematics do Angular Material:
+
+1. **Gerar um componente de botão**:
+   ```bash
+   ng generate @angular/material:button
+   ```
+
+2. **Adicionar um módulo do Angular Material**:
+   ```bash
+   ng add @angular/material
+   ```
+   Esse comando instala o Angular Material e configura automaticamente
+   o módulo básico em sua aplicação.
+
+3. **Adicionar um tema**:
+   Para adicionar um tema padrão, você pode executar o comando:
+   ```bash
+   ng generate @angular/material:theming --name=my-theme
+   ```
+
+### Benefícios dos schematics:
+- **Produtividade**: Automatizam a criação de código, poupando tempo.
+- **Consistência**: Garantem que o código siga as melhores práticas do Angular e do Angular Material.
+- **Facilidade**: Não é necessário configurar manualmente várias partes da aplicação ou importar arquivos específicos, tudo é feito de forma automatizada.
+
+Em resumo, os **schematics** no Angular Material são uma forma de acelerar
+o desenvolvimento, automatizando tarefas repetitivas e garantindo que as
+convenções do Angular Material sejam seguidas de maneira eficiente.
+
+Elementos do Angular - aula 1
+
+No Angular, nós temos oque chamamos de css escopado ou modularizado
+e css global, o css modularizado afeta apenas um componente específico,
+independente de que tipo de seletor você usa nele, já o css
+global está sujeito a afectar todos os componentes, o css escopado
+por padrão é aquele criado juntamente com um componente, já
+o css global é criado com o projeto Angular.
+
+Existem dois tipos de diretivas no Angular que são: attributes directives, structural directives.
+
+Nós temos o uso muito frequente no Angular de decorator.
+
+Decorator é um padrão de projeto que tem como objetivo evitar herança e ao invés disso
+trabalhar com composição para que nós possamos estender um objeto, ou seja adicionar métodos
+e atributos ao objeto.
+
+O Angular usa decorator em classes, oque indica que aquelea classe desempenha algum papel dentro
+do framework, seja de componente, diretiva ou outro elemento do angular.
+
+Exemplo de uma diretiva de atributo(attribute directive):
+    
+attributes directives:  altera a aparência e comportamento de um elemento, componente ou outra
+diretiva, a parte da aparência diz respeito a modificar o css, um exemplo da parte do
+comportamento seria colocar uma determinada diretiva dentro de um button, e essa diretiva faz
+com que seja feita uma chamada ajax para o backend da sua aplicação, as diretivas de atributos
+podem ser personalizadas, ou seja, criadas pelo próprio desenvolvedor.
+
+ Declaração : 
+   @Directive({
+       selector: "[appColor]" // representa o nome do atributo que usarei para referenciar a diretiva dentro de alguma tag HTML.
+   })
+   
+    export class RedDirective {
+        constructor(el: ElementRef) {
+           el.nativeElement.style.color = "#000"
+        }
+    }
+
+  Uso:
+    <h1 appColor></h1>
+    Quando  a referência da diretiva é usada, a classe associado a ela é instânciada e para
+    o seu construtor passado uma referência da tag HTML na qual ela(referência a diretiva)
+    foi usada.
+ 
+structural directives: altera o layout adicionando e removendo elementos na DOM, as diretivas
+estruturais já vêm embutidas no Angular.
+
+Exemplo de diretivas estruturais:
+
+O *ngIf é uma diretiva estrutural, que exibirá o tags dentro do formulário apenas se Product
+for true, logo ele mexe com a estrutura da DOM, adicionando ou removendo elementos.
+<form *ngIf="product" class="product-form">
+   
+</form>
+
+*ngForm é uma diretiva estrutural, chamamos de diretiva estrutural porque pode alterar a estrutura
+da DOM, adicionando ou removendo elementos.
+<ul> 
+   <li *ngFor="left product of products">
+       {{product.name}}
+  </li>
+</ul>
+
+
+property binding: é importante que tenhamos uma comunicação entre as partes que compõem um componente,
+por exemplo, é importante que o meu arquivo html consiga comunicar-se com o meu arquivo ts, e essa
+comunicação é possível por meio do property binding, que criará um vínculo por meio de propriedades
+entre o meu html e ts, isso para que eu tenha condições de por exemplo exibir dados de propriedades
+presentes no meu arquivo ts no meu html.
+
+Exemplo de property binding:
+
+ Declaração:
+   @Component({
+      seletor: "app-product-read"
+      templateUrl: "product-read.component.html"
+      styleUrls:["./product-read.component.css"]
+   })
+
+  export class ProductReadComponent {
+    products: Product[];
+
+  }
+
+   Uso:
+     // a string products apontará para o atributo products no meu componente ProductReadComponent
+    <table [dataSource]="products">
+    </table>
+  
+
+event binding: a ideia do event binding é quase a mesma que a do property binding, a diferença é
+que agora nós estaremos criando um vínculo comportamental e não de dados, ou seja, em resposta a um
+evento que ocorrer num elemento presente no html nós chamaremos um comportamento presente no
+arquivo ts.
+
+ Exemplo de evet binding:
+  
+   Declaração:
+     
+    @Component({
+       seletor: "app-product-create"
+       templateUrl: "product-create.component.html"
+       styleUrls:["./product-create.component.css"]
+    })
+
+  export class ProductCreateComponent {
+    createProduct(): void {
+       
+    }
+
+  }
+
+   Uso:
+     // A string createProduct() apontará para o método createProduct no meu componente ProductCreateComponent
+     <Button mat-raised-button 
+       (click)="createProduct()"
+       color="primary"
+     >
+    </Button>
+     
+one way data-binding: é a forma padrão que o Angular usa a partir da qual o estado de um componente
+pode ser modificado num único sentido, nessa forma, o html(interface gráfica) não consegue mudar o estado do componente(dados das propriedades no arquivo ts), ele
+precisa ter um evento associado a ele e a ação associada ao disparo desse evento será responsável
+por mudar o estado componente, nesse caso por padrão apenas o componente é capaz de alterar seu
+próprio estado, daí one way data-binding, porque a alteração do estado do componente é feito
+num único sentido(unidirecional), que é do próprio componente(arquivo ts) para a interface gráfica.
+
+Exemplo:
+    Sintaxe do one-way data-binding
+   <input type="text" [value]="nome"> 
+
+two way data-binding: é uma outra forma que o Angular usa para mudar o estado do componente, nessa 
+forma, tanto o HTML(interface gráfica) quanto o componente(o próprio arquivo ts) consegue mudar o estado do dele mesmo, daí
+two way data-binding, porque a alteração do estado do componente é feito em dois sentidos(bidirecional), do
+HTML(interface gráfica) para o componente(arquivo ts)
+
+Exemplo:
+    Sintaxe do two-way data-binding
+   <input type="text" [(ngModel)]="nome">
+
+Angular router: é um recurso que permite alternar entre componentes, ou seja, rotear entre
+componentes, porque nem sempre eu quero estar no mesmo componente.
+
+Fluxo do Angular router:
+
+Imagina que você tem um componente chamado nav e dentro desse componente um menu com
+vários links, dentre eles: Home, Produto, Usuário. Quando o usuário clicar no item de menu
+Home, automáticamente o componente home será carregado naquilo que nós chamamos de
+"Router Outlet", que é um componente que faz parte do Angular Router, esse componente
+substitui dentro dele os componentes de acordo com a navegação que foi feita.
+
+Exemplo:
+   
+  Quando o usuário clicar no link abaixo, o Angular router olhará para o lista das nossas rotas,
+  é a rota cujo link corresponder ao valor do routerLink terá o componente associado a ele carregado
+  no component router outlet, cada objeto dentro de routes representa uma rota.
+
+  <a routerLink="/products">
+    Produtos
+  </a>
+
+   const routes: Routes = [
+      { 
+        path: "products",
+        component: "ProductCrudComponent"
+      },
+      {
+        path: "products/create"
+        component: "ProductCreateComponent"
+      }
+    ]
+
+Angular Pipes: são processamentos que você faz um cima de variáveis, usando o operador |(pipe),
+o pipe aplica uma formatação em uma variável, um pipe pode receber um parâmetro, nós também 
+podemos ter uma cadeia de pipes ou encadeamento de pipes.
+
+Exemplo de pipe:
+   // Exemplo de pipes sem parâmetros
+   <p>
+     O vencimento é 
+     {{ produto.vencimento | date }} 
+   </p>
+
+   // Exemplo de pipes com parâmetros
+   <td mat-cell *matCellDef="let Product">
+      {{  product.price  | currency: 'BRL' }}
+   </td>
+
+   // Exemplo de cadeia de pipes
+    <p> 
+      O vencimento é 
+      {{produto.vencimento | date: "fullDate" | uppercase }}
+   </p>
+
+Elementos do Angular - aula 2
+
+Programação reativa: Programação reativa é um paradigma de
+programação que permite a criação de sistemas de forma não
+bloqueante e assíncrona. É um modelo orientado a fluxos de
+dados e propagação de estados, onde as operações são
+independentes e não precisam ser executadas em uma sequência
+específica. 
+
+A programação reativa é ideal para aplicações que precisam
+ser escaláveis e altamente responsivas, como aquelas que
+lidam com grandes volumes de dados em tempo real.
+
+O angular usa um framework chamado reactiveX, que tem implementações
+para várias linguagens, você tem o reactiveX para java, javascript e outras
+linguagens.
+
+Oque acontece quando um código se comporta de forma proativa?
+
+R: Muito provavelmente, ele ficará o tempo todo tentando fazer algum tipo 
+de processamento, e um código funcionar de forma proativa significa que estará
+consumindo mais processamento.
+
+um código comportar-se de forma reativa significa que ele será chamado apenas de forma
+reativa, ou seja, precisa acontecer alguma coisa externa, no caso um evento, para que ele
+seja chamado.
+
+O padrão de projeto mais utilizado na web é o observer, muita coisa do javascript está baseado
+em observer, você tem o conceito de callback, de promise e de observables.
+
+padrão observer é um padrão orientado a evento, isto porque ele entra em ação justamente
+quando um evento ocorre.
+
+Elementos do padrão observer:
+
+event: o evento que ocorrerá. 
+
+subject: quem detecta quando o evento acontece e notifica os interessados.
+
+observer: são as pessoas ou os códigos interessados
+num determinado evento, os observers precisam se registrar no subject para
+que eles possam ser notificados.
+
+
+Entendendo Observables
+
+Do ponto de vista do JavaScript puro, nós começamos a trabalhar 
+com esse conceito de reatividade a partir do momento que
+nós temos a possiblilidade de passar um função como parâmetro para
+outra função e essas funções passadas como parâmetro para outras
+funções são chamadas também de callbacks.
+
+Os problemas da callback é quando você tem uma lógica mais complexa,
+você vai acabar caindo num cenário em que você precisa passar uma
+callback dentro de outra callback, oque denominamos de callback hell,
+oque gera um código de difícil leitura, difícil manutenção, daí surgiu
+a partir do ES16 o conceito de promise, aqui também usa o conceito de callback,
+mas o diferencial aqui é você tem a possibilidade de encadear várias chamadas
+de callbacks, sem ter esse aninhamento causado pelo callback, um dos problemas
+da promise é que você usa apenas uma única vez, você executou um determinado
+código usando promise, depois que termina você não consegue reutilizar essa
+promise e daí surgiu o Observable, que o rxjs usa como dependência, as vantagens
+dos Observables são que nós conseguimos reusar ele(diferente da promise), conseguimos
+também lidar com stream de dados, e também com operadores(que são as funções que trabalham
+em conjunto com os Observables), funções como map, filter, reduce, que ajudam a manipular
+os dados que você está observando a partir do seu observable.
+
+O padrão observer é a base da programação reativa, só tem  programação reativa por causa
+do padrão observer.
+
+Quando você trabalha com Observables, promises e callbacks, via de regra você está trabalhando
+com código assíncrono, ou seja, não há uma resposta imediata na chamada do seu código.
+
+Elementos do Angular - aula 3
+
+O que são services?
+
+R: São classes que têm como objetivo principal organizar e compartilhar métodos e dados
+entre componentes e também dentro de diretivas.
+
+A ideia é você separar as responsabilidades, tudo aquilo que diz respeito a mostrar algo
+visual na tela, diz respeito ao componente, mas sempre que você tem regras que não dizem respeito
+a parte visual, como por exemplo: você quer encapsular o acesso a sua API, ou seja, o backend da
+sua aplicação, o ideal é colocar isso no service, que diz respeito a parte não visual.
+
+O Angular não força a criação de services.
+
+Você pode ter lógicas no arquivo ts do seu componente, desde  que essas lógicas estejam
+relacionadas a parte visual.
+
+Num service nós vamos agregar as lógicas comuns entre dois ou mais componentes ou lógicas
+que não fazem sentido estar dentro do arquivo ts do componente por não estarem relacionadas
+com a parte visual.
+
+Um service precisa ser responsável por um conjunto coerente de funcionalidades, ou seja, que 
+faça sentido que elas estejam juntas, por exemplo:
+
+Por exemplo, um service que trata da lógica de uma entidade PRODUTO não pode ser o mesmo que
+trata da lógica de uma entidade PESSOA, teriamos de ter dois services, um chamado ProdutoService
+e outro PessoaService.
+
+Dentro de um service nós poderemos ter um decorator chamado Injectable, que basicamente sua função
+será tornar um service detectável pelo Angular e vai ser possível de ser injetado em outras classe.
+
+ Decorator que torna o service na qual ele se encontra detectável e injetável pelo Angular.
+@Injectable({
+   providedIn: "root" -> a função dessa linha é indicar quem será o injetor dessa dependência na minha aplicação, que será root, que nada mais é do quem um alias para o AppModule.
+})
+
+O AppModule possui um rootInjector associado a ele, que é responsável por fazer a injeção de
+dependência.
+
+E sempre que um service for injetado dentro de um componente ou de uma diretiva, o Angular
+irá me devolver a mesma instância dele, o desenvolvedor não instância um service e nem injeta
+noutra objeto, o próprio Angular trata disso.
+
+Injeção de dependência
+
+Num cenário padrão em que a classe A precisa de uma classe B, a classe A criará uma instância
+da classe B, é muito natural acontecer isso, mas na injeção de dependência há uma inversão dessa
+lógica, isto porque agora quando a classe A precisar da classe B, a responsabilidade de instanciar
+a classe B deixará de ser da classe A e passará a ser de algum componente externo.
+
+De uma forma mais técnica, injeção de dependência é um padrão no qual a classe recebe as dependências
+de uma fonte externa ao invés de criar por conta própria.
+
+O problema de trabalhar sem injeção de dependência é que quando houver alguma alteração no construtor
+da classe que a classe B, eu terei de abrir a minha classe A para fazer uma alteração também.
+
+Dentro do framework Angular há um módulo responsável por fazer injeção de dependência.
+
+Quando eu crio um classe ProductService e digo que essa classe é injectable, você está dizendo
+por outras palavras para o Angular que essa classe deve ser instânciada e pode injectada
+componentes que já foram instânciados a partir do nome da sua tag, cada vez que eu referencio um
+componente a partir de um tag, o Angular devolver uma instância diferente daquele componente.
+
+O componente a qual estamos a nos referir aqui é a parte do html do componente que é referenciado
+pelo arquivo ts que possui o decorator injectable.
+
+Os services são singletons dentro do escopo de um injector, quando eu falo singletons me refiro
+ao fato de services possuírem uma única instância no escopo de um injector ou seja, o injector
+devolve a mesma instância do service para todos os componentes.
+
+No Angular, nós temos dois tipos de injector, que são: ModuleInjector, ElementInjector.
+
+como o root aponta para AppModule, nós estamos usando um injector de módulo no exemplo do injectable
+acima.
+
+No atributo providedIn, nós podemos colocar uma referência para um módulo da minha aplicação
+diferente de root, isso para que eu possa ter dentro do escopo do módulo espeficíficado um service
+injetado.
+
+Por exemplo, se eu tiver um módulo de autenticação na minha aplicação chamado authModule e eu
+desejo que dentro desse módulo de autenticação um service disponível dentro daquele escopo, em
+providedIn eu colocarei uma referência para authModule.
+
+O providedIn: "root" injecta o service para toda a aplicação e não para um módulo em
+específico, o providedIn é chamado de provider no Angular.
+
+Tipos de moduleInjector: @ngModule e @Injectable
+Tipos de elementInjector: @directive e @component
+
+O decorator @Injectable() é um das formas para registrar classes como dependências no Angular.
+Ao aplicar esse decorator a uma classe, você informa ao framework que ela pode ser injetada em
+outras classes da sua aplicação.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

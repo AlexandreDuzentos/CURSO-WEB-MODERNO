@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": "7",
+      "name": "Geladeira branca",
+      "price": "500.69"
+    },
+    {
+      "name": "Produto de teste",
+      "price": 125.98,
+      "id": "kom6miU"
+    },
+    {
+      "name": "Banana",
+      "price": "9.99",
+      "id": "hSguPn6"
+    },
+    {
+      "name": "Colunas",
+      "price": "2500",
+      "id": "8szMzgs"
+    },
+    {
+      "name": "Samsumg TV",
+      "price": "2500.50",
+      "id": "0TIcXkb"
+    },
+    {
+      "id": "sDDa30b",
+      "name": "",
+      "price": 0
+    },
+    {
+      "id": "5CD6Pof",
+      "name": "Geladeira rosa",
+      "price": "123.90"
+    }
+  ]
+}

@@ -436,6 +436,24 @@ O decorator @Injectable() é um das formas para registrar classes como dependên
 Ao aplicar esse decorator a uma classe, você informa ao framework que ela pode ser injetada em
 outras classes da sua aplicação.
 
+comando para criar um projeto angular sem o padrão standalone - ng new
+project_name --no-standalone
+
+No Angular, *standalone components* são componentes que não precisam estar
+dentro de um módulo (`NgModule`) para serem utilizados. A partir do Angular
+14, foi introduzida a possibilidade de criar componentes autônomos que podem
+ser diretamente instanciados e usados em templates sem a necessidade de serem
+declarados em um módulo.
+
+Esses componentes podem importar outros componentes, diretivas ou pipes
+diretamente e também podem ser exportados para uso em outros componentes.
+Isso simplifica a estrutura e a reutilização de componentes, além de permitir
+uma arquitetura mais modular e flexível.
+
+Em resumo, *standalone components* tornam o desenvolvimento mais simples,
+permitindo que os componentes sejam autossuficientes e independentes de
+módulos, facilitando a manutenção e o compartilhamento de código.
+
 
 
 

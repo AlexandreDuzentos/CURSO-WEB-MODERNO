@@ -1,5 +1,5 @@
 Create React App é uma forma oficial suportada para criar aplicações single page React.
-Ele oferece um setup moderno para com zero configuração.
+Ele oferece um setup moderno com zero configuração.
 
 Não é necessário instalar or configurar ferramentas como o gulp  ou o webpack. elas
 são pré-configuradas e ocultadas para que você possa se focar no código da aplicação

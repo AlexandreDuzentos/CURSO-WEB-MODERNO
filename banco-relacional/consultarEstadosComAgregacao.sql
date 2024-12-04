@@ -14,3 +14,17 @@ order by Total desc
 */
 select sum(populacao) as Total
 from estado
+
+/*
+   O GROUP BY no SQL é uma cláusula usada para agrupar resultados de uma
+   consulta com base em uma ou mais colunas, de modo a realizar operações de
+   agregação sobre esses grupos. Ela é comumente usada em conjunto com
+   funções agregadas (como SUM, COUNT, AVG, MIN, MAX, etc.) para resumir ou
+   calcular informações sobre um conjunto de registros agrupados.
+
+   Objetivo principal:
+   A principal função do GROUP BY é agrupar os resultados de uma consulta
+   para realizar operações de agregação em dados que compartilham o mesmo
+   valor em uma ou mais colunas. Ele permite que você veja informações
+   resumidas por grupo de dados.
+*/

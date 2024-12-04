@@ -1,0 +1,299 @@
+Tipo Blob: O tipo BLOB (Binary Large Object) em um SGBD
+armazena grandes volumes de dados binários, como imagens,
+vídeos ou arquivos.
+
+Características de uma chave primária:
+
+1-  É única
+2 - Não vazia
+3 - Não muda
+
+Obs: nem toda coluna que não aceita valores duplicados é uma
+chave primária.
+
+Uma chave surrogada é uma chave artificial usada para
+identificar unicamente registros em um banco de dados,
+sem ter um significado real, geralmente gerada
+automaticamente (ex: números sequenciais).
+
+Exemplo de chave surrogada: id gerado automaticamente
+pelo sgbd.
+
+Uma chave primária pode ser uma chave surrogada.
+
+Uma chave natural é uma chave composta por atributos que
+são exclusivos e essenciais para identificar algo,
+sem necessidade de adicionar elementos extras.
+
+A chave natural é composta por dois atributos.
+
+Exemplo de chave natural: cpf + número do bi, iban + número de conta
+e assim por diante.
+
+É por meio de uma chave primária que é possível termos chaves
+estrangeiras em um SGBD.
+
+buscas feitas usando a chave primária são geralmente muito
+rápidas, pois por padrão a chaves primárias são associadas
+estruturas chamadas
+índices, que fazem com que o algorítmo de busca não tenha
+de percorrer toda a lista até encontrar o registro desejado,
+ele vai direto para o registro.
+
+Índices em SGBDs são estruturas que aceleram a busca e
+recuperação de dados em tabelas, melhorando o desempenho
+das consultas.
+
+Algumas colunas não podem ter seus dados repetidos, isso não
+faz delas necessáriamente chaves primárias, por exemplo: uma
+coluna "email" não pode ter E-MAILs repetidos, para restringir
+isso usamos uma chave única(UNIQUE_KEY) que não permitirá
+repetição de E-MAILs naquela coluna.
+
+chaves estrangeiras é uma campo que serve para relacionar tabelas
+em bancos de dados relacionais.
+
+Tipos de relacionamentos em bancos de dados relacionais: um para um,
+um para muitos ou muitos para um, e muitos para muitos.
+
+Normalmente, num relacionamento um para um, todos os dados podem estar na mesma tabela
+dependendo da quantidade de atributos ou detalhes que teremos para cada uma das tabelas,
+se a quantidade de detalhes for mínima entre as tabelas, podemos optar por manter
+todos os dados na mesma tabela, caso contrário, optar por tabelas diferentes é uma melhor opção,
+tendo em vista fatores como organização, manutenção e outros, essa é uma decisão a ser tomada
+no momento da modelagem do seu banco de dados.
+
+TIPOS DE COMANDOS DA LIGNGUAGEM SQL:
+
+DML(data manipulation language): esses comandos são responsáveis por manipular os dados.
+ alguns exemplos de comandos DML são: insert, update, delete.
+
+DQL(data query language): esses comandos são responsáveis por recuperar dados
+ alguns exemplos de comandos DQL são: select.
+
+DDL(data definition language): esses comandos são responsáveis por mexer com a estrutura dos
+objetos de um banco de dados relacional, como tabelas, funções, stored procedures, views e outros.
+alguns exemplos de comandos DDL são: alter, create, drop, truncate
+
+DCL(data control language): esses comandos são responsáveis por gerenciar permissões e controle
+de acesso ao banco de dados.
+ alguns exemplos de comandos DCL são: grant, revoke, deny.
+
+TCL(transaction control language): esses comandos são responsáveis por gerenciar transações em
+banco de dados relacionais.
+ alguns exemplos de comandos TCL são: begin transaction,
+commit transaction, rollback.
+
+Tipos de join: inner join, outer join, left join(left outer join), right join(right outer join) e
+o full join.
+
+Inner join: traz a interseção dos registros entre duas tabelas, ou seja, apenas os registros
+que estão associados.
+
+Outer join: traz os registros de uma tabela que não estão associados a outra e vice-versa.
+
+left join(left outer join): traz a interseção dos registros entre duas tabelas, ou seja, os registros
+que estão associados, mais os registros da tabela do lado esquerdo que não estão relacionados com
+os registros da tabela da direita.
+
+right join(right outer join): traz a interseção dos registros entre duas tabelas, ou seja, os registros
+que estão associados, mais os registros do lado direito que não estão relacionados com os registros
+da tabela da esquerda.
+
+full join: é uma soma do inner join e do outer join.
+
+OBS: o full join não é suportado pelo mysql, mais é possível simulá-lo com o uso do operador
+union.
+
+
+A diferença entre **schema** e **database** está principalmente no nível de organização e no
+escopo dentro de um sistema de gerenciamento de banco de dados (SGBD).
+Aqui está uma explicação detalhada:
+
+1. **Database (Banco de Dados)**:
+   - **Definição**: Um banco de dados é um contêiner de alto nível onde dados são armazenados e
+     gerenciados. Ele pode conter tabelas, índices, visões, stored procedures e outros objetos
+     relacionados ao armazenamento de dados.
+
+   - **Escopo**: Ele é o nível mais alto de organização dentro de um SGBD, onde todos os dados e
+    objetos relacionados ao banco de dados são armazenados.
+
+   - **Exemplo**: Um banco de dados chamado "empresa" pode conter várias tabelas de clientes,
+    produtos, vendas, etc.
+   
+2. **Schema**:
+   - **Definição**: Um schema é uma forma de organizar objetos dentro de um banco de dados, como
+     tabelas, índices, visões e procedimentos armazenados. Ele é uma estrutura dentro de um
+     banco de dados que ajuda a separar e organizar esses objetos.
+
+   - **Escopo**: O schema pode ser considerado como um "namespace" (espaço de nomes), onde
+     objetos com o mesmo nome podem coexistir, mas em schemas diferentes.
+
+   - **Exemplo**: Dentro do banco de dados "empresa", pode haver um schema chamado "financeiro"
+     que contém as tabelas e objetos relacionados às finanças, e outro schema chamado "rh" que
+     contém as tabelas e objetos relacionados ao departamento de recursos humanos.
+
+### Diferenças principais:
+
+- **Escopo**:
+  - **Database**: Abrange todos os dados e objetos dentro do SGBD.
+  - **Schema**: Organiza os objetos dentro de um banco de dados, funcionando como uma subdivisão.
+  
+- **Nível de organização**:
+  - **Database**: É o nível mais alto, que agrupa vários schemas e seus objetos.
+  - **Schema**: É um nível dentro do banco de dados, ajudando a organizar a estrutura de dados e
+    a fornecer uma forma de agrupamento lógico.
+
+- **Exemplo prático**:
+  - Se você tem um banco de dados chamado `loja`, pode ter schemas como `clientes`, `produtos`,
+   `vendas` dentro deste banco, cada um contendo tabelas relacionadas.
+
+Em resumo, o **banco de dados** é o recipiente maior onde todos os dados são armazenados,
+enquanto o **schema** é uma maneira de organizar e agrupar esses dados dentro do banco de dados,
+de forma estruturada e hierárquica.
+
+
+Um sistema pode utilizar tanto um banco de dados relacional quanto um não relacional
+simultaneamente em diferentes partes da aplicação, dependendo das necessidades específicas de
+cada tipo de dado ou operação. Esse tipo de abordagem é conhecido como
+**poliglota de persistência** ou **poliglota de armazenamento**, e pode ser útil quando um único
+modelo de dados ou tipo de banco não atende completamente aos requisitos de uma aplicação.
+Aqui estão alguns cenários em que isso pode ocorrer:
+
+### 1. **Diversidade de dados**  
+Diferentes tipos de dados podem ser melhor gerenciados por diferentes tipos de banco de dados.
+Por exemplo:
+
+- **Banco relacional** (SQL) é ideal para dados estruturados, com um esquema bem definido e que
+requerem transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade). Exemplos incluem
+dados de usuários, registros de pedidos, inventários e outros dados transacionais.
+- **Banco não relacional** (NoSQL), como MongoDB, Cassandra, ou Redis, é útil para dados sem
+esquema fixo, como dados semiestruturados ou não estruturados (JSON, documentos, chaves-valor,
+gráficos, etc.), que podem precisar de alta escalabilidade, baixo tempo de resposta ou fácil
+integração com sistemas distribuídos.
+
+**Exemplo:** Um e-commerce pode usar um banco relacional para gerenciar pedidos e clientes,
+enquanto usa um banco de dados não relacional para armazenar logs de atividades de usuários,
+catálogos de produtos ou sessões de navegação.
+
+### 2. **Escalabilidade e desempenho**  
+Bancos de dados não relacionais são projetados para lidar com grandes volumes de dados e são
+frequentemente mais escaláveis horizontalmente (em servidores distribuídos). Em casos de dados
+massivos ou operações de leitura/escrita de alta velocidade, um banco NoSQL pode ser mais
+adequado.
+
+**Exemplo:** Uma aplicação de mídia social pode armazenar informações sobre usuários e seus
+posts em um banco relacional, enquanto usa um banco de dados de gráficos (como Neo4j) para
+modelar a rede de conexões sociais (amigos, seguidores, etc.), ou ainda um banco NoSQL para
+armazenar as interações de alta frequência (comentários, curtidas, etc.).
+
+### 3. **Atenção a diferentes casos de uso**  
+A necessidade de transações fortes ou operações complexas de junção de dados pode justificar o
+uso de bancos relacionais, enquanto operações de leitura rápida, agregações, ou dados com alta
+taxa de atualização podem ser mais bem atendidos por bancos não relacionais.
+
+**Exemplo:** Uma plataforma de análise de dados pode armazenar dados históricos em um banco
+relacional, garantindo consistência e capacidade de fazer joins entre tabelas, enquanto usa um
+banco NoSQL para armazenamento de dados em tempo real, onde a latência e a escalabilidade são
+mais importantes do que a estrutura rígida dos dados.
+
+### 4. **Flexibilidade no modelo de dados**  
+Em sistemas que evoluem rapidamente ou têm um modelo de dados que muda com frequência, bancos de
+dados não relacionais podem ser vantajosos porque eles não exigem um esquema fixo. Quando os
+dados não são bem definidos ou podem ser alterados frequentemente, o NoSQL oferece flexibilidade.
+
+**Exemplo:** Um serviço de mensagens pode usar um banco relacional para manter registros de
+usuários e autenticação, enquanto utiliza um banco de dados de documentos como MongoDB para
+armazenar as mensagens de forma flexível e sem um esquema rígido, permitindo a inserção de
+diferentes tipos de conteúdo (texto, mídia, links).
+
+### 5. **Uso de sistemas de cache**  
+Alguns bancos de dados não relacionais, como o **Redis**, são usados como **caches** em conjunto
+com bancos relacionais. O Redis pode ser utilizado para armazenar em cache dados frequentemente
+acessados ou temporários, enquanto o banco relacional armazena os dados permanentes.
+
+**Exemplo:** Um site de notícias pode usar um banco de dados relacional para armazenar artigos
+e suas versões, mas usar Redis para armazenar dados de visualização em tempo real, como o número
+de leitores de um artigo ou popularidade de uma notícia.
+
+### Como os dois bancos funcionam juntos
+
+Na prática, um sistema pode usar diferentes bancos de dados de maneira independente para
+diferentes finalidades, com uma camada de **integração de dados** ou **middleware** que facilita
+a comunicação entre esses sistemas. Esse middleware pode ser uma API que faz consultas em ambos
+os bancos, ou até mesmo um sistema de replicação ou sincronização de dados entre os bancos,
+conforme necessário.
+
+### Exemplos de cenários de uso:
+
+1. **E-commerce:**  
+   - **Relacional (SQL):** Armazena informações de clientes, pedidos, transações.
+   - **Não relacional (NoSQL):** Armazena inventário de produtos, recomendações baseadas em
+     comportamento do usuário, histórico de navegação.
+
+2. **Aplicação de análise de logs:**  
+   - **Relacional (SQL):** Dados de usuários, autenticação, transações.
+   - **Não relacional (NoSQL, como Elasticsearch):** Logs de eventos em tempo real, análise de
+    grandes volumes de dados.
+
+3. **Sistema de gerenciamento de conteúdo (CMS):**  
+   - **Relacional (SQL):** Metadados, controle de versão de conteúdo, usuários e permissões.
+   - **Não relacional (NoSQL):** Armazenamento flexível de conteúdos dinâmicos, como imagens,
+    vídeos e artigos.
+
+### Conclusão
+
+Um sistema pode usar bancos de dados relacionais e não relacionais ao mesmo tempo quando cada
+tipo de banco oferece vantagens específicas para diferentes aspectos da aplicação. A chave é
+entender as necessidades do sistema em termos de consistência, escalabilidade, flexibilidade e
+tipo de dados, e escolher a tecnologia de banco de dados mais adequada para cada caso de uso.
+Isso pode aumentar a eficiência e a performance geral do sistema.
+
+
+Para que serve a pasta bin presentes na instalação de programas?
+
+A pasta **bin** (abreviação de "binary") é uma pasta comum em sistemas operacionais como Linux
+e Unix, e também em algumas instalações de programas em sistemas Windows. Ela é usada para
+armazenar **arquivos executáveis** ou binários, ou seja, arquivos que podem ser diretamente
+executados pelo sistema operacional.
+
+Aqui estão as principais funções da pasta **bin**:
+
+1. **Armazenamento de Executáveis**: A pasta **bin** contém arquivos binários, ou seja,
+programas ou scripts compilados que podem ser executados diretamente. Isso inclui ferramentas
+de linha de comando, utilitários e programas principais do sistema.
+
+2. **Acessibilidade Global**: No contexto de sistemas Unix ou Linux, a pasta **bin** geralmente
+faz parte do **PATH** do sistema, o que significa que seus executáveis podem ser chamados de
+qualquer lugar no terminal, sem a necessidade de especificar o caminho completo para o arquivo.
+
+3. **Função em Instalações de Programas**: Quando você instala um programa, seus arquivos
+executáveis podem ser colocados na pasta **bin** ou em subpastas dentro dela. Isso permite que
+o programa seja facilmente acessado e executado sem precisar navegar até a pasta onde foi
+instalado.
+
+4. **Divisão de Arquivos**: Em alguns sistemas, pode haver múltiplas pastas **bin**, como
+**/bin**, **/usr/bin**, **/sbin**, etc., cada uma destinada a diferentes tipos de binários.
+Por exemplo, **/usr/bin** costuma conter programas do usuário (geralmente instalados por pacotes),
+enquanto **/bin** pode conter utilitários essenciais para a inicialização do sistema.
+
+Portanto, a pasta **bin** é essencial para a organização e execução de programas em um sistema
+operacional, facilitando o acesso e a execução de ferramentas e utilitários necessários para o
+funcionamento do sistema ou de programas adicionais.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

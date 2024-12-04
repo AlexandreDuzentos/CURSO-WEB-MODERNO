@@ -1,0 +1,534 @@
+Bancos de dados não relacionais (ou **NoSQL**) são sistemas de gerenciamento de bancos de dados
+que não utilizam o modelo tradicional de tabelas e relações, como os bancos de dados relacionais
+(SQL). Eles são projetados para lidar com grandes volumes de dados, escalabilidade horizontal,
+flexibilidade e alta performance, especialmente em situações onde os dados não se encaixam bem
+em um formato tabular.
+
+### Características principais dos bancos de dados não relacionais:
+1. **Estrutura flexível**: Ao contrário dos bancos de dados relacionais, que exigem um esquema
+rígido com tabelas e colunas definidas previamente, os bancos de dados NoSQL permitem armazenar
+dados de diferentes formas, como documentos, grafos, colunas ou chave-valor. Isso facilita a
+adaptação a dados dinâmicos e em constante mudança.
+
+2. **Escalabilidade horizontal**: Muitos bancos de dados NoSQL são projetados para serem
+escalados horizontalmente, ou seja, distribuindo a carga de dados entre vários servidores,
+o que os torna adequados para grandes volumes de dados e ambientes de alta demanda.
+
+3. **Desempenho e baixa latência**: Os bancos NoSQL são frequentemente otimizados para consultas
+rápidas e operações em tempo real, o que é importante em sistemas de grandes escalas, como redes
+sociais, comércio eletrônico e big data.
+
+4. **Modelo de dados variado**: Existem diferentes tipos de bancos de dados NoSQL, e cada um
+    oferece um modelo de dados distinto:
+
+   - **Banco de dados chave-valor**: Os dados são armazenados como pares de chave e valor
+     (ex: Redis, DynamoDB).
+
+   - **Banco de dados orientado a documentos**: Os dados são armazenados em documentos,
+     geralmente no formato JSON ou BSON (ex: MongoDB, CouchDB).
+
+   - **Banco de dados orientado a colunas**: Organizam dados em colunas em vez de linhas, o que
+     é ideal para consultas analíticas e processamento de grandes volumes de dados
+     (ex: Cassandra, HBase).
+
+   - **Banco de dados orientado a grafos**: Armazenam dados como grafos, com nós, arestas e
+     propriedades, permitindo consultas complexas em redes e interações (ex: Neo4j).
+
+5. **Alta disponibilidade e tolerância a falhas**: Muitos bancos de dados NoSQL são projetados
+    para garantir alta disponibilidade e resistência a falhas, mesmo em ambientes distribuídos.
+    Isso significa que, mesmo se um servidor falhar, o sistema continua funcionando.
+
+### Exemplos de bancos de dados não relacionais:
+- **MongoDB** (documento)
+- **Cassandra** (coluna)
+- **Redis** (chave-valor)
+- **Neo4j** (grafo)
+- **CouchDB** (documento)
+- **DynamoDB** (chave-valor)
+
+### Quando usar bancos de dados não relacionais:
+- Quando o esquema de dados não é bem definido ou está em constante mudança.
+
+- Quando há necessidade de escalar a aplicação horizontalmente, distribuindo dados em várias
+  máquinas.
+
+- Quando se lida com grandes volumes de dados e necessita de alta performance para consultas
+  rápidas.
+
+- Quando o modelo relacional tradicional não se adapta ao tipo de dados, como no caso de redes
+  sociais (grafos) ou dados JSON.
+
+Em resumo, bancos de dados não relacionais oferecem flexibilidade, escalabilidade e desempenho,
+tornando-se uma escolha popular para sistemas modernos que lidam com grandes volumes e variedade
+de dados.
+
+
+O **MongoDB** é um banco de dados **não relacional** (NoSQL) orientado a **documentos**,
+amplamente utilizado para armazenar grandes volumes de dados de forma flexível e escalável.
+Ele foi criado para atender a necessidades específicas de aplicações modernas, como alta
+performance, facilidade de desenvolvimento e escalabilidade horizontal, e é particularmente
+adequado para dados que não se encaixam bem em um modelo relacional tradicional.
+
+### Características principais do MongoDB:
+
+1. **Armazenamento orientado a documentos**:
+   - No MongoDB, os dados são armazenados em **documentos**, que são objetos JSON (ou BSON, uma
+    versão binária do JSON). Cada documento pode ter diferentes campos e tipos de dados,
+    permitindo flexibilidade no modelo de dados.
+
+   - Ao contrário dos bancos relacionais, que exigem um esquema fixo, o MongoDB permite que
+    diferentes documentos na mesma coleção tenham estruturas diferentes.
+
+2. **Coleções**:
+   - Os documentos são agrupados em **coleções**, que são equivalentes às **tabelas** de um
+    banco de dados relacional, mas sem a rigidez de um esquema.
+
+   - Uma coleção pode armazenar milhares ou milhões de documentos, e cada documento dentro de
+    uma coleção pode ter diferentes campos.
+
+3. **Escalabilidade Horizontal**:
+   - O MongoDB foi projetado para ser escalado **horizontalmente**, o que significa que ele pode
+    distribuir dados por vários servidores (chamados **shards**) de forma automática. Isso o
+    torna uma escolha popular para aplicações que necessitam lidar com grandes volumes de dados
+    e tráfego.
+   
+4. **Consultas poderosas**:
+   - Apesar de ser um banco de dados NoSQL, o MongoDB oferece uma linguagem de consulta bastante
+     robusta, permitindo filtragem, agregação, indexação e outros tipos de operações complexas
+     sobre os dados.
+
+   - Ele também oferece **agregações**, que permitem realizar operações de processamento e
+    transformação de dados, como soma, média e agrupamento.
+
+5. **Alta disponibilidade e replicação**:
+   - O MongoDB oferece suporte a **replicação**, o que significa que ele pode manter cópias de
+    dados em múltiplos servidores (nós), garantindo alta disponibilidade e tolerância a falhas.
+    Se um servidor falhar, o sistema pode continuar funcionando sem interrupção.
+   
+6. **Modelo flexível de dados**:
+   - O modelo de dados no MongoDB é flexível, o que significa que ele pode lidar com diferentes
+    tipos de dados (como números, strings, arrays e até documentos aninhados) dentro de um mesmo documento.
+   - Isso permite que os desenvolvedores adaptem o banco de dados facilmente às mudanças nas
+     necessidades de dados da aplicação, sem a necessidade de redefinir um esquema.
+
+7. **Índices**:
+   - O MongoDB oferece suporte a **índices** em qualquer campo dos documentos, o que melhora o
+    desempenho de consultas, especialmente quando se trata de grandes volumes de dados.
+
+### Casos de uso comuns:
+- **Aplicações web e móveis**: MongoDB é usado em muitos aplicativos modernos, incluindo sites
+  de comércio eletrônico, plataformas sociais e jogos online, devido à sua flexibilidade e
+  escalabilidade.
+
+- **Big Data e análise de dados**: Ele pode lidar com grandes volumes de dados e é útil para
+   armazenar dados não estruturados ou semi-estruturados, como logs, métricas de IoT e
+   informações de sensores.
+
+- **Armazenamento de conteúdo e gerenciamento de documentos**: MongoDB é amplamente usado para
+   gerenciar conteúdo em sistemas de gerenciamento de conteúdo (CMS) ou como backend de
+   documentos.
+
+- **Aplicações de tempo real**: Devido ao seu desempenho em leitura e escrita rápidas, o MongoDB
+   é utilizado em sistemas de monitoramento em tempo real, como análise de dados de redes sociais
+   ou transações financeiras.
+
+### Vantagens do MongoDB:
+- **Escalabilidade horizontal**: Pode ser escalado facilmente para lidar com grandes volumes de
+    dados.
+
+- **Flexibilidade de dados**: O modelo de documentos permite armazenar dados de maneira mais
+    natural e flexível do que tabelas rígidas.
+
+- **Alta disponibilidade**: A replicação e os mecanismos de failover garantem que o sistema
+    permaneça disponível mesmo em caso de falhas de hardware.
+
+- **Desempenho**: Otimizado para consultas rápidas e operações de leitura e escrita eficientes.
+
+### Exemplos de uso do MongoDB:
+- **Aplicações em tempo real** como chats, jogos online e monitoramento de dados.
+- **Plataformas de mídia social** e armazenamento de dados de usuários e interações.
+- **Armazenamento de logs** de sistemas, eventos ou dados de sensores em tempo real.
+- **Aplicações de Big Data** para processamento e análise de grandes volumes de dados sem
+   estrutura fixa.
+
+### Conclusão:
+O **MongoDB** é uma poderosa ferramenta para armazenar dados não estruturados ou
+semi-estruturados, especialmente em contextos onde a flexibilidade e a escalabilidade são
+essenciais. Ele permite que os desenvolvedores criem aplicações modernas e de alto desempenho
+que possam crescer rapidamente sem as limitações dos bancos de dados relacionais tradicionais.
+
+
+
+**Dados estruturados** são dados que estão organizados de maneira altamente definida e
+consistente, geralmente em tabelas, com um esquema bem definido e fácil de ser manipulado.
+Esses dados seguem um formato rígido, o que facilita o seu armazenamento, consulta e análise.
+
+### Características dos dados estruturados:
+1. **Formato tabular**:
+   - Dados estruturados são normalmente armazenados em tabelas, com linhas e colunas, onde cada
+    linha representa uma entrada (ou registro) e cada coluna representa um atributo (ou campo)
+    do dado.
+
+   - Exemplo: Uma tabela de "clientes" pode ter colunas como **ID**, **Nome**, **Idade**,
+    **Endereço**, etc., e cada linha será um cliente distinto.
+
+2. **Esquema definido**:
+   - Antes de armazenar os dados, o esquema (estrutura) do banco de dados é definido, ou seja,
+    as colunas, tipos de dados (como texto, número, data) e restrições (como chaves primárias,
+    índices, etc.) são especificados.
+
+   - Exemplo: Um banco de dados relacional (SQL) exige que o esquema seja definido para que a
+    estrutura de dados seja consistente.
+
+3. **Facilidade de consulta e análise**:
+   - Como os dados estruturados estão bem organizados, eles são fáceis de consultar, manipular e
+     analisar, especialmente usando linguagens de consulta como **SQL** (Structured Query
+     Language).
+
+   - Exemplos de consultas incluem: "SELECT * FROM clientes WHERE idade > 30" ou "SELECT nome,
+    idade FROM clientes WHERE cidade = 'São Paulo'".
+
+4. **Integração fácil com sistemas**:
+   - A organização e o formato padronizado dos dados estruturados tornam mais fácil integrá-los
+     com outras aplicações, sistemas de processamento ou ferramentas de análise.
+
+### Exemplos de dados estruturados:
+- **Tabelas de bancos de dados relacionais (SQL)**: Como mencionado, dados armazenados em bancos
+    como **MySQL**, **PostgreSQL**, **Oracle** ou **SQL Server** são exemplos clássicos de dados
+    estruturados.
+
+- **Planilhas do Excel**: Dados em planilhas também são um exemplo comum de dados estruturados,
+   onde cada célula está definida de acordo com um tipo de dado (números, texto, datas) e a
+   estrutura é organizada em linhas e colunas.
+
+- **Arquivos CSV**: Arquivos de valores separados por vírgulas (CSV) também são considerados
+    estruturados, pois as colunas e os dados têm um formato preestabelecido e as entradas são
+    uniformemente organizadas.
+
+### Vantagens dos dados estruturados:
+1. **Facilidade de consulta**: Devido ao formato tabular e à organização rígida, consultas em
+    dados estruturados podem ser feitas de forma eficiente.
+
+2. **Integridade e precisão**: O modelo de dados estruturados garante que os dados sigam um
+     formato predeterminado, o que reduz erros e inconsistências.
+
+3. **Desempenho**: Sistemas de bancos de dados relacionais são otimizados para consultar e
+    processar dados estruturados de forma muito rápida e eficiente, principalmente em grandes
+    volumes.
+
+4. **Armazenamento eficiente**: Dados estruturados podem ser compactados e armazenados de
+     maneira eficiente devido à sua organização uniforme.
+
+### Desvantagens:
+1. **Rigidez do esquema**: O principal desafio dos dados estruturados é que o esquema deve ser
+     pré-definido, o que pode ser inflexível quando os requisitos de dados mudam com o tempo.
+
+2. **Escalabilidade limitada**: Embora bancos de dados relacionais sejam eficientes para dados
+     estruturados, eles podem não ser tão escaláveis horizontalmente quanto bancos de dados NoSQL
+     quando lidam com grandes volumes ou dados não estruturados.
+
+3. **Dificuldade com dados não padronizados**: Dados que não seguem um formato fixo
+     (como texto livre, imagens, vídeos, etc.) são difíceis de armazenar em bancos de dados
+     relacionais tradicionais, exigindo outras soluções ou transformações para se adequarem ao
+     formato estruturado.
+
+### Comparação com dados não estruturados e semi-estruturados:
+- **Dados não estruturados**: São dados que não seguem uma estrutura rígida, como arquivos de
+    texto, imagens, vídeos, áudios ou postagens em redes sociais. Esses dados não podem ser
+    facilmente organizados em tabelas e exigem tecnologias mais avançadas para processamento e
+    análise.
+
+- **Dados semi-estruturados**: São dados que possuem uma organização parcial, mas não tão rígida
+   quanto os dados estruturados. Exemplos incluem **arquivos XML**, **JSON** e **bancos de dados
+   NoSQL** como MongoDB, onde a estrutura pode ser flexível, mas ainda segue certos padrões.
+
+### Exemplos de dados estruturados em prática:
+- **Sistema bancário**: Um banco pode usar dados estruturados para armazenar informações sobre
+   contas correntes, saldos, transações, etc., onde cada transação tem uma data, um valor e uma
+   conta associada.
+
+- **Sistemas de gestão de inventário**: Armazenam informações sobre produtos, incluindo código,
+    nome, descrição, quantidade em estoque e preço, em uma tabela organizada.
+
+- **Sistema de recursos humanos**: Um banco de dados de funcionários pode ter tabelas
+    estruturadas com informações como nome, endereço, cargo, salário e data de admissão.
+
+### Conclusão:
+Os **dados estruturados** são essenciais para muitos sistemas e processos de negócios, pois
+  permitem que as informações sejam organizadas de forma eficiente, com uma estrutura que
+  facilita o armazenamento, consulta e análise. Eles são a base de muitos bancos de dados
+  relacionais tradicionais, e sua forma organizada é ideal para operações transacionais e
+  processos que exigem integridade e consistência.
+
+
+COMANDOS BÁSICOS:
+
+O mongoDB é case-sensitive
+
+Nota: Para que esses comandos funcionem a variável de ambiente path com o caminho da
+pasta bin do mongodb precisa estar configurada.
+
+mongod -> Inicializa o servidor do mongoDB
+mongo -> Entra no client do mongoDB
+help -> exibe alguns comandos do mongoDB
+db. + tecla tab - exibe uma lista de comandos inciados em db
+show dbs -> exibe todos os bancos de dados disponíveis
+use wm -> Seta um banco de dados como em uso(ainda que não exista o mongodb cria)
+db.createCollection('estados') - cria uma coleção
+show collections -> exibe as coleções em um banco de dados
+db.estados.drop() -> exclui a coleção estados da base de dados em uso
+db.estados.insert(objeto ou json) -> insere um dado numa coleção(ainda que não exista o mongodb cria)
+db.estados.save(objeto ou json) -> atualizar ou salva dados numa coleção(ainda que não exista o mongodb cria)
+db.estados.find() -> faz uma consulta numa coleção de todos os registros.
+
+obs: A diferença entre um objeto e um json é que no json as chaves são delimitadas por aspas.
+
+db.estados.find().pretty() -> faz uma consulta numa coleção de todos os registros num formato
+mais fácil de ser visualizado.
+
+db.estados.findOne() - faz uma consulta numa coleção trazendo um único registro.
+
+db.estados.findOne({sigla: "RJ"}) - faz uma consulta numa coleção trazendo um único registro baseado num
+filtro.
+
+db.estados.find({sigla: "RJ"}) - faz um consulta numa coleção trazendo todos os registros que
+satisfaçam a condição passada dentro de chaves, ou seja, todos os estados com a sigla RJ.
+
+/* Consulta usando o operador lógico or */
+db.estados.find({$or: [{sigla: "RJ"}, {sigla: "AJ"}]
+
+/* Consulta usando o operador lógico and */
+db.estados.find({$and: [{sigla: "RJ"}, {sigla: "AJ"}]})
+
+/* Consulta por nome de coluna - retorna um resultado se a coluna existir no documento principal */
+db.estados.find({ populacao: {exists: true}} )
+
+/* Consulta por nome de coluna - retorna um resultado se a coluna existir no subdocumento cidade */
+db.estados.find({ "cidades.populacao": {exists: true}} )
+
+
+/*
+ Consulta com o skip e o limit - o skip pula uma quantidade de registros especificado e o limit 
+ limita a quantidade de registros que serão retornados, o skip é o equivalente ao offset em bancos
+ relacionais e o limit é o equivalente ao limit em bancos não relacionais.
+ */
+db.estados.find().skip(2).limit(1)
+
+/* Consulta para contar a quantidade registros */
+db.estados.count()
+
+/*
+ Consulta para trazer campos específicos e filtrar por campo, o 1(um) depois do nome do campo 
+ significa que aquela campo virá no resultado da consulta, o zero é para dizer que um campo não deve vir
+ no resultado da consulta.
+ */
+db.estados.find({sigla: "RJ"}, {nome: 1, sigla: 1})
+db.estados.find({sigla: "RJ"}, {nome: 1, sigla: 1, _id: 0})
+
+As consultas agregadas no mongodb usa o padrão pipes and filters, é como se você tivesse uma
+tubulação que conecta o ponto de origem dos dados e o ponto de destino, e dentro dessa tubulação
+nós temos uma série de filtros que transformam esses dados, cada filtro representa uma etapa
+da transformação, o resultado que é obtido no destino é o produto final do filtro.
+
+Exemplos de alguns estágios de um pipeline de agregação:
+
+$match -> filtra a stream de documentos da coleção para permitir que documentos que
+correspondam ao filtro passem não modificados para a próxima etapa do pipeline.
+
+$project -> Remolda cada documento na stream por meio da adição de novos campos ou remoção de
+campos existentes.
+
+$addFields -> Remolta cada documento na stream por meio da adição de novos campos.
+
+$count -> retorna a contagem do número de documentos nesse estágio do pipeline.
+
+$group -> O estágio $group no MongoDB é usado dentro do aggregation pipeline para agrupar
+documentos com base em um ou mais campos e aplicar funções de agregação (como somar, contar,
+calcular médias, etc.) sobre os dados agrupados. Ele permite realizar operações de agregação
+que dependem de combinar ou resumir dados de múltiplos documentos.
+
+$limit -> é um estágio que limita a quantidade de registros que serão passados para 
+a próxima etapa do pipeline.
+
+$lookup -> é uma etapa do aggregation pipeline que permite realizar uma operação de junção
+(join) entre duas coleções, similar ao conceito de "join" encontrado em bancos de dados
+relacionais. Ele permite combinar documentos de uma coleção com documentos de outra coleção,
+com base em uma condição de correspondência, proporcionando uma maneira de realizar operações
+de agregação mais complexas.
+
+$skip -> é uma etapa do pipeline que permite pular uma quantidade n de documentos de uma coleção
+afim de não serem processados dentro do pipeline.
+
+$unwind -> é uma etapa utilizada para "desconstruir" um array
+de um documento em múltiplos documentos, ou seja, ele expande um array dentro de um documento,
+criando um documento separado para cada elemento do array.
+
+Além dos stages dentro de um pipeline de agregação, nós podemos também usar operadores.
+
+/* Consulta usando o stage $project que trará apenas os campos nome(do estado), e nome(das cidades) */
+db.estados.aggregate([
+ { $project: {nome: 1, "cidades.nome": 1, _id: 0 } }
+])
+
+/*
+ Consulta usando o stage $project que trará apenas os campos populacao e sigla, o campo
+ população será adicionado no documento principal e será um campo cujo valor calculado 
+ baseado na soma das populações das cidades associadas ao estado - esse é um pipeline de
+ agregação com um único estágio ou etapa.
+*/
+db.estados.aggregate([
+  { $project: {populacao: {$sum: "$cidades.populacao"}, sigla: 1, _id: 0} }
+])
+
+/*
+O agrupamento sendo feito aqui é sem critério nenhum, o que significa que a operador
+de agregação será aplicado para a população de todos os estados, ou seja, será feita um
+a soma da população de todos os estados, o group usa o id para definir o critério de agrupamento.
+*/
+db.estados.aggregate([
+  { $project: {populacao: {$sum: "$cidades.populacao"}, sigla: 1, _id: 0} },
+  { $group: {_id: null, populacaoTotal: {$sum: "$populacao"}}},
+  { $project: {_id: 0, populacaoTotal: 1}} 
+])
+
+/* 
+   O primeiro estágio desse pipeline de agregação busca por estados que possuem cidades
+   com o nome Sorocaba e o segundo estágio consultar acima na função do stage $unwind e  
+   o primeiro estágio faz o mesmo que o segundo.
+*/
+db.estados.aggregate([
+  { $match: {"cidades.nome": "Socoba"}},
+  { $unwind: "$cidades"},
+  { $match: {"cidades.nome": "Socoba"}},
+  { $project: {_id: "$cidades._id"}}
+])
+
+OBS: O resultado de um estágio do pipeline de agregação é passada para o próximo estágio caso
+exista.
+
+/*
+Comando para fazer um update em documentos de uma coleção baseado numa condição(filtro) - 
+de uma maneira geral, no mongoDB, o update modifica os documentos que atenderem a condição
+definida, caso o campo que estiver a ser atualizado não existir, o mongodb criará.
+
+O operador $set é usado para definir os campos que se pretendem atualizar.
+ */
+db.estados.update({filtro}, {$set: {camponaoexistente: "valor", campoexistente: "valor"}})
+db.estados.update({sigla: "SP"}, {$set: {nome: "São Paulos", qtdEstados: 5}}
+
+/*
+ Fazendo um update para adicionar mais cidades no array das cidades de são paulo,
+ o operador push adicionará um objeto dentro do array cidades.
+*/
+db.estados.update({sigla: "SP"}, {$push: {cidades: {nome: "Santos", populacao: 12347374}}})
+
+/* Fazendo um update sem filtro */
+db.estados.update({}, {$push: {cidades: {nome: "Santos", populacao: 12347374}}})
+
+/*
+Fazendo um delete de documentos cujo atributo populacao não esteja presente neles, o primeiro
+parâmetro é o critério de remoção e o segundo é a quantidade de registros que se deseja remover,
+note que o segundo parâmetro é opcional.
+*/
+
+db.estados.remove({populacao: {$exists: false}}, 1)
+
+/* Fazendo um delete dos estados com populações inferiores a 123 */
+db.estados.remove({populacao: {$lt: 123}})
+
+/* Fazendo um delete dos estados com populações superiores a 123 */
+db.estados.remove({populacao: {$gt: 123}})
+
+
+/*
+Inserindo uma empresa na coleção empresas e associando essa empresa a um estado por meio
+da sua chave primária.
+*/
+
+db.empresas.insert({nome: "Bradesco", estadoId: new ObjectId("674a1378775a799d54442a42")})
+
+/*
+ Fazendo um busca com o lookup - em "from" nós específicamos o nome da tabela de origem de 
+ onde virá o estado associado com a empresa, em "localField" nós específicamos qual é o atributo
+ na collection empresas que faz referência a chave primária da collection estados, em
+ "foreignField" nós específicamos qual é o nome do atributo na tabela de origem que representa
+ chave primária e finalmente em "as" nós específicamos um alias para o estado associado a empresa.
+*/
+
+db.empresas.aggregate([
+ {$match: {nome: "Bradesco"}},
+ {$lookup: {
+    from: "estados",
+    localField: "estadoId",
+    foreignField: "_id",
+    as: "estado"
+ }},
+ {$unwind: "$estado"},
+ {$unwind: "$estado.cidades"}
+]).pretty()
+
+
+quit() - sai do client do mongodb
+cls - limpa o terminal
+
+
+
+
+
+Em um banco não relacional, cada registro dentro de uma collection representa um documento no
+formato JSON.
+
+
+/* Para inserirmos dessa maneira precisamos clicar na tecla enter para quebrar a linha */
+db.estados.insert({
+   nome: "Rio de janeiro",
+   sigla: "RJ",
+   regiao: "Sudeste",
+   cidades: [{
+       _id: new ObjectId(), -- criará um id de forma dinâmica para o subdocumento aninhado.
+       nome: "Niterói",
+       area: 133.9,
+       populacao: 487562
+   }]
+})
+
+No MongoDB, ele não gera automaticamente um _id para subdocumentos aninhados (objetos dentro de
+outros documentos) se você não o definir explicitamente. O MongoDB gera o _id automaticamente
+apenas para o documento principal, mas subdocumentos (como o campo endereco no exemplo anterior)
+não recebem um _id automaticamente, a menos que você os defina explicitamente da seguinte maneira:
+
+dentro do subdocument aninhado, criar um atributo chamado _id e fazer ele receber a instância
+da classe ObjectId()
+
+Por exemplo: _id: new ObjectId().
+
+
+db.estados.insert({
+ nome: "São Paulo",
+ sigla: "SP",
+ regiao: "Sudeste",
+ cidades: [
+ {
+    _id: new ObjectId(),
+    nome: "Campinas",
+    area: 795.7,
+    prefeito: "Jonas Donizette",
+    populacao: 1081000
+ },
+ {
+    _id: new ObjectId(),
+    nome: "Guarulhos",
+    populacao: 1325000
+ },
+ { 
+   _id: new ObjectId(),
+   nome: "Socoba",
+   distanciaCapital: 87,
+   populacao: 644919
+ }
+]
+})
+
+
+
+

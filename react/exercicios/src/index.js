@@ -14,7 +14,7 @@ import Primeiro from "./componentes/Primeiro"
  
 /*
  importando múltiplos componentes, um objeto é retornado contendo todas os componentes
- que foram exportados, o {} é o operador destruturing, ele está retirando o componentes que 
+ que foram exportados, o {} é o operador destruturing, ele está retirando os componentes que 
  foram exportados do objeto, os componentes nada mais são do que funções que retornam
  alguma coisa.
 

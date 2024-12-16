@@ -1,0 +1,317 @@
+O **Express.js** é um framework web minimalista e flexível para **Node.js**, que facilita a
+criação de aplicações web e APIs. Ele oferece um conjunto robusto de recursos para lidar com
+rotas, middleware, requisições HTTP, respostas e outros aspectos do desenvolvimento web.
+
+### Principais características:
+1. **Minimalista e Flexível**: É uma base simples para construir aplicativos web, permitindo adicionar apenas os módulos e funcionalidades que você realmente precisa.
+2. **Middleware**: Utiliza middleware para manipular requisições e respostas. Isso ajuda a estruturar a aplicação em camadas lógicas.
+3. **Roteamento**: Inclui um sistema robusto para definir rotas e gerenciar URLs de maneira organizada e eficiente.
+4. **Suporte a Templates**: Integração com engines de templates como Pug, EJS e Handlebars, facilitando a renderização de páginas dinâmicas.
+5. **Integração com Banco de Dados**: Pode ser usado com bibliotecas para interagir com bancos de dados como MongoDB, PostgreSQL, MySQL, entre outros.
+6. **Facilidade para APIs REST**: Amplamente utilizado para criar APIs REST devido à sua simplicidade e estruturação clara.
+
+### Como funciona o Express.js?
+O Express.js é construído sobre o Node.js e fornece uma abstração de alto nível para gerenciar requisições e respostas HTTP. Por exemplo:
+- **Definir rotas**: Permite configurar endpoints (URLs) e associar funções para processar as requisições.
+- **Gerenciar middleware**: Processa dados antes de enviar respostas ou passar para a próxima função.
+
+### Exemplo básico:
+```javascript
+const express = require('express');
+const app = express();
+
+// Rota principal
+app.get('/', (req, res) => {
+    res.send('Olá, Mundo!');
+});
+
+// Iniciar o servidor
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
+});
+```
+
+### Quando usar o Express.js?
+O Express.js é ideal para:
+- Criar aplicações web (como sites e dashboards).
+- Desenvolver APIs REST para frontend ou outros serviços.
+- Prototipar aplicações rapidamente.
+
+Sua popularidade e simplicidade tornam o Express.js uma
+escolha comum para desenvolvedores que desejam uma solução
+eficiente e personalizável para o desenvolvimento web.
+
+O **Nodemon** é uma ferramenta que reinicia automaticamente uma aplicação Node.js
+sempre que detecta mudanças nos arquivos do código, facilitando o desenvolvimento
+sem a necessidade de reiniciar manualmente o servidor, ele é um launcher, e é voltado
+quando a aplicação está em modo de desenvolvimento.
+
+"launcher" também pode se referir a ferramentas de desenvolvimento em Node.js que
+ajudam a iniciar servidores, testes ou builds automaticamente. Isso pode incluir
+pacotes como nodemon, que monitora mudanças em arquivos e reinicia o servidor
+automaticamente.
+
+O **PM2** é um **gerenciador de processos** para aplicativos Node.js, que permite executar,
+monitorar e gerenciar aplicativos em produção de forma eficiente, com funcionalidades como
+reinicialização automática, balanceamento de carga e monitoramento em tempo real, o PM2 também
+é um launcher e é usado em modo de produção.
+
+Alguns comandos do PM2:
+
+OBS: instalar o PM2 de forma global, nos traz algumas vantagens, como por exemplo, nós
+conseguimos executar os comandos abaixo diretamente na linha de comando, sem ter
+de necessariamente coloca-los dentro da seção "scripts" do arquivo package.json.
+
+- **`pm2 start index.js`**: serve para iniciar a execução do arquivo index.js usando o PM2, que é
+   um gerenciador de processos para aplicativos Node.js. Ele executa o script, coloca-o em
+   segundo plano e mantém o processo ativo, mesmo que o terminal seja fechado.
+
+- **`pm2 monit`**: Exibe uma interface em tempo real para monitoramento dos processos.
+- **`pm2 status`**: Mostra o status de todos os processos gerenciados pelo PM2.
+- **`pm2 show app_id`**: Exibe detalhes de um processo específico, identificado pelo `app_id`.
+- **`pm2 restart app_id`**: Reinicia o processo especificado pelo `app_id`.
+- **`pm2 stop app_id`**: Para um processo específico gerenciado pelo PM2.
+- **`pm2 stop all`**: Para todos os processos gerenciados pelo PM2.
+- **`pm2 save`**: Salva o estado atual dos processos para reiniciar automaticamente após
+ reinício do sistema.
+
+Quando executo o pm2 por uma segunda vez, mesmo ele já estando rodando, isso gera um problema,
+evite fazer isso.
+
+/*
+    scripts do package.json:
+
+    "production": "pm2 start index.js --name appx-backend",
+    "monit": "pm2 monit",
+    "status": "pm2 status",
+    "zero": "pm2 show 0",
+    "restart": "pm2 restart 0",
+    "stop": "pm2 stop all",
+    "save": "pm2 save",
+*/
+   
+
+Middlewares são componentes ou camadas de software que atuam como intermediários em sistemas ou aplicações, geralmente facilitando a comunicação, o processamento e a gestão de dados entre diferentes partes de uma aplicação ou entre sistemas distintos. Eles são amplamente usados em programação, especialmente no desenvolvimento de aplicações web, APIs e sistemas distribuídos.
+
+### Tipos de middlewares e onde são usados:
+
+1. **Middlewares em aplicações web:**
+   - No contexto de frameworks web (como Express.js, Django, Flask, etc.), middlewares são funções que processam requisições HTTP antes de elas chegarem ao controlador (ou rota) final ou depois de uma resposta ser gerada.
+   - Eles podem executar tarefas como:
+     - Autenticação e autorização.
+     - Registro de logs.
+     - Manipulação de erros.
+     - Transformação de dados (como parsing de JSON ou compressão de respostas).
+     - Adição de cabeçalhos.
+
+   **Exemplo em Express.js:**
+   ```javascript
+   const express = require('express');
+   const app = express();
+
+   // Middleware que registra requisições
+   app.use((req, res, next) => {
+       console.log(`${req.method} ${req.url}`);
+       next(); // Passa o controle para o próximo middleware
+   });
+
+   // Middleware que processa requisições JSON
+   app.use(express.json());
+
+   app.get('/', (req, res) => {
+       res.send('Olá, mundo!');
+   });
+
+   app.listen(3000, () => {
+       console.log('Servidor rodando na porta 3000');
+   });
+   ```
+
+2. **Middlewares em sistemas distribuídos:**
+   - Facilitam a comunicação entre sistemas ou serviços, funcionando como uma camada que abstrai detalhes de rede, protocolos e segurança.
+   - Exemplos:
+     - Mensageria (RabbitMQ, Kafka).
+     - Integração de APIs (por meio de gateways ou brokers).
+     - Serviços de monitoramento e gerenciamento de transações.
+
+3. **Middlewares em sistemas operacionais:**
+   - Podem ser usados para intermediar interações entre software de aplicação e hardware, gerenciando recursos, autenticação ou camadas de segurança.
+
+### Principais características:
+- **Reutilizáveis**: Podem ser aplicados em múltiplos pontos da aplicação.
+- **Modulares**: Geralmente implementados como módulos independentes.
+- **Encadeados**: Seguem uma cadeia de execução, onde cada middleware decide se passa o controle ao próximo.
+
+Middlewares ajudam a tornar o código mais organizado,
+modular e fácil de manter, separando responsabilidades e
+promovendo a reutilização de funcionalidades comuns.
+
+No contexto do Express.js, o body-parser é um middleware utilizado para fazer o parse (análise)
+do corpo (body) das requisições HTTP. Ele permite que você extraia e trabalhe com os dados
+enviados pelo cliente, como formulários ou JSON, em uma requisição POST ou PUT, por exemplo.
+
+O que o body-parser faz:
+
+Parse de JSON: Se os dados enviados pela requisição estiverem no formato JSON, o body-parser
+converte esse conteúdo em um objeto JavaScript acessível dentro da aplicação.
+
+Parse de URL Encoded: Para dados de formulários, o body-parser pode interpretar dados de
+formulários no formato application/x-www-form-urlencoded e transformá-los em um objeto
+JavaScript.
+
+
+
+
+No desenvolvimento de aplicações web, os conceitos de **rota** e **controlador** desempenham papéis complementares, mas possuem finalidades distintas. A escolha de quando chamamos um ou outro depende do nível de responsabilidade e organização da aplicação. Aqui está a distinção:
+
+---
+
+### **1. Chamamos **rota** quando:**
+A rota é o ponto inicial da aplicação para lidar com uma requisição. Ela mapeia um **endpoint** (como `/login` ou `/produtos`) e um **método HTTP** (como `GET`, `POST`, `PUT`, ou `DELETE`) a uma funcionalidade específica da aplicação.
+
+- **Função principal:** Identificar para onde a requisição deve ser encaminhada.
+- **Exemplo de uso típico:**
+  - Definir qual lógica será executada com base no caminho (URL) e no método HTTP.
+  - Servir diretamente respostas simples quando a lógica é mínima.
+
+**Exemplo em Express.js:**
+```javascript
+app.get('/produtos', (req, res) => {
+    res.send('Lista de produtos');
+});
+```
+
+Neste exemplo, a rota **define diretamente** o que deve acontecer para o endpoint `/produtos`.
+
+**Quando usar somente rotas?**
+- Em aplicações pequenas ou simples, onde as regras de negócio são leves.
+- Quando não há necessidade de reutilização de lógica complexa entre diferentes partes da aplicação.
+
+---
+
+### **2. Chamamos **controlador** quando:**
+O controlador (ou *controller*) é um componente separado que contém a lógica de negócios associada a uma rota específica. Ele é chamado pela rota para processar a requisição e retornar a resposta.
+
+- **Função principal:** Gerenciar a lógica de negócios da aplicação de forma mais organizada e modular.
+- **Exemplo de uso típico:**
+  - Centralizar a lógica em funções reutilizáveis e organizadas.
+  - Lidar com requisições mais complexas, como interagir com o banco de dados, validar entradas, ou processar dados antes de responder.
+
+**Exemplo em Express.js com controlador:**
+```javascript
+// controlador-produto.js
+exports.listarProdutos = (req, res) => {
+    const produtos = [
+        { id: 1, nome: 'Produto A' },
+        { id: 2, nome: 'Produto B' }
+    ];
+    res.json(produtos);
+};
+```
+
+```javascript
+// server.js
+const express = require('express');
+const app = express();
+const produtoController = require('./controlador-produto');
+
+app.get('/produtos', produtoController.listarProdutos);
+
+/*
+A função app.listen do Express serve para iniciar um servidor, ouvindo requisições em uma porta
+específica.
+*/
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
+});
+```
+
+A função `req.on("data", function(parte){})` no Express é usada para lidar com o evento de recebimento de dados em fluxos (streams) de requisição HTTP. No contexto de um servidor Express, ela é usada quando você precisa manipular dados que estão sendo transmitidos para o servidor, como no caso de um corpo de requisição (request body) sendo enviado via métodos HTTP como `POST` ou `PUT`.
+
+### Explicação:
+
+- **`req`**: Refere-se ao objeto de requisição do Express, que contém informações sobre a requisição recebida.
+- **`.on("data", function(parte){})`**: Esse é um listener de eventos para o evento `"data"` no fluxo de entrada da requisição. Cada vez que uma nova parte dos dados é recebida (no caso de um fluxo de dados grande, como uploads de arquivos), a função callback é chamada.
+  - **`parte`**: A variável `parte` contém uma porção dos dados recebidos. Isso é relevante principalmente quando o corpo da requisição é grande e precisa ser lido em pedaços menores, como em uploads de arquivos ou requisições com grandes volumes de dados.
+
+### Exemplo de uso:
+
+```javascript
+app.post('/upload', (req, res) => {
+  let dados = '';
+
+  req.on('data', function(parte) {
+    dados += parte;  // Acumula os dados recebidos
+  });
+
+  req.on('end', function() {
+    console.log('Dados recebidos:', dados);  // Quando todos os dados forem recebidos
+    res.send('Dados recebidos com sucesso');
+  });
+});
+```
+
+### Fluxo:
+1. Quando a requisição é feita, o servidor começa a receber os dados enviados pelo cliente.
+2. O evento `data` é disparado sempre que uma parte dos dados é recebida, e a função callback é chamada, recebendo a `parte` dos dados.
+3. Quando todos os dados forem recebidos, o evento `end` é disparado e você pode processar ou armazenar os dados completos.
+
+### Uso típico:
+- Isso é particularmente útil quando você está lidando com fluxos grandes de dados (por exemplo, uploads de arquivos), ou quando o corpo da requisição não é totalmente conhecido de antemão e precisa ser processado em pedaços.
+
+No entanto, no Express, para muitos casos comuns de leitura de dados, como formulários ou JSON, existem middlewares como `express.json()` ou `express.urlencoded()` que fazem o trabalho de ler o corpo da requisição automaticamente, sem a necessidade de tratar o evento `data` diretamente.
+
+**Quando usar controladores?**
+- Em aplicações médias a grandes, para separar responsabilidades.
+- Quando múltiplas rotas compartilham a mesma lógica (ex.: listar, adicionar, editar ou excluir registros).
+- Para facilitar a manutenção, testabilidade e escalabilidade da aplicação.
+
+---
+
+### **Resumo prático:**
+1. **Rota:** Mapeia o endpoint e método HTTP e decide o que fazer com a requisição.
+2. **Controlador:** Contém a lógica de negócios associada e é chamado pela rota quando necessário.
+
+Em aplicações bem estruturadas, as rotas **delegam responsabilidades** para controladores,
+permitindo que o código fique mais limpo, modular e fácil de entender.
+
+
+No Express, a função `app.use((req, res) => { })` define um middleware que será executado para todas as requisições recebidas pelo servidor. Aqui está o que acontece em cada parte:
+
+- **`app.use`**: Este método é usado para registrar middlewares no Express. Middlewares são funções que podem modificar a requisição (`req`), a resposta (`res`), ou até mesmo encerrar o ciclo de requisição-resposta.
+  
+- **`(req, res) => { }`**: Esta é uma função anônima (arrow function) que define o middleware. Ela recebe dois parâmetros:
+  - **`req`**: O objeto de requisição, que contém informações sobre a requisição HTTP recebida.
+  - **`res`**: O objeto de resposta, que permite enviar uma resposta de volta ao cliente.
+
+Quando você usa o `app.use` dessa forma, ele será executado para **todas as rotas e métodos HTTP** (GET, POST, PUT, DELETE, etc.) e **para qualquer URL** que a aplicação Express receba. Esse middleware não faz nada até que o corpo da função seja implementado.
+
+### Exemplo básico:
+```javascript
+app.use((req, res) => {
+    console.log('A requisição chegou!');
+    res.send('Resposta do middleware');
+});
+```
+
+Neste exemplo, todas as requisições que chegarem ao servidor passarão por esse middleware. Ele apenas logará uma mensagem no console e responderá com "Resposta do middleware".
+
+### Observações:
+- Se não for chamada a função `res.send()`, `res.end()` ou outro método que finalize a resposta, a requisição ficará "pendente" e o cliente nunca receberá uma resposta.
+- Esse tipo de middleware é geralmente utilizado para logar, verificar autenticação, ou outras ações que devem ocorrer em todas as requisições antes de passar para o manipulador de rota específico.
+
+Se o middleware precisar passar a requisição para o próximo middleware ou manipulador de rota, você pode usar `next()` dentro da função:
+
+```javascript
+app.use((req, res, next) => {
+    console.log('A requisição chegou!');
+    next(); // Passa para o próximo middleware ou rota
+});
+```
+
+Sem o `next()`, o fluxo de execução da requisição será interrompido ali.
+
+
+verbo http options: O verbo HTTP OPTIONS é usado para solicitar informações sobre os métodos HTTP
+suportados por um servidor para uma determinada URL, sem realizar uma requisição
+de dados.
